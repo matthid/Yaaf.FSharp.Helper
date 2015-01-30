@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>38b85f98-90c9-4fa8-851f-096de04bb3b1</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Yaaf.FSharp.Helper</RootNamespace>
+    <AssemblyName>Yaaf.FSharp.Helper</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <TargetProfile>netcore</TargetProfile>
+    <TargetFSharpCoreVersion>3.3.1.0</TargetFSharpCoreVersion>
+    <Name>Yaaf.FSharp.Helper</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <Tailcalls>false</Tailcalls>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FX_NO_THEADPOOL;FX_NO_FILE;FX_NO_WEB_CLIENT;NET40;NET45</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <DocumentationFile>bin\Debug\Yaaf.FSharp.Helper.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <Tailcalls>true</Tailcalls>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <DocumentationFile>bin\Release\Yaaf.FSharp.Helper.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">12</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.Portable.FSharp.Targets" />
+  <ItemGroup>
+    <None Include="Script.fsx" />
+    <Content Include="packages.config" />
+    <Content Include="app.config" />
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="Prelude.fs" />
+    <Compile Include="Monoid.fs" />
+    <Compile Include="Monad.fs" />
+    <Compile Include="Continuation.fs" />
+    <Compile Include="Enumerator.fs" />
+    <Compile Include="Agent.fs" />
+    <Compile Include="AutoCancelAgent.fs" />
+    <Compile Include="BatchProcessingAgent.fs" />
+    <Compile Include="BlockingQueueAgent.fs" />
+    <Compile Include="CircularQueueAgent.fs" />
+    <Compile Include="ConcurrentSetAgent.fs" />
+    <Compile Include="SlidingWindowAgent.fs" />
+    <Compile Include="Async.fs" />
+    <Compile Include="AsyncOperations.fs" />
+    <Compile Include="AsyncWorker.fs" />
+    <Compile Include="AsyncStreamReader.fs" />
+    <Compile Include="Observable.fs" />
+    <Compile Include="AsyncSeq.fs" />
+    <Compile Include="PSeq.fs" />
+    <Compile Include="Task.fs" />
+    <Compile Include="AsyncPrimitives.fs" />
+    <Compile Include="IO.fs" />
+    <Compile Include="Helper.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="FSharp.Core">
+      <Name>FSharp.Core</Name>
+      <AssemblyName>FSharp.Core.dll</AssemblyName>
+      <HintPath>$(MSBuildExtensionsPath32)\..\Reference Assemblies\Microsoft\FSharp\.NETCore\$(TargetFSharpCoreVersion)\FSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharpx.Collections">
+      <HintPath>..\..\..\packages\.nuget\FSharpx.Collections.1.9.6\lib\portable-net4+sl4+wp71+win8\FSharpx.Collections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Portable.Text.Encoding">
+      <HintPath>..\..\..\packages\.nuget\Portable.Text.Encoding.0.7.0.0\lib\portable-net45+wp8+win8\Portable.Text.Encoding.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
