@@ -6,13 +6,13 @@ Yaaf.AdvancedBuilding
 
 **Development Branch**
 
-[![Build Status](https://travis-ci.org/matthid/Yaaf.AdvancedBuilding.svg?branch=develop)](https://travis-ci.org/matthid/Yaaf.AdvancedBuilding)
-[![Build status](https://ci.appveyor.com/api/projects/status/2xitdogybhrpd74o/branch/develop?svg=true)](https://ci.appveyor.com/project/matthid/yaaf-511/branch/develop)
+[![Build Status](https://travis-ci.org/matthid/Yaaf.FSharp.Helper.svg?branch=develop)](https://travis-ci.org/matthid/Yaaf.FSharp.Helper)
+[![Build status](https://ci.appveyor.com/api/projects/status/8yc353qgmwokx0ai/branch/develop?svg=true)](https://ci.appveyor.com/project/matthid/yaaf-fsharp-helper/branch/develop)
 
 **Master Branch**
 
-[![Build Status](https://travis-ci.org/matthid/Yaaf.AdvancedBuilding.svg?branch=master)](https://travis-ci.org/matthid/Yaaf.AdvancedBuilding)
-[![Build status](https://ci.appveyor.com/api/projects/status/2xitdogybhrpd74o/branch/master?svg=true)](https://ci.appveyor.com/project/matthid/yaaf-511/branch/master)
+[![Build Status](https://travis-ci.org/matthid/Yaaf.FSharp.Helper.svg?branch=master)](https://travis-ci.org/matthid/Yaaf.FSharp.Helper)
+[![Build status](https://ci.appveyor.com/api/projects/status/8yc353qgmwokx0ai/branch/master?svg=true)](https://ci.appveyor.com/project/matthid/yaaf-fsharp-helper/branch/master)
 
 ## NuGet
 
