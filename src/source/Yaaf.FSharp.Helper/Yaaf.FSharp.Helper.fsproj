@@ -67,6 +67,22 @@
     <Compile Include="IO.fs" />
     <Compile Include="Helper.fs" />
   </ItemGroup>
+  <Choose>
+    <When Condition="($(TargetFrameworkProfile) == 'Profile111')">
+      <ItemGroup>
+        <Reference Include="FSharpx.Collections">
+          <HintPath>..\..\..\packages\FSharpx.Collections\lib\portable-net4+sl4+wp71+win8\FSharpx.Collections.dll</HintPath>
+          <Private>True</Private>
+          <Paket>False</Paket>
+        </Reference>
+        <Reference Include="Portable.Text.Encoding">
+          <HintPath>..\..\..\packages\Portable.Text.Encoding\lib\portable-net45+wp8+win8\Portable.Text.Encoding.dll</HintPath>
+          <Private>True</Private>
+          <Paket>False</Paket>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
