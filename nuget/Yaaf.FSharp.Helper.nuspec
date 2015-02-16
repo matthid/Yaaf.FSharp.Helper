@@ -15,7 +15,7 @@
     <releaseNotes>@releaseNotes@</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>@tags@</tags>
-    <dependencies />
+    @dependencies@
   </metadata>
   <files>
     <file src="release/lib/profile111/Yaaf.FSharp.Helper.dll" target="lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/Yaaf.FSharp.Helper.dll" />
