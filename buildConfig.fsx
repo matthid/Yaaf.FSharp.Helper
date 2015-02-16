@@ -64,5 +64,8 @@ let buildConfig =
      [ { BuildParams.Empty with
           // The default build
           CustomBuildName = ""
-          SimpleBuildName = "profile111" } ]
+          SimpleBuildName = "profile111" 
+          FindUnitTestDlls =
+            // Don't run on mono.
+            if isMono then (fun _ -> Seq.empty) else BuildParams.Empty.FindUnitTestDlls } ]
   }
