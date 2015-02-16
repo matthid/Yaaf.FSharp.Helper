@@ -6,4 +6,6 @@
 #load @"buildConfig.fsx"
 #load "packages/Yaaf.AdvancedBuilding/content/generateDocsInclude.fsx"
 open Fake
-RunTargetOrDefault "LocalDoc"
+#RunTargetOrDefault "LocalDoc"
+traceError "Documentation generation is disabled: https://github.com/matthid/Yaaf.FSharp.Helper/issues/1"
+()

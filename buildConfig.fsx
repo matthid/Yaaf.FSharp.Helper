@@ -64,5 +64,5 @@ let buildConfig =
      [ { BuildParams.Empty with
           // The default build
           CustomBuildName = ""
-          SimpleBuildName = "net40" } ]
+          SimpleBuildName = "profile111" } ]
   }

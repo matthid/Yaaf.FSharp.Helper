@@ -1,4 +1,4 @@
-﻿# Yaaf.AdvancedBuilding implementation documentation 
+﻿# Yaaf.FSharp.Helper implementation documentation 
 
 ## Building
 Open the ``.sln`` file or run ``./build``.
@@ -19,9 +19,9 @@ This project tries to help you with your build setup.
 
 ### Issues / Features / TODOs
 
-New features are accepted via github pull requests (so just fork away right now!):  https://github.com/matthid/Yaaf.AdvancedBuilding
+New features are accepted via github pull requests (so just fork away right now!):  https://github.com/matthid/Yaaf.FSharp.Helper
 
-Issues and TODOs are tracked on github, see: https://github.com/matthid/Yaaf.AdvancedBuilding/issues
+Issues and TODOs are tracked on github, see: https://github.com/matthid/Yaaf.FSharp.Helper/issues
 
 Discussions/Forums are on IRC. 
 
@@ -31,7 +31,7 @@ http://semver.org/
 
 ### High level documentation ordered by project.
 
-- `Yaaf.AdvancedBuilding`: For one a project to test the building infrastructure, in the future a helper to generate fsproj and csproj files.
+- `Yaaf.FSharp.Helper`: Some helper functionality.
 
 ### The Project structure:
 
