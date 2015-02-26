@@ -50,7 +50,7 @@ let buildConfig =
               ReleaseNotes = toLines release.Notes
               Dependencies = 
                 [ "FSharpx.Collections", "1.9.6"
-                  "Portable.Text.Encoding", "0.7.0"
+                  "Yaaf.Portable.Text.Encoding", "0.7.0"
                   "Yaaf.Logging", "1.0.1" ] }) ]
     UseNuget = false
     SetAssemblyFileVersions = (fun config ->
