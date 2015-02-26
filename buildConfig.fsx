@@ -49,7 +49,8 @@ let buildConfig =
               Version = config.Version
               ReleaseNotes = toLines release.Notes
               Dependencies = 
-                [ "FSharpx.Collections", "1.9.6"
+                [ "FSharp.Core", "3.1.2.1"
+                  "FSharpx.Collections", "1.10.1"
                   "Yaaf.Portable.Text.Encoding", "0.7.0"
                   "Yaaf.Logging", "1.0.1" ] }) ]
     UseNuget = false
