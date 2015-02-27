@@ -5,8 +5,9 @@ nuget Yaaf.AdvancedBuilding
 
 nuget FSharp.Core
 nuget FSharpx.Collections
-nuget Portable.Text.Encoding
+nuget Yaaf.Portable.Text.Encoding
 nuget Yaaf.Logging
+nuget FSharp.Formatting == 2.6.3
 
 nuget NUnit == 2.6.3
 nuget NUnit.Runners
