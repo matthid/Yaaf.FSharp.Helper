@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Task - Yaaf.FSharp.Helper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Matthias Dittrich">
+
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/style.css" />
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.css" />
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/tips.js"></script>
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://fsharp.org">fsharp.org</a></li>
+          <li><a href="http://tpetricek.github.io/FSharp.Formatting/"><img height="16" width="16" src="https://matthid.github.io/Yaaf.AdvancedBuilding/content/img/FSharp.Formatting.png" /> F# Formatting</a></li>
+        </ul>
+        <h3 class="muted"><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Yaaf.FSharp.Helper</a></h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="span9" id="main">
+          
+
+
+
+<h1>Task</h1>
+<div class="xmldoc">
+    Defined in Yaaf.FSharp.Helper.dll.
+</div>
+<div class="xmldoc">
+</div>
+
+<!-- Render nested types and modules, if there are any -->
+  <h2>Nested types and modules</h2>
+  <div>
+      <table class="table table-bordered type-list">
+    <thead>
+      <tr><td>Type</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-helper-task-result-1.html">Result<'T></a>
+          </td>
+          <td class="xmldoc">
+ Task result
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-helper-task-taskbuilder.html">TaskBuilder</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-helper-task-taskbuildercontext-1.html">TaskBuilderContext<'context></a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-helper-task-taskbuilderwithtoken.html">TaskBuilderWithToken</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '540', 540)" onmouseover="showTip(event, '540', 540)">
+            ( *&gt; ) a b
+          </code>
+          <div class="tip" id="540">
+            <strong>Signature:</strong> a:Task&lt;&#39;?6647&gt; -&gt; b:Task&lt;&#39;?6648&gt; -&gt; Task&lt;&#39;?6648&gt;<br />
+                          <strong>Type parameters:</strong> '?6647, '?6648          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L395-395" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequence actions, discarding the value of the first argument.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '541', 541)" onmouseover="showTip(event, '541', 541)">
+            ( &lt;!&gt; ) f x
+          </code>
+          <div class="tip" id="541">
+            <strong>Signature:</strong> f:(&#39;?6644 -&gt; &#39;?6645) -&gt; x:Task&lt;&#39;?6644&gt; -&gt; Task&lt;&#39;?6645&gt;<br />
+                          <strong>Type parameters:</strong> '?6644, '?6645          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L392-392" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Infix map
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '542', 542)" onmouseover="showTip(event, '542', 542)">
+            ( &lt;* ) a b
+          </code>
+          <div class="tip" id="542">
+            <strong>Signature:</strong> a:Task&lt;&#39;?6650&gt; -&gt; b:Task&lt;&#39;?6651&gt; -&gt; Task&lt;&#39;?6650&gt;<br />
+                          <strong>Type parameters:</strong> '?6650, '?6651          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L398-398" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequence actions, discarding the value of the second argument.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '543', 543)" onmouseover="showTip(event, '543', 543)">
+            ( &lt;*&gt; ) f x
+          </code>
+          <div class="tip" id="543">
+            <strong>Signature:</strong> f:Task&lt;(&#39;?6641 -&gt; &#39;?6642)&gt; -&gt; x:Task&lt;&#39;?6641&gt; -&gt; Task&lt;&#39;?6642&gt;<br />
+                          <strong>Type parameters:</strong> '?6641, '?6642          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L389-389" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequential application
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '544', 544)" onmouseover="showTip(event, '544', 544)">
+            ( &lt;=&lt; ) x
+          </code>
+          <div class="tip" id="544">
+            <strong>Signature:</strong> x:(&#39;?6629 -&gt; Task&lt;&#39;?6630&gt;) -&gt; (&#39;?6631 -&gt; &#39;?6632) -&gt; &#39;?6631 -&gt; Task&lt;&#39;?6630&gt;<br />
+                          <strong>Type parameters:</strong> '?6629, '?6630, '?6631, '?6632          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L379-379" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Right-to-left Kleisli composition
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '545', 545)" onmouseover="showTip(event, '545', 545)">
+            ( =&lt;&lt; ) f m
+          </code>
+          <div class="tip" id="545">
+            <strong>Signature:</strong> f:(&#39;?6618 -&gt; Task&lt;&#39;?6619&gt;) -&gt; m:Task&lt;&#39;?6618&gt; -&gt; Task&lt;&#39;?6619&gt;<br />
+                          <strong>Type parameters:</strong> '?6618, '?6619          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L370-370" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Flipped >>=
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '546', 546)" onmouseover="showTip(event, '546', 546)">
+            ( &gt;=&gt; ) f g x
+          </code>
+          <div class="tip" id="546">
+            <strong>Signature:</strong> f:(&#39;?6624 -&gt; &#39;?6625) -&gt; g:(&#39;?6626 -&gt; Task&lt;&#39;?6627&gt;) -&gt; x:&#39;?6624 -&gt; Task&lt;&#39;?6627&gt;<br />
+                          <strong>Type parameters:</strong> '?6624, '?6625, '?6626, '?6627          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L376-376" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Left-to-right Kleisli composition
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '547', 547)" onmouseover="showTip(event, '547', 547)">
+            ( &gt;&gt;. ) m1 m2
+          </code>
+          <div class="tip" id="547">
+            <strong>Signature:</strong> m1:Task&lt;&#39;?6621&gt; -&gt; m2:Task&lt;&#39;?6622&gt; -&gt; Task&lt;&#39;?6622&gt;<br />
+                          <strong>Type parameters:</strong> '?6621, '?6622          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L373-373" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequentially compose two either actions, discarding any value produced by the first
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '548', 548)" onmouseover="showTip(event, '548', 548)">
+            ( &gt;&gt;= ) m f
+          </code>
+          <div class="tip" id="548">
+            <strong>Signature:</strong> m:Task&lt;&#39;?6615&gt; -&gt; f:(&#39;?6615 -&gt; Task&lt;&#39;?6616&gt;) -&gt; Task&lt;&#39;?6616&gt;<br />
+                          <strong>Type parameters:</strong> '?6615, '?6616          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L367-367" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequentially compose two actions, passing any value produced by the first as an argument to the second.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '549', 549)" onmouseover="showTip(event, '549', 549)">
+            ap x f
+          </code>
+          <div class="tip" id="549">
+            <strong>Signature:</strong> x:Task&lt;&#39;?6638&gt; -&gt; f:Task&lt;(&#39;?6638 -&gt; &#39;?6639)&gt; -&gt; Task&lt;&#39;?6639&gt;<br />
+                          <strong>Type parameters:</strong> '?6638, '?6639          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L386-386" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequential application
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '550', 550)" onmouseover="showTip(event, '550', 550)">
+            await t
+          </code>
+          <div class="tip" id="550">
+            <strong>Signature:</strong> t:Task&lt;&#39;?6568&gt; -&gt; Async&lt;&#39;?6568&gt;<br />
+                          <strong>Type parameters:</strong> '?6568          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L226-226" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '551', 551)" onmouseover="showTip(event, '551', 551)">
+            awaitNoExn t
+          </code>
+          <div class="tip" id="551">
+            <strong>Signature:</strong> t:Task&lt;&#39;?6570&gt; -&gt; Async&lt;Task&lt;&#39;?6570&gt;&gt;<br />
+                          <strong>Type parameters:</strong> '?6570          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L239-239" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '552', 552)" onmouseover="showTip(event, '552', 552)">
+            awaitNoExnIgnore t
+          </code>
+          <div class="tip" id="552">
+            <strong>Signature:</strong> t:Task&lt;&#39;?6572&gt; -&gt; Async&lt;unit&gt;<br />
+                          <strong>Type parameters:</strong> '?6572          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L242-242" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '553', 553)" onmouseover="showTip(event, '553', 553)">
+            awaitPlain t
+          </code>
+          <div class="tip" id="553">
+            <strong>Signature:</strong> t:Task -&gt; Async&lt;unit&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L246-246" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '554', 554)" onmouseover="showTip(event, '554', 554)">
+            bind f m
+          </code>
+          <div class="tip" id="554">
+            <strong>Signature:</strong> f:(&#39;T -&gt; Task&lt;&#39;U&gt;) -&gt; m:Task&lt;&#39;T&gt; -&gt; Task&lt;&#39;U&gt;<br />
+                          <strong>Type parameters:</strong> 'T, 'U          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L357-357" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '555', 555)" onmouseover="showTip(event, '555', 555)">
+            bindWithOptions (...)
+          </code>
+          <div class="tip" id="555">
+            <strong>Signature:</strong> token:CancellationToken -&gt; continuationOptions:TaskContinuationOptions -&gt; scheduler:TaskScheduler -&gt; f:(&#39;T -&gt; Task&lt;&#39;U&gt;) -&gt; m:Task&lt;&#39;T&gt; -&gt; Task&lt;&#39;U&gt;<br />
+                          <strong>Type parameters:</strong> 'T, 'U          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L354-354" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '556', 556)" onmouseover="showTip(event, '556', 556)">
+            combine m1 m2
+          </code>
+          <div class="tip" id="556">
+            <strong>Signature:</strong> m1:Task&lt;&#39;?6736&gt; -&gt; m2:Task&lt;&#39;?6737&gt; -&gt; Task&lt;&#39;?6736 * &#39;?6737&gt;<br />
+                          <strong>Type parameters:</strong> '?6736, '?6737          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L495-495" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '557', 557)" onmouseover="showTip(event, '557', 557)">
+            Context 
+          </code>
+          <div class="tip" id="557">
+            <strong>Signature:</strong> &#39;?6726 -&gt; Task&lt;&#39;?6726&gt;<br />
+                          <strong>Type parameters:</strong> '?6726          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L477-477" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '558', 558)" onmouseover="showTip(event, '558', 558)">
+            continueWith f t
+          </code>
+          <div class="tip" id="558">
+            <strong>Signature:</strong> f:(Task&lt;&#39;?6579&gt; -&gt; &#39;?6580) -&gt; t:Task&lt;&#39;?6579&gt; -&gt; Task&lt;&#39;?6580&gt;<br />
+                          <strong>Type parameters:</strong> '?6579, '?6580          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L262-262" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '559', 559)" onmouseover="showTip(event, '559', 559)">
+            flatAggregate agg
+          </code>
+          <div class="tip" id="559">
+            <strong>Signature:</strong> agg:AggregateException -&gt; exn<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L188-188" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '560', 560)" onmouseover="showTip(event, '560', 560)">
+            flatten exn
+          </code>
+          <div class="tip" id="560">
+            <strong>Signature:</strong> exn:exn -&gt; exn<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L193-193" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '561', 561)" onmouseover="showTip(event, '561', 561)">
+            guardAggregate f
+          </code>
+          <div class="tip" id="561">
+            <strong>Signature:</strong> f:(unit -&gt; &#39;?6561) -&gt; &#39;?6561<br />
+                          <strong>Type parameters:</strong> '?6561          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L214-214" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '562', 562)" onmouseover="showTip(event, '562', 562)">
+            ignore m
+          </code>
+          <div class="tip" id="562">
+            <strong>Signature:</strong> m:Task&lt;&#39;?6739&gt; -&gt; Task&lt;unit&gt;<br />
+                          <strong>Type parameters:</strong> '?6739          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L511-511" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '563', 563)" onmouseover="showTip(event, '563', 563)">
+            lift2 f a b
+          </code>
+          <div class="tip" id="563">
+            <strong>Signature:</strong> f:(&#39;?6634 -&gt; &#39;?6635 -&gt; &#39;?6636) -&gt; a:Task&lt;&#39;?6634&gt; -&gt; b:Task&lt;&#39;?6635&gt; -&gt; Task&lt;&#39;?6636&gt;<br />
+                          <strong>Type parameters:</strong> '?6634, '?6635, '?6636          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L382-382" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Promote a function to a monad/applicative, scanning the monadic/applicative arguments from left to right.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '564', 564)" onmouseover="showTip(event, '564', 564)">
+            map f m
+          </code>
+          <div class="tip" id="564">
+            <strong>Signature:</strong> f:(&#39;?6604 -&gt; &#39;?6605) -&gt; m:Task&lt;&#39;?6604&gt; -&gt; Task&lt;&#39;?6605&gt;<br />
+                          <strong>Type parameters:</strong> '?6604, '?6605          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L351-351" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Transforms a Task's first value by using a specified mapping function.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '565', 565)" onmouseover="showTip(event, '565', 565)">
+            mapWithOptions (...)
+          </code>
+          <div class="tip" id="565">
+            <strong>Signature:</strong> token:CancellationToken -&gt; continuationOptions:TaskContinuationOptions -&gt; scheduler:TaskScheduler -&gt; f:(&#39;?6601 -&gt; &#39;?6602) -&gt; m:Task&lt;&#39;?6601&gt; -&gt; Task&lt;&#39;?6602&gt;<br />
+                          <strong>Type parameters:</strong> '?6601, '?6602          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L347-347" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Transforms a Task's first value by using a specified mapping function.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '566', 566)" onmouseover="showTip(event, '566', 566)">
+            ofAsync asy
+          </code>
+          <div class="tip" id="566">
+            <strong>Signature:</strong> asy:Async&lt;&#39;?6582&gt; -&gt; Task&lt;&#39;?6582&gt;<br />
+                          <strong>Type parameters:</strong> '?6582          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L265-265" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '567', 567)" onmouseover="showTip(event, '567', 567)">
+            ofPlainTask t
+          </code>
+          <div class="tip" id="567">
+            <strong>Signature:</strong> t:Task -&gt; Task&lt;unit&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L198-198" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '568', 568)" onmouseover="showTip(event, '568', 568)">
+            reraisePreserveStackTrace e
+          </code>
+          <div class="tip" id="568">
+            <strong>Signature:</strong> e:Exception -&gt; &#39;?6554<br />
+                          <strong>Type parameters:</strong> '?6554          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L184-184" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '569', 569)" onmouseover="showTip(event, '569', 569)">
+            result t
+          </code>
+          <div class="tip" id="569">
+            <strong>Signature:</strong> t:Task&lt;&#39;?6565&gt; -&gt; &#39;?6565<br />
+                          <strong>Type parameters:</strong> '?6565          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L220-220" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '570', 570)" onmouseover="showTip(event, '570', 570)">
+            returnM a
+          </code>
+          <div class="tip" id="570">
+            <strong>Signature:</strong> a:&#39;?6613 -&gt; Task&lt;&#39;?6613&gt;<br />
+                          <strong>Type parameters:</strong> '?6613          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L360-360" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '571', 571)" onmouseover="showTip(event, '571', 571)">
+            run t
+          </code>
+          <div class="tip" id="571">
+            <strong>Signature:</strong> t:(unit -&gt; Task&lt;&#39;?6597&gt;) -&gt; Result&lt;&#39;?6597&gt;<br />
+                          <strong>Type parameters:</strong> '?6597          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L322-322" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '572', 572)" onmouseover="showTip(event, '572', 572)">
+            runWork f
+          </code>
+          <div class="tip" id="572">
+            <strong>Signature:</strong> f:(unit -&gt; &#39;a) -&gt; Task&lt;&#39;a&gt;<br />
+                          <strong>Type parameters:</strong> 'a          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L250-250" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '573', 573)" onmouseover="showTip(event, '573', 573)">
+            runWorkTask f
+          </code>
+          <div class="tip" id="573">
+            <strong>Signature:</strong> f:(unit -&gt; Task&lt;&#39;a&gt;) -&gt; Task&lt;&#39;a&gt;<br />
+                          <strong>Type parameters:</strong> 'a          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L251-251" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '574', 574)" onmouseover="showTip(event, '574', 574)">
+            start t
+          </code>
+          <div class="tip" id="574">
+            <strong>Signature:</strong> t:Task&lt;&#39;?6563&gt; -&gt; unit<br />
+                          <strong>Type parameters:</strong> '?6563          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L219-219" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '575', 575)" onmouseover="showTip(event, '575', 575)">
+            startTask o errors asy
+          </code>
+          <div class="tip" id="575">
+            <strong>Signature:</strong> o:&#39;?6559 -&gt; errors:Event&lt;EventHandler&lt;exn&gt;,exn&gt; -&gt; asy:Async&lt;unit&gt; -&gt; unit<br />
+                          <strong>Type parameters:</strong> '?6559          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L207-207" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '576', 576)" onmouseover="showTip(event, '576', 576)">
+            startTasks waitForTasks
+          </code>
+          <div class="tip" id="576">
+            <strong>Signature:</strong> waitForTasks:AsyncSeq&lt;Task&lt;&#39;?6584&gt;&gt; -&gt; AsyncSeq&lt;Task&lt;&#39;?6584&gt;&gt;<br />
+                          <strong>Type parameters:</strong> '?6584          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L274-274" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Starts the given tasks and returns them in the order they finish.
+ The tasks will be started as soon as they are available and they will be returned as they finish.
+ The task will start when you start to iterate over the results.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '577', 577)" onmouseover="showTip(event, '577', 577)">
+            task 
+          </code>
+          <div class="tip" id="577">
+            <strong>Signature:</strong> TaskBuilder<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L487-487" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '578', 578)" onmouseover="showTip(event, '578', 578)">
+            taskBuilder 
+          </code>
+          <div class="tip" id="578">
+            <strong>Signature:</strong> TaskBuilderWithToken<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L486-486" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '579', 579)" onmouseover="showTip(event, '579', 579)">
+            toAsync t
+          </code>
+          <div class="tip" id="579">
+            <strong>Signature:</strong> t:Task&lt;&#39;T&gt; -&gt; Async&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L334-334" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '580', 580)" onmouseover="showTip(event, '580', 580)">
+            Token token
+          </code>
+          <div class="tip" id="580">
+            <strong>Signature:</strong> token:CancellationToken -&gt; Task&lt;CancellationToken&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L485-485" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '581', 581)" onmouseover="showTip(event, '581', 581)">
+            wait t
+          </code>
+          <div class="tip" id="581">
+            <strong>Signature:</strong> t:Task -&gt; unit<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L223-223" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '582', 582)" onmouseover="showTip(event, '582', 582)">
+            whenAll tasks
+          </code>
+          <div class="tip" id="582">
+            <strong>Signature:</strong> tasks:seq&lt;Task&lt;&#39;?6732&gt;&gt; -&gt; Task&lt;&#39;?6732 []&gt;<br />
+                          <strong>Type parameters:</strong> '?6732          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L489-489" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '583', 583)" onmouseover="showTip(event, '583', 583)">
+            whenAny tasks
+          </code>
+          <div class="tip" id="583">
+            <strong>Signature:</strong> tasks:seq&lt;Task&lt;&#39;?6734&gt;&gt; -&gt; Task&lt;&#39;?6734&gt;<br />
+                          <strong>Type parameters:</strong> '?6734          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L492-492" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+        </div>
+        <div class="span3">
+          <a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">
+            <img src="https://matthid.github.io/Yaaf.FSharp.Helper/content/img/logo.png" style="width:140px;height:140px;margin:10px 0px 0px 35px;border-style:none;" />
+          </a>
+
+          <ul class="nav nav-list" id="menu">
+
+            <li class="nav-header">Yaaf.FSharp.Helper</li>
+
+            <li class="divider"></li>
+            <li><a href="https://www.nuget.org/packages/Yaaf.FSharp.Helper/">Get Yaaf.FSharp.Helper package via NuGet</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper">Source Code</a></li>
+            <li><a href="https://github.com/matthid//issues">Open bugs and feature requests</a></li>
+            <li><a href="https://github.com/matthid//issues/new">Report Issue or Request Feature</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/develop/LICENSE.md">License (Apache 2)</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/Contributing.html">Contributing</a></li>
+            
+            <li class="nav-header">Documentation</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Quick Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/ReleaseNotes.html">Release Notes</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/DevelopReadme.html">Development Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/buildConfig.html">An example build configuration</a></li>
+
+            <li class="nav-header">Reference</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/references/index.html">API Reference</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+      <a href="https://github.com/matthid/Yaaf.FSharp.Helper"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    </body>
+  </html>

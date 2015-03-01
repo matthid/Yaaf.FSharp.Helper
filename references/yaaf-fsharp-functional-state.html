@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>State - Yaaf.FSharp.Helper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Matthias Dittrich">
+
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/style.css" />
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.css" />
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/tips.js"></script>
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://fsharp.org">fsharp.org</a></li>
+          <li><a href="http://tpetricek.github.io/FSharp.Formatting/"><img height="16" width="16" src="https://matthid.github.io/Yaaf.AdvancedBuilding/content/img/FSharp.Formatting.png" /> F# Formatting</a></li>
+        </ul>
+        <h3 class="muted"><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Yaaf.FSharp.Helper</a></h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="span9" id="main">
+          
+
+
+
+<h1>State</h1>
+<div class="xmldoc">
+    Defined in Yaaf.FSharp.Helper.dll.
+</div>
+<div class="xmldoc">
+</div>
+
+<!-- Render nested types and modules, if there are any -->
+  <h2>Nested types and modules</h2>
+  <div>
+      <table class="table table-bordered type-list">
+    <thead>
+      <tr><td>Type</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-functional-state-state-2.html">State<'T, 'State></a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-functional-state-statebuilder.html">StateBuilder</a>
+          </td>
+          <td class="xmldoc">
+ The state monad.
+ The algorithm is adjusted from my original work off of Brian Beckman's http://channel9.msdn.com/shows/Going+Deep/Brian-Beckman-The-Zen-of-Expressing-State-The-State-Monad/.
+ The approach was adjusted from Matthew Podwysocki's http://codebetter.com/blogs/matthew.podwysocki/archive/2009/12/30/much-ado-about-monads-state-edition.aspx and mirrors his final result.
+</br></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '357', 357)" onmouseover="showTip(event, '357', 357)">
+            ( *&gt; ) x y
+          </code>
+          <div class="tip" id="357">
+            <strong>Signature:</strong> x:State&lt;&#39;?7660,&#39;?7661&gt; -&gt; y:State&lt;&#39;?7662,&#39;?7661&gt; -&gt; State&lt;&#39;?7662,&#39;?7661&gt;<br />
+                          <strong>Type parameters:</strong> '?7660, '?7661, '?7662          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L464-464" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequence actions, discarding the value of the first argument.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '358', 358)" onmouseover="showTip(event, '358', 358)">
+            ( &lt;!&gt; ) f m
+          </code>
+          <div class="tip" id="358">
+            <strong>Signature:</strong> f:(&#39;?7651 -&gt; &#39;?7652) -&gt; m:State&lt;&#39;?7651,&#39;?7653&gt; -&gt; State&lt;&#39;?7652,&#39;?7653&gt;<br />
+                          <strong>Type parameters:</strong> '?7651, '?7652, '?7653          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L460-460" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Infix map
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '359', 359)" onmouseover="showTip(event, '359', 359)">
+            ( &lt;* ) x y
+          </code>
+          <div class="tip" id="359">
+            <strong>Signature:</strong> x:State&lt;&#39;?7664,&#39;?7665&gt; -&gt; y:State&lt;&#39;?7666,&#39;?7665&gt; -&gt; State&lt;&#39;?7664,&#39;?7665&gt;<br />
+                          <strong>Type parameters:</strong> '?7664, '?7665, '?7666          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L466-466" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequence actions, discarding the value of the second argument.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '360', 360)" onmouseover="showTip(event, '360', 360)">
+            ( &lt;*&gt; ) f m
+          </code>
+          <div class="tip" id="360">
+            <strong>Signature:</strong> f:State&lt;(&#39;?7639 -&gt; &#39;?7640),&#39;?7641&gt; -&gt; m:State&lt;&#39;?7639,&#39;?7641&gt; -&gt; State&lt;&#39;?7640,&#39;?7641&gt;<br />
+                          <strong>Type parameters:</strong> '?7639, '?7640, '?7641          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L454-454" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequential application
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '361', 361)" onmouseover="showTip(event, '361', 361)">
+            ( &lt;=&lt; ) x
+          </code>
+          <div class="tip" id="361">
+            <strong>Signature:</strong> x:(&#39;?7677 -&gt; State&lt;&#39;?7678,&#39;?7679&gt;) -&gt; (&#39;?7680 -&gt; State&lt;&#39;?7677,&#39;?7679&gt;) -&gt; &#39;?7680 -&gt; State&lt;&#39;?7678,&#39;?7679&gt;<br />
+                          <strong>Type parameters:</strong> '?7677, '?7678, '?7679, '?7680          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L472-472" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Right-to-left Kleisli composition
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '362', 362)" onmouseover="showTip(event, '362', 362)">
+            ( =&lt;&lt; ) f m
+          </code>
+          <div class="tip" id="362">
+            <strong>Signature:</strong> f:(&#39;?7635 -&gt; State&lt;&#39;?7636,&#39;?7637&gt;) -&gt; m:State&lt;&#39;?7635,&#39;?7637&gt; -&gt; State&lt;&#39;?7636,&#39;?7637&gt;<br />
+                          <strong>Type parameters:</strong> '?7635, '?7636, '?7637          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L452-452" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Flipped >>=
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '363', 363)" onmouseover="showTip(event, '363', 363)">
+            ( &gt;=&gt; ) f g x
+          </code>
+          <div class="tip" id="363">
+            <strong>Signature:</strong> f:(&#39;?7672 -&gt; State&lt;&#39;?7673,&#39;?7674&gt;) -&gt; g:(&#39;?7673 -&gt; State&lt;&#39;?7675,&#39;?7674&gt;) -&gt; x:&#39;?7672 -&gt; State&lt;&#39;?7675,&#39;?7674&gt;<br />
+                          <strong>Type parameters:</strong> '?7672, '?7673, '?7674, '?7675          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L470-470" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Left-to-right Kleisli composition
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '364', 364)" onmouseover="showTip(event, '364', 364)">
+            ( &gt;&gt;. ) m f
+          </code>
+          <div class="tip" id="364">
+            <strong>Signature:</strong> m:State&lt;&#39;?7668,&#39;?7669&gt; -&gt; f:State&lt;&#39;?7670,&#39;?7669&gt; -&gt; State&lt;&#39;?7670,&#39;?7669&gt;<br />
+                          <strong>Type parameters:</strong> '?7668, '?7669, '?7670          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L468-468" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequentially compose two state actions, discarding any value produced by the first
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '365', 365)" onmouseover="showTip(event, '365', 365)">
+            ( &gt;&gt;= ) m f
+          </code>
+          <div class="tip" id="365">
+            <strong>Signature:</strong> m:State&lt;&#39;?7631,&#39;?7632&gt; -&gt; f:(&#39;?7631 -&gt; State&lt;&#39;?7633,&#39;?7632&gt;) -&gt; State&lt;&#39;?7633,&#39;?7632&gt;<br />
+                          <strong>Type parameters:</strong> '?7631, '?7632, '?7633          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L450-450" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequentially compose two actions, passing any value produced by the first as an argument to the second.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '366', 366)" onmouseover="showTip(event, '366', 366)">
+            ap m f
+          </code>
+          <div class="tip" id="366">
+            <strong>Signature:</strong> m:State&lt;&#39;?7643,&#39;?7644&gt; -&gt; f:State&lt;(&#39;?7643 -&gt; &#39;?7645),&#39;?7644&gt; -&gt; State&lt;&#39;?7645,&#39;?7644&gt;<br />
+                          <strong>Type parameters:</strong> '?7643, '?7644, '?7645          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L456-456" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequential application
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '367', 367)" onmouseover="showTip(event, '367', 367)">
+            bind k m s
+          </code>
+          <div class="tip" id="367">
+            <strong>Signature:</strong> k:(&#39;?7588 -&gt; &#39;?7589 -&gt; &#39;?7590) -&gt; m:(&#39;?7591 -&gt; &#39;?7588 * &#39;?7589) -&gt; s:&#39;?7591 -&gt; &#39;?7590<br />
+                          <strong>Type parameters:</strong> '?7588, '?7589, '?7590, '?7591          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L417-417" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '368', 368)" onmouseover="showTip(event, '368', 368)">
+            empty s
+          </code>
+          <div class="tip" id="368">
+            <strong>Signature:</strong> s:&#39;?7586 -&gt; unit * &#39;?7586<br />
+                          <strong>Type parameters:</strong> '?7586          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L416-416" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '369', 369)" onmouseover="showTip(event, '369', 369)">
+            eval m s
+          </code>
+          <div class="tip" id="369">
+            <strong>Signature:</strong> m:(&#39;?7578 -&gt; &#39;?7579 * &#39;?7580) -&gt; s:&#39;?7578 -&gt; &#39;?7579<br />
+                          <strong>Type parameters:</strong> '?7578, '?7579, '?7580          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L414-414" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '370', 370)" onmouseover="showTip(event, '370', 370)">
+            exec m s
+          </code>
+          <div class="tip" id="370">
+            <strong>Signature:</strong> m:(&#39;?7582 -&gt; &#39;?7583 * &#39;?7584) -&gt; s:&#39;?7582 -&gt; &#39;?7584<br />
+                          <strong>Type parameters:</strong> '?7582, '?7583, '?7584          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L415-415" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '371', 371)" onmouseover="showTip(event, '371', 371)">
+            foldM f s
+          </code>
+          <div class="tip" id="371">
+            <strong>Signature:</strong> f:(&#39;?7682 -&gt; &#39;?7683 -&gt; State&lt;&#39;?7682,&#39;?7684&gt;) -&gt; s:&#39;?7682 -&gt; seq&lt;&#39;?7683&gt; -&gt; State&lt;&#39;?7682,&#39;?7684&gt;<br />
+                          <strong>Type parameters:</strong> '?7682, '?7683, '?7684          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L474-474" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '372', 372)" onmouseover="showTip(event, '372', 372)">
+            getState s
+          </code>
+          <div class="tip" id="372">
+            <strong>Signature:</strong> s:&#39;?7573 -&gt; &#39;?7573 * &#39;?7573<br />
+                          <strong>Type parameters:</strong> '?7573          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L412-412" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '373', 373)" onmouseover="showTip(event, '373', 373)">
+            lift2 f a b
+          </code>
+          <div class="tip" id="373">
+            <strong>Signature:</strong> f:(&#39;?7655 -&gt; &#39;?7656 -&gt; &#39;?7657) -&gt; a:State&lt;&#39;?7655,&#39;?7658&gt; -&gt; b:State&lt;&#39;?7656,&#39;?7658&gt; -&gt; State&lt;&#39;?7657,&#39;?7658&gt;<br />
+                          <strong>Type parameters:</strong> '?7655, '?7656, '?7657, '?7658          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L462-462" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Promote a function to a monad/applicative, scanning the monadic/applicative arguments from left to right.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '374', 374)" onmouseover="showTip(event, '374', 374)">
+            map f m
+          </code>
+          <div class="tip" id="374">
+            <strong>Signature:</strong> f:(&#39;?7647 -&gt; &#39;?7648) -&gt; m:State&lt;&#39;?7647,&#39;?7649&gt; -&gt; State&lt;&#39;?7648,&#39;?7649&gt;<br />
+                          <strong>Type parameters:</strong> '?7647, '?7648, '?7649          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L458-458" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Transforms a State value by using a specified mapping function.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '375', 375)" onmouseover="showTip(event, '375', 375)">
+            mapM f x
+          </code>
+          <div class="tip" id="375">
+            <strong>Signature:</strong> f:(&#39;?7689 -&gt; State&lt;&#39;?7690,&#39;?7691&gt;) -&gt; x:&#39;?7689 list -&gt; State&lt;&#39;?7690 list,&#39;?7691&gt;<br />
+                          <strong>Type parameters:</strong> '?7689, '?7690, '?7691          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L481-481" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '376', 376)" onmouseover="showTip(event, '376', 376)">
+            putState s arg2
+          </code>
+          <div class="tip" id="376">
+            <strong>Signature:</strong> s:&#39;?7575 -&gt; &#39;?7576 -&gt; unit * &#39;?7575<br />
+                          <strong>Type parameters:</strong> '?7575, '?7576          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L413-413" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '377', 377)" onmouseover="showTip(event, '377', 377)">
+            returnM x
+          </code>
+          <div class="tip" id="377">
+            <strong>Signature:</strong> x:&#39;?7628 -&gt; State&lt;&#39;?7628,&#39;?7629&gt;<br />
+                          <strong>Type parameters:</strong> '?7628, '?7629          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L448-448" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Inject a value into the State type
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '378', 378)" onmouseover="showTip(event, '378', 378)">
+            sequence s
+          </code>
+          <div class="tip" id="378">
+            <strong>Signature:</strong> s:State&lt;&#39;?7686,&#39;?7687&gt; list -&gt; State&lt;&#39;?7686 list,&#39;?7687&gt;<br />
+                          <strong>Type parameters:</strong> '?7686, '?7687          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L477-477" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '379', 379)" onmouseover="showTip(event, '379', 379)">
+            state 
+          </code>
+          <div class="tip" id="379">
+            <strong>Signature:</strong> StateBuilder<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L443-443" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+        </div>
+        <div class="span3">
+          <a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">
+            <img src="https://matthid.github.io/Yaaf.FSharp.Helper/content/img/logo.png" style="width:140px;height:140px;margin:10px 0px 0px 35px;border-style:none;" />
+          </a>
+
+          <ul class="nav nav-list" id="menu">
+
+            <li class="nav-header">Yaaf.FSharp.Helper</li>
+
+            <li class="divider"></li>
+            <li><a href="https://www.nuget.org/packages/Yaaf.FSharp.Helper/">Get Yaaf.FSharp.Helper package via NuGet</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper">Source Code</a></li>
+            <li><a href="https://github.com/matthid//issues">Open bugs and feature requests</a></li>
+            <li><a href="https://github.com/matthid//issues/new">Report Issue or Request Feature</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/develop/LICENSE.md">License (Apache 2)</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/Contributing.html">Contributing</a></li>
+            
+            <li class="nav-header">Documentation</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Quick Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/ReleaseNotes.html">Release Notes</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/DevelopReadme.html">Development Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/buildConfig.html">An example build configuration</a></li>
+
+            <li class="nav-header">Reference</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/references/index.html">API Reference</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+      <a href="https://github.com/matthid/Yaaf.FSharp.Helper"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    </body>
+  </html>

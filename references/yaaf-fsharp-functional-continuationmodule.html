@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Continuation - Yaaf.FSharp.Helper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Matthias Dittrich">
+
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/style.css" />
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.css" />
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/tips.js"></script>
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://fsharp.org">fsharp.org</a></li>
+          <li><a href="http://tpetricek.github.io/FSharp.Formatting/"><img height="16" width="16" src="https://matthid.github.io/Yaaf.AdvancedBuilding/content/img/FSharp.Formatting.png" /> F# Formatting</a></li>
+        </ul>
+        <h3 class="muted"><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Yaaf.FSharp.Helper</a></h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="span9" id="main">
+          
+
+
+
+<h1>Continuation</h1>
+<div class="xmldoc">
+    Defined in Yaaf.FSharp.Helper.dll.
+</div>
+<div class="xmldoc">
+</div>
+
+<!-- Render nested types and modules, if there are any -->
+  <h2>Nested types and modules</h2>
+  <div>
+      <table class="table table-bordered type-list">
+    <thead>
+      <tr><td>Type</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-functional-continuationmodule-continuationbuilder.html">ContinuationBuilder</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '158', 158)" onmouseover="showTip(event, '158', 158)">
+            ( *&gt; ) x y
+          </code>
+          <div class="tip" id="158">
+            <strong>Signature:</strong> x:Cont&lt;&#39;?8399,&#39;?8400&gt; -&gt; y:Cont&lt;&#39;?8401,&#39;?8400&gt; -&gt; Cont&lt;&#39;?8401,&#39;?8400&gt;<br />
+                          <strong>Type parameters:</strong> '?8399, '?8400, '?8401          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L74-74" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequence actions, discarding the value of the first argument.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '159', 159)" onmouseover="showTip(event, '159', 159)">
+            ( &lt;!&gt; ) f m
+          </code>
+          <div class="tip" id="159">
+            <strong>Signature:</strong> f:(&#39;?8390 -&gt; &#39;?8391) -&gt; m:Cont&lt;&#39;?8390,&#39;?8392&gt; -&gt; Cont&lt;&#39;?8391,&#39;?8392&gt;<br />
+                          <strong>Type parameters:</strong> '?8390, '?8391, '?8392          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L70-70" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Infix map
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '160', 160)" onmouseover="showTip(event, '160', 160)">
+            ( &lt;* ) x y
+          </code>
+          <div class="tip" id="160">
+            <strong>Signature:</strong> x:Cont&lt;&#39;?8403,&#39;?8404&gt; -&gt; y:Cont&lt;&#39;?8405,&#39;?8404&gt; -&gt; Cont&lt;&#39;?8403,&#39;?8404&gt;<br />
+                          <strong>Type parameters:</strong> '?8403, '?8404, '?8405          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L76-76" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequence actions, discarding the value of the second argument.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '161', 161)" onmouseover="showTip(event, '161', 161)">
+            ( &lt;*&gt; ) f m
+          </code>
+          <div class="tip" id="161">
+            <strong>Signature:</strong> f:Cont&lt;(&#39;?8378 -&gt; &#39;?8379),&#39;?8380&gt; -&gt; m:Cont&lt;&#39;?8378,&#39;?8380&gt; -&gt; Cont&lt;&#39;?8379,&#39;?8380&gt;<br />
+                          <strong>Type parameters:</strong> '?8378, '?8379, '?8380          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L64-64" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequential application
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '162', 162)" onmouseover="showTip(event, '162', 162)">
+            ( &lt;=&lt; ) x
+          </code>
+          <div class="tip" id="162">
+            <strong>Signature:</strong> x:(&#39;?8416 -&gt; Cont&lt;&#39;?8417,&#39;?8418&gt;) -&gt; (&#39;?8419 -&gt; Cont&lt;&#39;?8416,&#39;?8418&gt;) -&gt; &#39;?8419 -&gt; Cont&lt;&#39;?8417,&#39;?8418&gt;<br />
+                          <strong>Type parameters:</strong> '?8416, '?8417, '?8418, '?8419          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L82-82" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Right-to-left Kleisli composition
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '163', 163)" onmouseover="showTip(event, '163', 163)">
+            ( =&lt;&lt; ) f m
+          </code>
+          <div class="tip" id="163">
+            <strong>Signature:</strong> f:(&#39;?8374 -&gt; Cont&lt;&#39;?8375,&#39;?8376&gt;) -&gt; m:Cont&lt;&#39;?8374,&#39;?8376&gt; -&gt; Cont&lt;&#39;?8375,&#39;?8376&gt;<br />
+                          <strong>Type parameters:</strong> '?8374, '?8375, '?8376          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L62-62" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Flipped >>=
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '164', 164)" onmouseover="showTip(event, '164', 164)">
+            ( &gt;=&gt; ) f g x
+          </code>
+          <div class="tip" id="164">
+            <strong>Signature:</strong> f:(&#39;?8411 -&gt; Cont&lt;&#39;?8412,&#39;?8413&gt;) -&gt; g:(&#39;?8412 -&gt; Cont&lt;&#39;?8414,&#39;?8413&gt;) -&gt; x:&#39;?8411 -&gt; Cont&lt;&#39;?8414,&#39;?8413&gt;<br />
+                          <strong>Type parameters:</strong> '?8411, '?8412, '?8413, '?8414          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L80-80" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Left-to-right Kleisli composition
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '165', 165)" onmouseover="showTip(event, '165', 165)">
+            ( &gt;&gt;. ) m f
+          </code>
+          <div class="tip" id="165">
+            <strong>Signature:</strong> m:Cont&lt;&#39;?8407,&#39;?8408&gt; -&gt; f:Cont&lt;&#39;?8409,&#39;?8408&gt; -&gt; Cont&lt;&#39;?8409,&#39;?8408&gt;<br />
+                          <strong>Type parameters:</strong> '?8407, '?8408, '?8409          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L78-78" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequentially compose two continuation actions, discarding any value produced by the first
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '166', 166)" onmouseover="showTip(event, '166', 166)">
+            ( &gt;&gt;= ) m f
+          </code>
+          <div class="tip" id="166">
+            <strong>Signature:</strong> m:Cont&lt;&#39;?8370,&#39;?8371&gt; -&gt; f:(&#39;?8370 -&gt; Cont&lt;&#39;?8372,&#39;?8371&gt;) -&gt; Cont&lt;&#39;?8372,&#39;?8371&gt;<br />
+                          <strong>Type parameters:</strong> '?8370, '?8371, '?8372          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L60-60" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequentially compose two actions, passing any value produced by the first as an argument to the second.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '167', 167)" onmouseover="showTip(event, '167', 167)">
+            ap m f
+          </code>
+          <div class="tip" id="167">
+            <strong>Signature:</strong> m:Cont&lt;&#39;?8382,&#39;?8383&gt; -&gt; f:Cont&lt;(&#39;?8382 -&gt; &#39;?8384),&#39;?8383&gt; -&gt; Cont&lt;&#39;?8384,&#39;?8383&gt;<br />
+                          <strong>Type parameters:</strong> '?8382, '?8383, '?8384          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L66-66" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequential application
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '168', 168)" onmouseover="showTip(event, '168', 168)">
+            bind f comp1 cont econt
+          </code>
+          <div class="tip" id="168">
+            <strong>Signature:</strong> f:(&#39;?8325 -&gt; Cont&lt;&#39;?8326,&#39;?8327&gt;) -&gt; comp1:Cont&lt;&#39;?8325,&#39;?8327&gt; -&gt; cont:(&#39;?8326 -&gt; &#39;?8327) -&gt; econt:(exn -&gt; &#39;?8327) -&gt; &#39;?8327<br />
+                          <strong>Type parameters:</strong> '?8325, '?8326, '?8327          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L26-26" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '169', 169)" onmouseover="showTip(event, '169', 169)">
+            callcc f cont econt
+          </code>
+          <div class="tip" id="169">
+            <strong>Signature:</strong> f:((&#39;T -&gt; Cont&lt;&#39;b,&#39;r&gt;) -&gt; Cont&lt;&#39;T,&#39;r&gt;) -&gt; cont:(&#39;T -&gt; &#39;r) -&gt; econt:(exn -&gt; &#39;r) -&gt; &#39;r<br />
+                          <strong>Type parameters:</strong> 'T, 'b, 'r          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L24-24" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '170', 170)" onmouseover="showTip(event, '170', 170)">
+            cont 
+          </code>
+          <div class="tip" id="170">
+            <strong>Signature:</strong> ContinuationBuilder<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L53-53" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '171', 171)" onmouseover="showTip(event, '171', 171)">
+            foldM f s
+          </code>
+          <div class="tip" id="171">
+            <strong>Signature:</strong> f:(&#39;?8421 -&gt; &#39;?8422 -&gt; Cont&lt;&#39;?8421,&#39;?8423&gt;) -&gt; s:&#39;?8421 -&gt; seq&lt;&#39;?8422&gt; -&gt; Cont&lt;&#39;?8421,&#39;?8423&gt;<br />
+                          <strong>Type parameters:</strong> '?8421, '?8422, '?8423          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L84-84" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '172', 172)" onmouseover="showTip(event, '172', 172)">
+            lift2 f a b
+          </code>
+          <div class="tip" id="172">
+            <strong>Signature:</strong> f:(&#39;?8394 -&gt; &#39;?8395 -&gt; &#39;?8396) -&gt; a:Cont&lt;&#39;?8394,&#39;?8397&gt; -&gt; b:Cont&lt;&#39;?8395,&#39;?8397&gt; -&gt; Cont&lt;&#39;?8396,&#39;?8397&gt;<br />
+                          <strong>Type parameters:</strong> '?8394, '?8395, '?8396, '?8397          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L72-72" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Promote a function to a monad/applicative, scanning the monadic/applicative arguments from left to right.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '173', 173)" onmouseover="showTip(event, '173', 173)">
+            map f m
+          </code>
+          <div class="tip" id="173">
+            <strong>Signature:</strong> f:(&#39;?8386 -&gt; &#39;?8387) -&gt; m:Cont&lt;&#39;?8386,&#39;?8388&gt; -&gt; Cont&lt;&#39;?8387,&#39;?8388&gt;<br />
+                          <strong>Type parameters:</strong> '?8386, '?8387, '?8388          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L68-68" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Transforms a Cont value by using a specified mapping function.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '174', 174)" onmouseover="showTip(event, '174', 174)">
+            mapM f x
+          </code>
+          <div class="tip" id="174">
+            <strong>Signature:</strong> f:(&#39;?8428 -&gt; Cont&lt;&#39;?8429,&#39;?8430&gt;) -&gt; x:&#39;?8428 list -&gt; Cont&lt;&#39;?8429 list,&#39;?8430&gt;<br />
+                          <strong>Type parameters:</strong> '?8428, '?8429, '?8430          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L91-91" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '175', 175)" onmouseover="showTip(event, '175', 175)">
+            returnM x
+          </code>
+          <div class="tip" id="175">
+            <strong>Signature:</strong> x:&#39;?8367 -&gt; Cont&lt;&#39;?8367,&#39;?8368&gt;<br />
+                          <strong>Type parameters:</strong> '?8367, '?8368          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L58-58" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Inject a value into the Cont type
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '176', 176)" onmouseover="showTip(event, '176', 176)">
+            runCont c cont econt
+          </code>
+          <div class="tip" id="176">
+            <strong>Signature:</strong> c:Cont&lt;&#39;?8315,&#39;?8316&gt; -&gt; cont:(&#39;?8315 -&gt; &#39;?8316) -&gt; econt:(exn -&gt; &#39;?8316) -&gt; &#39;?8316<br />
+                          <strong>Type parameters:</strong> '?8315, '?8316          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L22-22" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '177', 177)" onmouseover="showTip(event, '177', 177)">
+            sequence s
+          </code>
+          <div class="tip" id="177">
+            <strong>Signature:</strong> s:Cont&lt;&#39;?8425,&#39;?8426&gt; list -&gt; Cont&lt;&#39;?8425 list,&#39;?8426&gt;<br />
+                          <strong>Type parameters:</strong> '?8425, '?8426          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L87-87" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '178', 178)" onmouseover="showTip(event, '178', 178)">
+            throw exn cont econt
+          </code>
+          <div class="tip" id="178">
+            <strong>Signature:</strong> exn:exn -&gt; cont:(&#39;T -&gt; &#39;r) -&gt; econt:(exn -&gt; &#39;r) -&gt; &#39;r<br />
+                          <strong>Type parameters:</strong> 'T, 'r          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Continuation.fs#L23-23" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+        </div>
+        <div class="span3">
+          <a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">
+            <img src="https://matthid.github.io/Yaaf.FSharp.Helper/content/img/logo.png" style="width:140px;height:140px;margin:10px 0px 0px 35px;border-style:none;" />
+          </a>
+
+          <ul class="nav nav-list" id="menu">
+
+            <li class="nav-header">Yaaf.FSharp.Helper</li>
+
+            <li class="divider"></li>
+            <li><a href="https://www.nuget.org/packages/Yaaf.FSharp.Helper/">Get Yaaf.FSharp.Helper package via NuGet</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper">Source Code</a></li>
+            <li><a href="https://github.com/matthid//issues">Open bugs and feature requests</a></li>
+            <li><a href="https://github.com/matthid//issues/new">Report Issue or Request Feature</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/develop/LICENSE.md">License (Apache 2)</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/Contributing.html">Contributing</a></li>
+            
+            <li class="nav-header">Documentation</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Quick Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/ReleaseNotes.html">Release Notes</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/DevelopReadme.html">Development Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/buildConfig.html">An example build configuration</a></li>
+
+            <li class="nav-header">Reference</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/references/index.html">API Reference</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+      <a href="https://github.com/matthid/Yaaf.FSharp.Helper"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    </body>
+  </html>

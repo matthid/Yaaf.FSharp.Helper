@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Namespaces - Yaaf.FSharp.Helper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Matthias Dittrich">
+
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/style.css" />
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.css" />
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/tips.js"></script>
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://fsharp.org">fsharp.org</a></li>
+          <li><a href="http://tpetricek.github.io/FSharp.Formatting/"><img height="16" width="16" src="https://matthid.github.io/Yaaf.AdvancedBuilding/content/img/FSharp.Formatting.png" /> F# Formatting</a></li>
+        </ul>
+        <h3 class="muted"><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Yaaf.FSharp.Helper</a></h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="span9" id="main">
+          
+
+<h1>Yaaf.FSharp.Helper</h1>
+
+<h2><a name="Overview" class="anchor" href="#Overview">Overview</a></h2>
+    <a href="#FSharpx.Collections">FSharpx.Collections</a><br />
+    <a href="#Yaaf.FSharp.Control">Yaaf.FSharp.Control</a><br />
+    <a href="#Yaaf.FSharp.Functional">Yaaf.FSharp.Functional</a><br />
+    <a href="#Yaaf.Helper">Yaaf.Helper</a><br />
+    <a href="#Yaaf.IO">Yaaf.IO</a><br />
+
+    <h2><a href="#Overview"><img src="https://matthid.github.io/Yaaf.FSharp.Helper/content/img/back_to_top.png" alt="Back to top" /></a> <a name="FSharpx.Collections" class="anchor" href="#FSharpx.Collections">FSharpx.Collections Namespace</a></h2>
+    <div>
+        <table class="table table-bordered module-list">
+    <thead>
+      <tr><td>Module</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="module-name">
+            <a href="fsharpx-collections-bytestring.html">ByteString</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="fsharpx-collections-list.html">List</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="fsharpx-collections-map.html">Map</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="fsharpx-collections-seq.html">Seq</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="fsharpx-collections-set.html">Set</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+
+    </div>
+    <h2><a href="#Overview"><img src="https://matthid.github.io/Yaaf.FSharp.Helper/content/img/back_to_top.png" alt="Back to top" /></a> <a name="Yaaf.FSharp.Control" class="anchor" href="#Yaaf.FSharp.Control">Yaaf.FSharp.Control Namespace</a></h2>
+    <div>
+        <table class="table table-bordered type-list">
+    <thead>
+      <tr><td>Type</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-control-agent-1.html">Agent<'T></a>
+          </td>
+          <td class="xmldoc">
+ Type alias for F# mailbox processor type
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-control-asyncresult-1.html">AsyncResult<'T></a>
+          </td>
+          <td class="xmldoc">
+ Represents the reified result of an asynchronous computation
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-control-asyncresultcell-1.html">AsyncResultCell<'T></a>
+          </td>
+          <td class="xmldoc">
+ When using .NET 4.0 you can replace this type by Task<'T>
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-control-asyncseq-1.html">AsyncSeq<'T></a>
+          </td>
+          <td class="xmldoc">
+ An asynchronous sequence represents a delayed computation that can be
+ started to produce either Cons value consisting of the next element of the 
+ sequence (head) together with the next asynchronous sequence (tail) or a 
+ special value representing the end of the sequence (Nil)
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-control-asyncseqinner-1.html">AsyncSeqInner<'T></a>
+          </td>
+          <td class="xmldoc">
+ The interanl type that represents a value returned as a result of
+ evaluating a step of an asynchronous sequence
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-control-asyncstreamreader.html">AsyncStreamReader</a>
+          </td>
+          <td class="xmldoc">
+ Implements a TextReader-like API that asynchronously reads characters from 
+ a byte stream in a particular encoding.
+ </br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-control-asyncworker-1.html">AsyncWorker<'T></a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-control-autocancelagent-1.html">AutoCancelAgent<'T></a>
+          </td>
+          <td class="xmldoc">
+ Wrapper for the standard F# agent (MailboxProcessor) that
+ supports stopping of the agent's body using the IDisposable 
+ interface (the type automatically creates a cancellation token)
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-control-batchprocessingagent-1.html">BatchProcessingAgent<'T></a>
+          </td>
+          <td class="xmldoc">
+ Agent that can be used to implement batch processing. It creates groups
+ of messages (added using the Enqueue method) and emits them using the 
+ BatchProduced event. A group is produced when it reaches the maximal 
+ size or after the timeout elapses.
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-control-blockingqueueagent-1.html">BlockingQueueAgent<'T></a>
+          </td>
+          <td class="xmldoc">
+ Agent that implements an asynchronous queue with blocking put
+ and blocking get operation (this implements the producer-consumer 
+ concurrent programming pattern). The constructor takes the maximal
+ size of the buffer.
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-control-circularqueueagent-1.html">CircularQueueAgent<'T></a>
+          </td>
+          <td class="xmldoc">
+ Agent that implements an asynchronous circular buffer with blocking
+ enqueue and blocking dequeue operation (this implements the producer-consumer 
+ concurrent programming pattern). The constructor takes the maximal
+ size of the buffer.
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-control-concurrentsetagent-1.html">ConcurrentSetAgent<'T></a>
+          </td>
+          <td class="xmldoc">
+ Agent that implements a simple concurrent set. The agent exposes a 
+ member that adds value to the set and returns whether the value
+ was already present.
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-control-isubject-2.html">ISubject<'TIn, 'TOut></a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-control-observableextensions.html">ObservableExtensions</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-control-observableupdate-1.html">ObservableUpdate<'T></a>
+          </td>
+          <td class="xmldoc">
+ Union type that represents different messages that can be sent to the
+ IObserver interface. The IObserver type is equivalent to a type that has
+ just OnNext method that gets 'ObservableUpdate' as an argument.
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-control-replaysubject-1.html">ReplaySubject<'T></a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-control-slidingwindowagent-1.html">SlidingWindowAgent<'T></a>
+          </td>
+          <td class="xmldoc">
+ Agent that implements the "sliding window" functionality. It collects
+ messages added using the Enqueue method and emits them in overlapping 
+ groups of the specified size. For example, given [1,2,3,4,5...] and a 
+ size 3, the produced groups will be [1,2,3], [2,3,4], [3,4,5], ...
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-control-subject-1.html">Subject<'T></a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+  <table class="table table-bordered module-list">
+    <thead>
+      <tr><td>Module</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-control-asyncextensions.html">AsyncExtensions</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-control-asyncseq.html">AsyncSeq</a>
+          </td>
+          <td class="xmldoc">
+ Module with helper functions for working with asynchronous sequences
+</br></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-control-asyncseqextensions.html">AsyncSeqExtensions</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-control-fileextensions.html">FileExtensions</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-control-observable.html">Observable</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-control-seq.html">Seq</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-control-streamreaderextensions.html">StreamReaderExtensions</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-control-webclientextensions.html">WebClientExtensions</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-control-webrequestextensions.html">WebRequestExtensions</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+
+    </div>
+    <h2><a href="#Overview"><img src="https://matthid.github.io/Yaaf.FSharp.Helper/content/img/back_to_top.png" alt="Back to top" /></a> <a name="Yaaf.FSharp.Functional" class="anchor" href="#Yaaf.FSharp.Functional">Yaaf.FSharp.Functional Namespace</a></h2>
+    <div>
+        <table class="table table-bordered type-list">
+    <thead>
+      <tr><td>Type</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-functional-cont-2.html">Cont<'T, 'r></a>
+          </td>
+          <td class="xmldoc">
+ The continuation monad.
+ The algorithm is from Wes Dyer http://blogs.msdn.com/b/wesdyer/archive/2008/01/11/the-marvels-of-monads.aspx.
+ The builder approach is from Matthew Podwysocki's excellent Creating Extended Builders series http://codebetter.com/blogs/matthew.podwysocki/archive/2010/01/18/much-ado-about-monads-creating-extended-builders.aspx.
+ Current implementation from Matt's gist at https://gist.github.com/628956
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-functional-coroutine.html">Coroutine</a>
+          </td>
+          <td class="xmldoc">
+ The coroutine type from http://fssnip.net/7M
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-functional-isemigroup-1.html">ISemigroup<'T></a>
+          </td>
+          <td class="xmldoc">
+ Semigroup (set with associative binary operation)
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-functional-monoid-1.html">Monoid<'T></a>
+          </td>
+          <td class="xmldoc">
+ Monoid (associative binary operation with identity)
+</br></td>
+        </tr>
+    </tbody>
+  </table>
+  <table class="table table-bordered module-list">
+    <thead>
+      <tr><td>Module</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-functional-async.html">Async</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-functional-choice.html">Choice</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-functional-continuationmodule.html">Continuation</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-functional-enumerator.html">Enumerator</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-functional-monoid.html">Monoid</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-functional-nullable.html">Nullable</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-functional-operators.html">Operators</a>
+          </td>
+          <td class="xmldoc">
+ Generic monadic operators    
+</br></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-functional-option.html">Option</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-functional-prelude.html">Prelude</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-functional-reader.html">Reader</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-functional-semigroup.html">Semigroup</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-functional-state.html">State</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-functional-task.html">Task</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-functional-undo.html">Undo</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-functional-validation.html">Validation</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-functional-writer.html">Writer</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-fsharp-functional-ziplist.html">ZipList</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+
+    </div>
+    <h2><a href="#Overview"><img src="https://matthid.github.io/Yaaf.FSharp.Helper/content/img/back_to_top.png" alt="Back to top" /></a> <a name="Yaaf.Helper" class="anchor" href="#Yaaf.Helper">Yaaf.Helper Namespace</a></h2>
+    <div>
+        <table class="table table-bordered type-list">
+    <thead>
+      <tr><td>Type</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-helper-asynclock.html">AsyncLock</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-helper-asyncmanualresetevent.html">AsyncManualResetEvent</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-helper-asyncsemaphore.html">AsyncSemaphore</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-helper-icallcontext.html">ICallContext</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-helper-myunit.html">MyUnit</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-helper-observablesource-1.html">ObservableSource<'T></a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-helper-volatilebarrier.html">VolatileBarrier</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-helper-workerthread.html">WorkerThread</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-helper-pseq-1.html">pseq<'T></a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+  <table class="table table-bordered module-list">
+    <thead>
+      <tr><td>Module</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-helper-aseq.html">ASeq</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-helper-async.html">Async</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-helper-asyncextensions.html">AsyncExtensions</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-helper-asyncseq.html">AsyncSeq</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-helper-core.html">Core</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-helper-event.html">Event</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-helper-lazy.html">Lazy</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-helper-observable.html">Observable</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-helper-option.html">Option</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-helper-pseqmodule.html">PSeq</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-helper-seq.html">Seq</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-helper-task.html">Task</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+
+    </div>
+    <h2><a href="#Overview"><img src="https://matthid.github.io/Yaaf.FSharp.Helper/content/img/back_to_top.png" alt="Back to top" /></a> <a name="Yaaf.IO" class="anchor" href="#Yaaf.IO">Yaaf.IO Namespace</a></h2>
+    <div>
+        <table class="table table-bordered type-list">
+    <thead>
+      <tr><td>Type</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-io-concurrentqueue-1.html">ConcurrentQueue<'a></a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-io-concurrentqueuemessage-1.html">ConcurrentQueueMessage<'a></a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-io-ipeekstream-1.html">IPeekStream<'a></a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-io-istream-1.html">IStream<'a></a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-io-peekmoreoption-1.html">PeekMoreOption<'a></a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-io-peekstream-1.html">PeekStream<'a></a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-io-streamhelper.html">StreamHelper</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-io-wrapperistream-1.html">WrapperIStream<'a></a>
+          </td>
+          <td class="xmldoc">
+ Note that this type is only for performance reasons
+ Because the IStream is an asynchronous interface there will be no stackoverflows
+ However it will slow down with each abstraction...
+</br></td>
+        </tr>
+    </tbody>
+  </table>
+  <table class="table table-bordered module-list">
+    <thead>
+      <tr><td>Module</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-io-peekstreamextensions.html">PeekStreamExtensions</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-io-stream.html">Stream</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-io-streamextensions.html">StreamExtensions</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+
+    </div>
+
+        </div>
+        <div class="span3">
+          <a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">
+            <img src="https://matthid.github.io/Yaaf.FSharp.Helper/content/img/logo.png" style="width:140px;height:140px;margin:10px 0px 0px 35px;border-style:none;" />
+          </a>
+
+          <ul class="nav nav-list" id="menu">
+
+            <li class="nav-header">Yaaf.FSharp.Helper</li>
+
+            <li class="divider"></li>
+            <li><a href="https://www.nuget.org/packages/Yaaf.FSharp.Helper/">Get Yaaf.FSharp.Helper package via NuGet</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper">Source Code</a></li>
+            <li><a href="https://github.com/matthid//issues">Open bugs and feature requests</a></li>
+            <li><a href="https://github.com/matthid//issues/new">Report Issue or Request Feature</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/develop/LICENSE.md">License (Apache 2)</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/Contributing.html">Contributing</a></li>
+            
+            <li class="nav-header">Documentation</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Quick Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/ReleaseNotes.html">Release Notes</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/DevelopReadme.html">Development Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/buildConfig.html">An example build configuration</a></li>
+
+            <li class="nav-header">Reference</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/references/index.html">API Reference</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+      <a href="https://github.com/matthid/Yaaf.FSharp.Helper"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    </body>
+  </html>

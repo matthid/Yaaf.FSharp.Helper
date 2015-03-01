@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PSeq - Yaaf.FSharp.Helper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Matthias Dittrich">
+
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/style.css" />
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.css" />
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/tips.js"></script>
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://fsharp.org">fsharp.org</a></li>
+          <li><a href="http://tpetricek.github.io/FSharp.Formatting/"><img height="16" width="16" src="https://matthid.github.io/Yaaf.AdvancedBuilding/content/img/FSharp.Formatting.png" /> F# Formatting</a></li>
+        </ul>
+        <h3 class="muted"><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Yaaf.FSharp.Helper</a></h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="span9" id="main">
+          
+
+
+
+<h1>PSeq</h1>
+<div class="xmldoc">
+    Defined in Yaaf.FSharp.Helper.dll.
+</div>
+<div class="xmldoc">
+</div>
+
+<!-- Render nested types and modules, if there are any -->
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '471', 471)" onmouseover="showTip(event, '471', 471)">
+            append(s1 s2)
+          </code>
+          <div class="tip" id="471">
+            <strong>Signature:</strong> s1:seq&lt;&#39;?6908&gt; -&gt; s2:seq&lt;&#39;?6908&gt; -&gt; ParallelQuery&lt;&#39;?6908&gt;<br />
+                          <strong>Type parameters:</strong> '?6908          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L122-122" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '472', 472)" onmouseover="showTip(event, '472', 472)">
+            average(s)
+          </code>
+          <div class="tip" id="472">
+            <strong>Signature:</strong> s:seq&lt;^T&gt; -&gt; ^T<br />
+                          <strong>Type parameters:</strong> ^T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L188-188" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '473', 473)" onmouseover="showTip(event, '473', 473)">
+            averageBy(f s)
+          </code>
+          <div class="tip" id="473">
+            <strong>Signature:</strong> f:(&#39;T -&gt; ^U) -&gt; s:seq&lt;&#39;T&gt; -&gt; ^U<br />
+                          <strong>Type parameters:</strong> 'T, ^U          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L199-199" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '474', 474)" onmouseover="showTip(event, '474', 474)">
+            cast(s)
+          </code>
+          <div class="tip" id="474">
+            <strong>Signature:</strong> s:IEnumerable -&gt; pseq&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L116-116" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '475', 475)" onmouseover="showTip(event, '475', 475)">
+            choose(chooser s)
+          </code>
+          <div class="tip" id="475">
+            <strong>Signature:</strong> chooser:(&#39;?6954 -&gt; &#39;?6955 option) -&gt; s:seq&lt;&#39;?6954&gt; -&gt; ParallelQuery&lt;&#39;?6955&gt;<br />
+                          <strong>Type parameters:</strong> '?6954, '?6955          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L183-183" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '476', 476)" onmouseover="showTip(event, '476', 476)">
+            collect(f s)
+          </code>
+          <div class="tip" id="476">
+            <strong>Signature:</strong> f:(&#39;?6904 -&gt; &#39;?6905) -&gt; s:seq&lt;&#39;?6904&gt; -&gt; ParallelQuery&lt;&#39;U&gt;<br />
+                          <strong>Type parameters:</strong> '?6904, '?6905, 'U          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L119-119" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '477', 477)" onmouseover="showTip(event, '477', 477)">
+            concat(ss)
+          </code>
+          <div class="tip" id="477">
+            <strong>Signature:</strong> ss:seq&lt;&#39;?6951&gt; -&gt; ParallelQuery&lt;&#39;?6952&gt;<br />
+                          <strong>Type parameters:</strong> '?6951, '?6952          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L180-180" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '478', 478)" onmouseover="showTip(event, '478', 478)">
+            countBy(f s)
+          </code>
+          <div class="tip" id="478">
+            <strong>Signature:</strong> f:(&#39;?6948 -&gt; &#39;?6949) -&gt; s:seq&lt;&#39;?6948&gt; -&gt; ParallelQuery&lt;&#39;?6949 * int&gt;<br />
+                          <strong>Type parameters:</strong> '?6948, '?6949          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L177-177" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '479', 479)" onmouseover="showTip(event, '479', 479)">
+            distinct(s)
+          </code>
+          <div class="tip" id="479">
+            <strong>Signature:</strong> s:seq&lt;&#39;?6938&gt; -&gt; ParallelQuery&lt;&#39;?6938&gt;<br />
+                          <strong>Type parameters:</strong> '?6938          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L159-159" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '480', 480)" onmouseover="showTip(event, '480', 480)">
+            distinctBy(p s)
+          </code>
+          <div class="tip" id="480">
+            <strong>Signature:</strong> p:(&#39;?6940 -&gt; &#39;?6941) -&gt; s:seq&lt;&#39;?6940&gt; -&gt; ParallelQuery&lt;&#39;?6940&gt;<br />
+                          <strong>Type parameters:</strong> '?6940, '?6941          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L162-162" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '481', 481)" onmouseover="showTip(event, '481', 481)">
+            empty
+          </code>
+          <div class="tip" id="481">
+            <strong>Signature:</strong> ParallelQuery&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L28-28" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '482', 482)" onmouseover="showTip(event, '482', 482)">
+            exists(p s)
+          </code>
+          <div class="tip" id="482">
+            <strong>Signature:</strong> p:(&#39;?6862 -&gt; bool) -&gt; s:seq&lt;&#39;?6862&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> '?6862          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L52-52" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '483', 483)" onmouseover="showTip(event, '483', 483)">
+            exists2(f s1 s2)
+          </code>
+          <div class="tip" id="483">
+            <strong>Signature:</strong> f:(&#39;T -&gt; &#39;U -&gt; bool) -&gt; s1:seq&lt;&#39;T&gt; -&gt; s2:seq&lt;&#39;U&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> 'T, 'U          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L58-58" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '484', 484)" onmouseover="showTip(event, '484', 484)">
+            filter(p s)
+          </code>
+          <div class="tip" id="484">
+            <strong>Signature:</strong> p:(&#39;?6872 -&gt; bool) -&gt; s:seq&lt;&#39;?6872&gt; -&gt; ParallelQuery&lt;&#39;?6872&gt;<br />
+                          <strong>Type parameters:</strong> '?6872          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L64-64" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '485', 485)" onmouseover="showTip(event, '485', 485)">
+            find(p s)
+          </code>
+          <div class="tip" id="485">
+            <strong>Signature:</strong> p:(&#39;?6882 -&gt; bool) -&gt; s:seq&lt;&#39;?6882&gt; -&gt; &#39;?6882<br />
+                          <strong>Type parameters:</strong> '?6882          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L80-80" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '486', 486)" onmouseover="showTip(event, '486', 486)">
+            findIndex(p s)
+          </code>
+          <div class="tip" id="486">
+            <strong>Signature:</strong> p:(&#39;?6886 -&gt; bool) -&gt; s:seq&lt;&#39;?6886&gt; -&gt; int<br />
+                          <strong>Type parameters:</strong> '?6886          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L87-87" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '487', 487)" onmouseover="showTip(event, '487', 487)">
+            fold(f acc s)
+          </code>
+          <div class="tip" id="487">
+            <strong>Signature:</strong> f:(&#39;State -&gt; &#39;T -&gt; &#39;State) -&gt; acc:&#39;State -&gt; s:seq&lt;&#39;T&gt; -&gt; &#39;State<br />
+                          <strong>Type parameters:</strong> 'T, 'State          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L46-46" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '488', 488)" onmouseover="showTip(event, '488', 488)">
+            forall(p s)
+          </code>
+          <div class="tip" id="488">
+            <strong>Signature:</strong> p:(&#39;?6864 -&gt; bool) -&gt; s:seq&lt;&#39;?6864&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> '?6864          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L55-55" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '489', 489)" onmouseover="showTip(event, '489', 489)">
+            forall2(f s1 s2)
+          </code>
+          <div class="tip" id="489">
+            <strong>Signature:</strong> f:(&#39;T -&gt; &#39;U -&gt; bool) -&gt; s1:seq&lt;&#39;T&gt; -&gt; s2:seq&lt;&#39;U&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> 'T, 'U          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L61-61" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '490', 490)" onmouseover="showTip(event, '490', 490)">
+            groupBy(f s)
+          </code>
+          <div class="tip" id="490">
+            <strong>Signature:</strong> f:(&#39;T -&gt; &#39;Key) -&gt; s:seq&lt;&#39;T&gt; -&gt; ParallelQuery&lt;&#39;Key * IEnumerable&lt;&#39;T&gt;&gt;<br />
+                          <strong>Type parameters:</strong> 'T, 'Key          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L156-156" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '491', 491)" onmouseover="showTip(event, '491', 491)">
+            head(s)
+          </code>
+          <div class="tip" id="491">
+            <strong>Signature:</strong> s:seq&lt;&#39;?6853&gt; -&gt; &#39;?6853<br />
+                          <strong>Type parameters:</strong> '?6853          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L40-40" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '492', 492)" onmouseover="showTip(event, '492', 492)">
+            init(n f)
+          </code>
+          <div class="tip" id="492">
+            <strong>Signature:</strong> n:int -&gt; f:(int -&gt; &#39;?6910) -&gt; ParallelQuery&lt;&#39;?6910&gt;<br />
+                          <strong>Type parameters:</strong> '?6910          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L125-125" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '493', 493)" onmouseover="showTip(event, '493', 493)">
+            isEmpty(s)
+          </code>
+          <div class="tip" id="493">
+            <strong>Signature:</strong> s:seq&lt;&#39;?6849&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> '?6849          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L34-34" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '494', 494)" onmouseover="showTip(event, '494', 494)">
+            iter(f s)
+          </code>
+          <div class="tip" id="494">
+            <strong>Signature:</strong> f:(&#39;?6874 -&gt; unit) -&gt; s:seq&lt;&#39;?6874&gt; -&gt; unit<br />
+                          <strong>Type parameters:</strong> '?6874          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L67-67" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '495', 495)" onmouseover="showTip(event, '495', 495)">
+            iter2(f s1 s2)
+          </code>
+          <div class="tip" id="495">
+            <strong>Signature:</strong> f:(&#39;?6912 -&gt; &#39;?6913 -&gt; unit) -&gt; s1:seq&lt;&#39;?6912&gt; -&gt; s2:seq&lt;&#39;?6913&gt; -&gt; unit<br />
+                          <strong>Type parameters:</strong> '?6912, '?6913          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L128-128" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '496', 496)" onmouseover="showTip(event, '496', 496)">
+            iteri(f s)
+          </code>
+          <div class="tip" id="496">
+            <strong>Signature:</strong> f:(int -&gt; &#39;?6927 -&gt; unit) -&gt; s:seq&lt;&#39;?6927&gt; -&gt; unit<br />
+                          <strong>Type parameters:</strong> '?6927          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L143-143" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '497', 497)" onmouseover="showTip(event, '497', 497)">
+            length(s)
+          </code>
+          <div class="tip" id="497">
+            <strong>Signature:</strong> s:seq&lt;&#39;?6847&gt; -&gt; int<br />
+                          <strong>Type parameters:</strong> '?6847          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L31-31" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '498', 498)" onmouseover="showTip(event, '498', 498)">
+            map(f s)
+          </code>
+          <div class="tip" id="498">
+            <strong>Signature:</strong> f:(&#39;?6876 -&gt; &#39;?6877) -&gt; s:seq&lt;&#39;?6876&gt; -&gt; ParallelQuery&lt;&#39;?6877&gt;<br />
+                          <strong>Type parameters:</strong> '?6876, '?6877          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L70-70" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '499', 499)" onmouseover="showTip(event, '499', 499)">
+            map2(f s1 s2)
+          </code>
+          <div class="tip" id="499">
+            <strong>Signature:</strong> f:(&#39;?6917 -&gt; &#39;?6918 -&gt; &#39;?6919) -&gt; s1:seq&lt;&#39;?6917&gt; -&gt; s2:seq&lt;&#39;?6918&gt; -&gt; ParallelQuery&lt;&#39;?6919&gt;<br />
+                          <strong>Type parameters:</strong> '?6917, '?6918, '?6919          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L134-134" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '500', 500)" onmouseover="showTip(event, '500', 500)">
+            mapi(f s)
+          </code>
+          <div class="tip" id="500">
+            <strong>Signature:</strong> f:(int -&gt; &#39;?6924 -&gt; &#39;?6925) -&gt; s:seq&lt;&#39;?6924&gt; -&gt; ParallelQuery&lt;&#39;?6925&gt;<br />
+                          <strong>Type parameters:</strong> '?6924, '?6925          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L140-140" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '501', 501)" onmouseover="showTip(event, '501', 501)">
+            max(s)
+          </code>
+          <div class="tip" id="501">
+            <strong>Signature:</strong> s:seq&lt;^T&gt; -&gt; ^T<br />
+                          <strong>Type parameters:</strong> ^T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L247-247" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '502', 502)" onmouseover="showTip(event, '502', 502)">
+            maxBy(f s)
+          </code>
+          <div class="tip" id="502">
+            <strong>Signature:</strong> f:(^T -&gt; ^U) -&gt; s:seq&lt;^T&gt; -&gt; ^T<br />
+                          <strong>Type parameters:</strong> ^T, ^U          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L257-257" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '503', 503)" onmouseover="showTip(event, '503', 503)">
+            min(s)
+          </code>
+          <div class="tip" id="503">
+            <strong>Signature:</strong> s:seq&lt;^T&gt; -&gt; ^T<br />
+                          <strong>Type parameters:</strong> ^T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L232-232" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '504', 504)" onmouseover="showTip(event, '504', 504)">
+            minBy(f s)
+          </code>
+          <div class="tip" id="504">
+            <strong>Signature:</strong> f:(^T -&gt; ^U) -&gt; s:seq&lt;^T&gt; -&gt; ^T<br />
+                          <strong>Type parameters:</strong> ^T, ^U          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L242-242" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '505', 505)" onmouseover="showTip(event, '505', 505)">
+            nth(n s)
+          </code>
+          <div class="tip" id="505">
+            <strong>Signature:</strong> n:int -&gt; s:seq&lt;&#39;?6915&gt; -&gt; &#39;?6915<br />
+                          <strong>Type parameters:</strong> '?6915          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L131-131" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '506', 506)" onmouseover="showTip(event, '506', 506)">
+            ofArray(arr)
+          </code>
+          <div class="tip" id="506">
+            <strong>Signature:</strong> arr:&#39;T array -&gt; ParallelQuery&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L98-98" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '507', 507)" onmouseover="showTip(event, '507', 507)">
+            ofList(l)
+          </code>
+          <div class="tip" id="507">
+            <strong>Signature:</strong> l:&#39;T list -&gt; ParallelQuery&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L104-104" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '508', 508)" onmouseover="showTip(event, '508', 508)">
+            ofSeq(s)
+          </code>
+          <div class="tip" id="508">
+            <strong>Signature:</strong> s:seq&lt;&#39;T&gt; -&gt; ParallelQuery&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L110-110" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '509', 509)" onmouseover="showTip(event, '509', 509)">
+            ordered(s)
+          </code>
+          <div class="tip" id="509">
+            <strong>Signature:</strong> s:seq&lt;&#39;?6977&gt; -&gt; ParallelQuery&lt;&#39;?6977&gt;<br />
+                          <strong>Type parameters:</strong> '?6977          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L279-279" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '510', 510)" onmouseover="showTip(event, '510', 510)">
+            pick(f s)
+          </code>
+          <div class="tip" id="510">
+            <strong>Signature:</strong> f:(&#39;?6879 -&gt; &#39;?6880 option) -&gt; s:seq&lt;&#39;?6879&gt; -&gt; &#39;?6880<br />
+                          <strong>Type parameters:</strong> '?6879, '?6880          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L73-73" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '511', 511)" onmouseover="showTip(event, '511', 511)">
+            reduce(f s)
+          </code>
+          <div class="tip" id="511">
+            <strong>Signature:</strong> f:(&#39;?6860 -&gt; &#39;?6860 -&gt; &#39;?6860) -&gt; s:seq&lt;&#39;?6860&gt; -&gt; &#39;?6860<br />
+                          <strong>Type parameters:</strong> '?6860          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L49-49" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '512', 512)" onmouseover="showTip(event, '512', 512)">
+            singleton(x)
+          </code>
+          <div class="tip" id="512">
+            <strong>Signature:</strong> x:&#39;?6851 -&gt; ParallelQuery&lt;&#39;?6851&gt;<br />
+                          <strong>Type parameters:</strong> '?6851          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L37-37" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '513', 513)" onmouseover="showTip(event, '513', 513)">
+            skip(n s)
+          </code>
+          <div class="tip" id="513">
+            <strong>Signature:</strong> n:int -&gt; s:seq&lt;&#39;?6931&gt; -&gt; ParallelQuery&lt;&#39;?6931&gt;<br />
+                          <strong>Type parameters:</strong> '?6931          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L150-150" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '514', 514)" onmouseover="showTip(event, '514', 514)">
+            skipWhile(f s)
+          </code>
+          <div class="tip" id="514">
+            <strong>Signature:</strong> f:(&#39;?6933 -&gt; bool) -&gt; s:seq&lt;&#39;?6933&gt; -&gt; ParallelQuery&lt;&#39;?6933&gt;<br />
+                          <strong>Type parameters:</strong> '?6933          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L153-153" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '515', 515)" onmouseover="showTip(event, '515', 515)">
+            sort(s)
+          </code>
+          <div class="tip" id="515">
+            <strong>Signature:</strong> s:seq&lt;&#39;T&gt; -&gt; pseq&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L171-171" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '516', 516)" onmouseover="showTip(event, '516', 516)">
+            sortBy(f s)
+          </code>
+          <div class="tip" id="516">
+            <strong>Signature:</strong> f:(&#39;T -&gt; &#39;Key) -&gt; s:seq&lt;&#39;T&gt; -&gt; pseq&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T, 'Key          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L174-174" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '517', 517)" onmouseover="showTip(event, '517', 517)">
+            sum(s)
+          </code>
+          <div class="tip" id="517">
+            <strong>Signature:</strong> s:seq&lt;^T&gt; -&gt; ^T<br />
+                          <strong>Type parameters:</strong> ^T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L209-209" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '518', 518)" onmouseover="showTip(event, '518', 518)">
+            sumBy(f s)
+          </code>
+          <div class="tip" id="518">
+            <strong>Signature:</strong> f:(&#39;T -&gt; ^U) -&gt; s:seq&lt;&#39;T&gt; -&gt; ^U<br />
+                          <strong>Type parameters:</strong> 'T, ^U          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L221-221" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '519', 519)" onmouseover="showTip(event, '519', 519)">
+            takeWhile(f s)
+          </code>
+          <div class="tip" id="519">
+            <strong>Signature:</strong> f:(&#39;?6929 -&gt; bool) -&gt; s:seq&lt;&#39;?6929&gt; -&gt; ParallelQuery&lt;&#39;?6929&gt;<br />
+                          <strong>Type parameters:</strong> '?6929          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L147-147" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '520', 520)" onmouseover="showTip(event, '520', 520)">
+            toArray(s)
+          </code>
+          <div class="tip" id="520">
+            <strong>Signature:</strong> s:seq&lt;&#39;?6892&gt; -&gt; &#39;?6892 []<br />
+                          <strong>Type parameters:</strong> '?6892          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L101-101" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '521', 521)" onmouseover="showTip(event, '521', 521)">
+            toList(s)
+          </code>
+          <div class="tip" id="521">
+            <strong>Signature:</strong> s:seq&lt;&#39;T&gt; -&gt; &#39;T list<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L107-107" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '522', 522)" onmouseover="showTip(event, '522', 522)">
+            toP(s)
+          </code>
+          <div class="tip" id="522">
+            <strong>Signature:</strong> s:seq&lt;&#39;T&gt; -&gt; pseq&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L21-21" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '523', 523)" onmouseover="showTip(event, '523', 523)">
+            toSeq(s)
+          </code>
+          <div class="tip" id="523">
+            <strong>Signature:</strong> s:seq&lt;&#39;?6900&gt; -&gt; IEnumerable&lt;&#39;?6900&gt;<br />
+                          <strong>Type parameters:</strong> '?6900          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L113-113" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '524', 524)" onmouseover="showTip(event, '524', 524)">
+            truncate(n s)
+          </code>
+          <div class="tip" id="524">
+            <strong>Signature:</strong> n:int -&gt; s:seq&lt;&#39;?6855&gt; -&gt; ParallelQuery&lt;&#39;?6855&gt;<br />
+                          <strong>Type parameters:</strong> '?6855          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L43-43" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '525', 525)" onmouseover="showTip(event, '525', 525)">
+            tryFind(p s)
+          </code>
+          <div class="tip" id="525">
+            <strong>Signature:</strong> p:(&#39;?6884 -&gt; bool) -&gt; s:seq&lt;&#39;?6884&gt; -&gt; &#39;?6884 option<br />
+                          <strong>Type parameters:</strong> '?6884          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L83-83" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '526', 526)" onmouseover="showTip(event, '526', 526)">
+            tryFindIndex(p s)
+          </code>
+          <div class="tip" id="526">
+            <strong>Signature:</strong> p:(&#39;?6888 -&gt; bool) -&gt; s:seq&lt;&#39;?6888&gt; -&gt; int option<br />
+                          <strong>Type parameters:</strong> '?6888          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L92-92" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '527', 527)" onmouseover="showTip(event, '527', 527)">
+            withCancellation(cancellationToken s)
+          </code>
+          <div class="tip" id="527">
+            <strong>Signature:</strong> cancellationToken:CancellationToken -&gt; s:seq&lt;&#39;?6985&gt; -&gt; ParallelQuery&lt;&#39;?6985&gt;<br />
+                          <strong>Type parameters:</strong> '?6985          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L291-291" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '528', 528)" onmouseover="showTip(event, '528', 528)">
+            withDegreeOfParallelism(n s)
+          </code>
+          <div class="tip" id="528">
+            <strong>Signature:</strong> n:int -&gt; s:seq&lt;&#39;?6979&gt; -&gt; ParallelQuery&lt;&#39;?6979&gt;<br />
+                          <strong>Type parameters:</strong> '?6979          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L282-282" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '529', 529)" onmouseover="showTip(event, '529', 529)">
+            withExecutionMode(executionMode s)
+          </code>
+          <div class="tip" id="529">
+            <strong>Signature:</strong> executionMode:ParallelExecutionMode -&gt; s:seq&lt;&#39;?6981&gt; -&gt; ParallelQuery&lt;&#39;?6981&gt;<br />
+                          <strong>Type parameters:</strong> '?6981          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L285-285" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '530', 530)" onmouseover="showTip(event, '530', 530)">
+            withMergeOptions(mergeOptions s)
+          </code>
+          <div class="tip" id="530">
+            <strong>Signature:</strong> mergeOptions:ParallelMergeOptions -&gt; s:seq&lt;&#39;?6983&gt; -&gt; ParallelQuery&lt;&#39;?6983&gt;<br />
+                          <strong>Type parameters:</strong> '?6983          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L288-288" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '531', 531)" onmouseover="showTip(event, '531', 531)">
+            zip(s1 s2)
+          </code>
+          <div class="tip" id="531">
+            <strong>Signature:</strong> s1:seq&lt;&#39;?6921&gt; -&gt; s2:seq&lt;&#39;?6922&gt; -&gt; ParallelQuery&lt;&#39;?6921 * &#39;?6922&gt;<br />
+                          <strong>Type parameters:</strong> '?6921, '?6922          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/PSeq.fs#L137-137" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+        </div>
+        <div class="span3">
+          <a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">
+            <img src="https://matthid.github.io/Yaaf.FSharp.Helper/content/img/logo.png" style="width:140px;height:140px;margin:10px 0px 0px 35px;border-style:none;" />
+          </a>
+
+          <ul class="nav nav-list" id="menu">
+
+            <li class="nav-header">Yaaf.FSharp.Helper</li>
+
+            <li class="divider"></li>
+            <li><a href="https://www.nuget.org/packages/Yaaf.FSharp.Helper/">Get Yaaf.FSharp.Helper package via NuGet</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper">Source Code</a></li>
+            <li><a href="https://github.com/matthid//issues">Open bugs and feature requests</a></li>
+            <li><a href="https://github.com/matthid//issues/new">Report Issue or Request Feature</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/develop/LICENSE.md">License (Apache 2)</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/Contributing.html">Contributing</a></li>
+            
+            <li class="nav-header">Documentation</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Quick Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/ReleaseNotes.html">Release Notes</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/DevelopReadme.html">Development Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/buildConfig.html">An example build configuration</a></li>
+
+            <li class="nav-header">Reference</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/references/index.html">API Reference</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+      <a href="https://github.com/matthid/Yaaf.FSharp.Helper"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    </body>
+  </html>

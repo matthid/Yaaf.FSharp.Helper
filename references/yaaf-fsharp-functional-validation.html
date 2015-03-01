@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Validation - Yaaf.FSharp.Helper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Matthias Dittrich">
+
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/style.css" />
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.css" />
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/tips.js"></script>
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://fsharp.org">fsharp.org</a></li>
+          <li><a href="http://tpetricek.github.io/FSharp.Formatting/"><img height="16" width="16" src="https://matthid.github.io/Yaaf.AdvancedBuilding/content/img/FSharp.Formatting.png" /> F# Formatting</a></li>
+        </ul>
+        <h3 class="muted"><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Yaaf.FSharp.Helper</a></h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="span9" id="main">
+          
+
+
+
+<h1>Validation</h1>
+<div class="xmldoc">
+    Defined in Yaaf.FSharp.Helper.dll.
+</div>
+<div class="xmldoc">
+</div>
+
+<!-- Render nested types and modules, if there are any -->
+  <h2>Nested types and modules</h2>
+  <div>
+      <table class="table table-bordered type-list">
+    <thead>
+      <tr><td>Type</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-functional-validation-customvalidation-1.html">CustomValidation<'T></a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-functional-validation-nonemptylistsemigroup-1.html">NonEmptyListSemigroup<'T></a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-fsharp-functional-validation-nonemptylistvalidation-1.html">NonEmptyListValidation<'T></a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '408', 408)" onmouseover="showTip(event, '408', 408)">
+            ( *&gt; ) x y
+          </code>
+          <div class="tip" id="408">
+            <strong>Signature:</strong> x:Choice&lt;&#39;?7309,NonEmptyList&lt;&#39;?7310&gt;&gt; -&gt; y:Choice&lt;&#39;?7311,NonEmptyList&lt;&#39;?7310&gt;&gt; -&gt; Choice&lt;&#39;?7311,NonEmptyList&lt;&#39;?7310&gt;&gt;<br />
+                          <strong>Type parameters:</strong> '?7309, '?7310, '?7311          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L894-894" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequence actions, discarding the value of the first argument.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '409', 409)" onmouseover="showTip(event, '409', 409)">
+            ( &lt;* ) x y
+          </code>
+          <div class="tip" id="409">
+            <strong>Signature:</strong> x:Choice&lt;&#39;?7313,NonEmptyList&lt;&#39;?7314&gt;&gt; -&gt; y:Choice&lt;&#39;?7315,NonEmptyList&lt;&#39;?7314&gt;&gt; -&gt; Choice&lt;&#39;?7313,NonEmptyList&lt;&#39;?7314&gt;&gt;<br />
+                          <strong>Type parameters:</strong> '?7313, '?7314, '?7315          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L897-897" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequence actions, discarding the value of the second argument.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '410', 410)" onmouseover="showTip(event, '410', 410)">
+            ( &lt;*&gt; ) f x
+          </code>
+          <div class="tip" id="410">
+            <strong>Signature:</strong> f:Choice&lt;(&#39;?7300 -&gt; &#39;?7301),NonEmptyList&lt;&#39;?7302&gt;&gt; -&gt; x:Choice&lt;&#39;?7300,NonEmptyList&lt;&#39;?7302&gt;&gt; -&gt; Choice&lt;&#39;?7301,NonEmptyList&lt;&#39;?7302&gt;&gt;<br />
+                          <strong>Type parameters:</strong> '?7300, '?7301, '?7302          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L888-888" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequential application
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '411', 411)" onmouseover="showTip(event, '411', 411)">
+            ap x
+          </code>
+          <div class="tip" id="411">
+            <strong>Signature:</strong> x:Choice&lt;&#39;?7296,NonEmptyList&lt;&#39;?7297&gt;&gt; -&gt; Choice&lt;(&#39;?7296 -&gt; &#39;?7298),NonEmptyList&lt;&#39;?7297&gt;&gt; -&gt; Choice&lt;&#39;?7298,NonEmptyList&lt;&#39;?7297&gt;&gt;<br />
+                          <strong>Type parameters:</strong> '?7296, '?7297, '?7298          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L885-885" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequential application
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '412', 412)" onmouseover="showTip(event, '412', 412)">
+            apa append x f
+          </code>
+          <div class="tip" id="412">
+            <strong>Signature:</strong> append:(&#39;?7251 -&gt; &#39;?7251 -&gt; &#39;?7251) -&gt; x:Choice&lt;&#39;?7252,&#39;?7251&gt; -&gt; f:Choice&lt;(&#39;?7252 -&gt; &#39;?7253),&#39;?7251&gt; -&gt; Choice&lt;&#39;?7253,&#39;?7251&gt;<br />
+                          <strong>Type parameters:</strong> '?7251, '?7252, '?7253          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L843-843" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequential application, parameterized by append
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '413', 413)" onmouseover="showTip(event, '413', 413)">
+            apm m
+          </code>
+          <div class="tip" id="413">
+            <strong>Signature:</strong> m:ISemigroup&lt;&#39;?7255&gt; -&gt; Choice&lt;&#39;?7256,&#39;?7255&gt; -&gt; Choice&lt;(&#39;?7256 -&gt; &#39;?7257),&#39;?7255&gt; -&gt; Choice&lt;&#39;?7257,&#39;?7255&gt;<br />
+                          <strong>Type parameters:</strong> '?7255, '?7256, '?7257          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L851-851" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Sequential application, parameterized by semigroup
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '414', 414)" onmouseover="showTip(event, '414', 414)">
+            lift2 f a b
+          </code>
+          <div class="tip" id="414">
+            <strong>Signature:</strong> f:(&#39;?7304 -&gt; &#39;?7305 -&gt; &#39;?7306) -&gt; a:Choice&lt;&#39;?7304,NonEmptyList&lt;&#39;?7307&gt;&gt; -&gt; b:Choice&lt;&#39;?7305,NonEmptyList&lt;&#39;?7307&gt;&gt; -&gt; Choice&lt;&#39;?7306,NonEmptyList&lt;&#39;?7307&gt;&gt;<br />
+                          <strong>Type parameters:</strong> '?7304, '?7305, '?7306, '?7307          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L891-891" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+ Promote a function to a monad/applicative, scanning the monadic/applicative arguments from left to right.
+</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '415', 415)" onmouseover="showTip(event, '415', 415)">
+            mapM f x
+          </code>
+          <div class="tip" id="415">
+            <strong>Signature:</strong> f:(&#39;?7324 -&gt; Choice&lt;&#39;?7325,NonEmptyList&lt;&#39;?7326&gt;&gt;) -&gt; x:&#39;?7324 list -&gt; Choice&lt;&#39;?7325 list,NonEmptyList&lt;&#39;?7326&gt;&gt;<br />
+                          <strong>Type parameters:</strong> '?7324, '?7325, '?7326          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L907-907" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '416', 416)" onmouseover="showTip(event, '416', 416)">
+            sequence s
+          </code>
+          <div class="tip" id="416">
+            <strong>Signature:</strong> s:Choice&lt;&#39;?7321,NonEmptyList&lt;&#39;?7322&gt;&gt; list -&gt; Choice&lt;&#39;?7321 list,NonEmptyList&lt;&#39;?7322&gt;&gt;<br />
+                          <strong>Type parameters:</strong> '?7321, '?7322          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L903-903" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '417', 417)" onmouseover="showTip(event, '417', 417)">
+            seqValidator f
+          </code>
+          <div class="tip" id="417">
+            <strong>Signature:</strong> f:(&#39;?7317 -&gt; Choice&lt;&#39;?7318,NonEmptyList&lt;&#39;?7319&gt;&gt;) -&gt; seq&lt;&#39;?7317&gt; -&gt; Choice&lt;&#39;?7318 list,NonEmptyList&lt;&#39;?7319&gt;&gt;<br />
+                          <strong>Type parameters:</strong> '?7317, '?7318, '?7319          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L899-899" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Active patterns</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Active pattern</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '418', 418)" onmouseover="showTip(event, '418', 418)">
+            ( |Success|Failure| ) _arg1
+          </code>
+          <div class="tip" id="418">
+            <strong>Signature:</strong> _arg1:Choice&lt;&#39;?7248,&#39;?7249&gt; -&gt; Choice&lt;&#39;?7248,&#39;?7249&gt;<br />
+                          <strong>Type parameters:</strong> '?7248, '?7249          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Monad.fs#L837-837" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+        </div>
+        <div class="span3">
+          <a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">
+            <img src="https://matthid.github.io/Yaaf.FSharp.Helper/content/img/logo.png" style="width:140px;height:140px;margin:10px 0px 0px 35px;border-style:none;" />
+          </a>
+
+          <ul class="nav nav-list" id="menu">
+
+            <li class="nav-header">Yaaf.FSharp.Helper</li>
+
+            <li class="divider"></li>
+            <li><a href="https://www.nuget.org/packages/Yaaf.FSharp.Helper/">Get Yaaf.FSharp.Helper package via NuGet</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper">Source Code</a></li>
+            <li><a href="https://github.com/matthid//issues">Open bugs and feature requests</a></li>
+            <li><a href="https://github.com/matthid//issues/new">Report Issue or Request Feature</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/develop/LICENSE.md">License (Apache 2)</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/Contributing.html">Contributing</a></li>
+            
+            <li class="nav-header">Documentation</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Quick Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/ReleaseNotes.html">Release Notes</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/DevelopReadme.html">Development Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/buildConfig.html">An example build configuration</a></li>
+
+            <li class="nav-header">Reference</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/references/index.html">API Reference</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+      <a href="https://github.com/matthid/Yaaf.FSharp.Helper"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    </body>
+  </html>
