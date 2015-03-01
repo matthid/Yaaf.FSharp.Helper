@@ -21,6 +21,18 @@ type WorkerThread () as x =
     do
         WorkerThread.CheckCallContext()
     static let mutable callContext : ICallContext = null
+#if FX_NO_CONTEXT
+#else
+    static do
+        callContext <- WorkerThread.DefaultCallContext
+    static member DefaultCallContext =
+        { new ICallContext with
+            member __.LogicalGetData key =
+                System.Runtime.Remoting.Messaging.CallContext.LogicalGetData key
+            member __.LogicalSetData (key, value) =
+                System.Runtime.Remoting.Messaging.CallContext.LogicalSetData(key, value)
+        }
+#endif
     static member CallContext with get () : ICallContext = callContext and set v = callContext <- v
     [<ThreadStatic>]
     [<DefaultValue>]

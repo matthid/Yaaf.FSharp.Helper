@@ -3,40 +3,64 @@
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Platform Condition=" '$(Platform)' == '' ">Net45</Platform>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>38b85f98-90c9-4fa8-851f-096de04bb3b1</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Yaaf.FSharp.Helper</RootNamespace>
     <AssemblyName>Yaaf.FSharp.Helper</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
-    <TargetProfile>netcore</TargetProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <TargetFSharpCoreVersion>3.3.1.0</TargetFSharpCoreVersion>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
     <Name>Yaaf.FSharp.Helper</Name>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Net45' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <Tailcalls>false</Tailcalls>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;FX_NO_THEADPOOL;FX_NO_FILE;FX_NO_WEB_CLIENT;NET40;NET45</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;NET40;NET45</DefineConstants>
     <WarningLevel>3</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Net45' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <Tailcalls>true</Tailcalls>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE;FX_NO_THEADPOOL;FX_NO_FILE;FX_NO_WEB_CLIENT;NET40;NET45</DefineConstants>
+    <OutputPath>$(SolutionDir)/../build/net45</OutputPath>
+    <DefineConstants>TRACE;NET40;NET45</DefineConstants>
     <WarningLevel>3</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Profile111' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <Tailcalls>false</Tailcalls>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <TargetProfile>netcore</TargetProfile>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FX_NO_THEADPOOL;FX_NO_FILE;FX_NO_WEB_CLIENT;FX_NO_CONTEXT;NET40;NET45</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Profile111' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <Tailcalls>true</Tailcalls>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <TargetProfile>netcore</TargetProfile>
+    <OutputPath>$(SolutionDir)/../build/profile111</OutputPath>
+    <DefineConstants>TRACE;FX_NO_THEADPOOL;FX_NO_FILE;FX_NO_WEB_CLIENT;FX_NO_CONTEXT;NET40;NET45</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)\..\packages\Yaaf.AdvancedBuilding\content\build.targets" />
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">12</MinimumVisualStudioVersion>
-    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
   </PropertyGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.Portable.FSharp.Targets" />
+  <Import Project="$(FSharpTargetsPath)" Condition="Exists('$(FSharpTargetsPath)')" />
   <ItemGroup>
     <Compile Include="..\..\SharedAssemblyInfo.fs">
       <Link>SharedAssemblyInfo.fs</Link>
@@ -67,6 +91,10 @@
     <Compile Include="AsyncPrimitives.fs" />
     <Compile Include="IO.fs" />
     <Compile Include="Helper.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

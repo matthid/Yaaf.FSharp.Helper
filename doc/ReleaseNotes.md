@@ -1,4 +1,8 @@
-﻿### 0.1.3
+﻿### 0.1.4
+
+ * Add net45 build.
+
+### 0.1.3
 
  * Fix dependencies.
  
