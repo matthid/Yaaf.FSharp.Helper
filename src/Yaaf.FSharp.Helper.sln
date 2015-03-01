@@ -29,18 +29,28 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Yaaf.FSharp.Helper", "sourc
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		Debug|Net45 = Debug|Net45
+		Debug|Profile111 = Debug|Profile111
+		Release|Net45 = Release|Net45
+		Release|Profile111 = Release|Profile111
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{005A35E8-3F9C-405A-B5CE-44516B5E724D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{005A35E8-3F9C-405A-B5CE-44516B5E724D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{005A35E8-3F9C-405A-B5CE-44516B5E724D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{005A35E8-3F9C-405A-B5CE-44516B5E724D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{38B85F98-90C9-4FA8-851F-096DE04BB3B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{38B85F98-90C9-4FA8-851F-096DE04BB3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{38B85F98-90C9-4FA8-851F-096DE04BB3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{38B85F98-90C9-4FA8-851F-096DE04BB3B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{005A35E8-3F9C-405A-B5CE-44516B5E724D}.Debug|Net45.ActiveCfg = Debug|Net45
+		{005A35E8-3F9C-405A-B5CE-44516B5E724D}.Debug|Net45.Build.0 = Debug|Net45
+		{005A35E8-3F9C-405A-B5CE-44516B5E724D}.Debug|Profile111.ActiveCfg = Debug|Profile111
+		{005A35E8-3F9C-405A-B5CE-44516B5E724D}.Debug|Profile111.Build.0 = Debug|Profile111
+		{005A35E8-3F9C-405A-B5CE-44516B5E724D}.Release|Net45.ActiveCfg = Release|Net45
+		{005A35E8-3F9C-405A-B5CE-44516B5E724D}.Release|Net45.Build.0 = Release|Net45
+		{005A35E8-3F9C-405A-B5CE-44516B5E724D}.Release|Profile111.ActiveCfg = Release|Profile111
+		{005A35E8-3F9C-405A-B5CE-44516B5E724D}.Release|Profile111.Build.0 = Release|Profile111
+		{38B85F98-90C9-4FA8-851F-096DE04BB3B1}.Debug|Net45.ActiveCfg = Debug|Net45
+		{38B85F98-90C9-4FA8-851F-096DE04BB3B1}.Debug|Net45.Build.0 = Debug|Net45
+		{38B85F98-90C9-4FA8-851F-096DE04BB3B1}.Debug|Profile111.ActiveCfg = Debug|Profile111
+		{38B85F98-90C9-4FA8-851F-096DE04BB3B1}.Debug|Profile111.Build.0 = Debug|Profile111
+		{38B85F98-90C9-4FA8-851F-096DE04BB3B1}.Release|Net45.ActiveCfg = Release|Net45
+		{38B85F98-90C9-4FA8-851F-096DE04BB3B1}.Release|Net45.Build.0 = Release|Net45
+		{38B85F98-90C9-4FA8-851F-096DE04BB3B1}.Release|Profile111.ActiveCfg = Release|Profile111
+		{38B85F98-90C9-4FA8-851F-096DE04BB3B1}.Release|Profile111.Build.0 = Release|Profile111
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

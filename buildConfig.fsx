@@ -65,11 +65,19 @@ let buildConfig =
       CreateFSharpAssemblyInfo "./src/SharedAssemblyInfo.fs" info)
     EnableProjectFileCreation = false
     BuildTargets =
-     [ { BuildParams.Empty with
+     [ { BuildParams.WithSolution with
           // The default build
-          CustomBuildName = ""
-          SimpleBuildName = "profile111" 
+          PlatformName = "Profile111"
+          // Workaround FSharp.Compiler.Service not liking to have a FSharp.Core here: https://github.com/fsprojects/FSharpx.Reflection/issues/1
+          AfterBuild = fun _ -> File.Delete "build/profile111/FSharp.Core.dll"
+          SimpleBuildName = "profile111"
           FindUnitTestDlls =
             // Don't run on mono.
-            if isMono then (fun _ -> Seq.empty) else BuildParams.Empty.FindUnitTestDlls } ]
+            if isMono then (fun _ -> Seq.empty) else BuildParams.Empty.FindUnitTestDlls }
+       { BuildParams.WithSolution with
+          // The default build
+          PlatformName = "Net45"
+          // Workaround FSharp.Compiler.Service not liking to have a FSharp.Core here: https://github.com/fsprojects/FSharpx.Reflection/issues/1
+          AfterBuild = fun _ -> File.Delete "build/net45/FSharp.Core.dll"
+          SimpleBuildName = "net45" } ]
   }
