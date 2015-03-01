@@ -40,25 +40,11 @@
 
 <h2><a name="Building" class="anchor" href="#Building">Building</a></h2>
 
-<p>Open the <code>.sln</code> file or run <code>./build</code>.</p>
-
-<blockquote>
-  <p>NOTE: You can only build the <code>.sln</code> file AFTER doing an initial <code>./build</code> (because nuget dependencies have to be resolved).</p>
-</blockquote>
-
-<p>If you want to edit the build for a specific build you should look into the <code>./src/platform</code> folders for a solution file.</p>
-
-<blockquote>
-  <p>NOTE: The platform solutions are generated with the first build!</p>
-</blockquote>
-
-<p>DON'T edit those platform specific solutions/project files as they will be overwritten by the next build!
-Just edit the templates in <code>./src/source/Yaaf.AdvancedBuilding/templates</code> NOT the ones in <code>./src/templates</code> (will be overwritten)
-or the "normal" project and solution files or the project generation files (*._proj.fsx files).</p>
+<p>This project uses Yaaf.AdvancedBuilding, see <a href="https://matthid.github.io/Yaaf.AdvancedBuilding/DevelopReadme.html">https://matthid.github.io/Yaaf.AdvancedBuilding/DevelopReadme.html</a> for details</p>
 
 <h2><a name="General-overview" class="anchor" href="#General-overview">General overview:</a></h2>
 
-<p>This project tries to help you with your build setup.</p>
+<p>This project tries to provide some helpfull utilities for FSharp code.</p>
 
 <h3><a name="Issues-Features-TODOs" class="anchor" href="#Issues-Features-TODOs">Issues / Features / TODOs</a></h3>
 
@@ -76,85 +62,6 @@ or the "normal" project and solution files or the project generation files (*._p
 
 <ul>
 <li><code>Yaaf.FSharp.Helper</code>: Some helper functionality.</li>
-</ul>
-
-<h3><a name="The-Project-structure" class="anchor" href="#The-Project-structure">The Project structure:</a></h3>
-
-<ul>
-<li><p>/.nuget/</p>
-<p>Nuget dependencies will be downloaded into this folder. 
-  This folder can safely be deleted without affecting the build.</p></li>
-<li><p>/build/</p>
-<p>The project assemblies will be build into this folder. This folder can safely be deleted without affecting the build.</p></li>
-<li><p>/lib/</p>
-<p>library dependencies (currently not used). Most dependencies are automatically managed by nuget and not in this folder. 
-  Only some internal dependencies and packages not in nuget. The git repository should always be "complete".</p></li>
-<li><p>/doc/</p>
-<p>Project documentation files. This folder contains both development and user documentation.</p></li>
-<li><p>/src/</p>
-<p>The Solution directory for all projects</p>
-<ul>
-<li><p>/src/source/</p>
-<p>The root for all projects (not including unit test projects).</p></li>
-<li><p>/src/templates/</p>
-<p>The root for project templates (DONT TOUCH: will be overwritten automatically with <code>/src/source/Yaaf.AdvancedBuilding/templates</code>)</p></li>
-<li><p>/src/test/</p>
-<p>The root for all unit test projects.</p></li>
-</ul></li>
-<li><p>/test/</p>
-<p>The unit test assemblies will be build into this folder. This folder can safely be deleted without affecting the build.</p></li>
-<li><p>/tmp/</p>
-<p>This folder is ignored by git.</p></li>
-<li><p>/build.cmd, /build.sh, /build.fsx</p>
-<p>Files to directly start a build including unit tests via console (windows &amp; linux).</p></li>
-</ul>
-
-<p>Each project should have has a corresponding project with the name <code>Test.${ProjectName}</code> in the test folder.
-This test project provides unit tests for the project <code>${ProjectName}</code>.</p>
-
-<h2><a name="Advanced-Building" class="anchor" href="#Advanced-Building">Advanced Building</a></h2>
-
-<p>The build is done in different steps and you can execute the build until a given step or a single step:</p>
-
-<p>First <code>build.sh</code> and <code>build.cmd</code> restore build dependencies and <code>nuget.exe</code>, then build.fsx is invoked:</p>
-
-<ul>
-<li><code>Clean</code>: cleans the directories (previous builds)</li>
-<li><code>RestorePackages</code>: restores nuget packages</li>
-<li><code>SetVersions</code>: sets the current version</li>
-<li><code>Build_net40</code>: build/test for net40</li>
-<li><code>Build_net45</code>: build/test for net45</li>
-<li><code>CopyToRelease</code>: copy the generated .dlls to release/lib</li>
-<li><code>LocalDoc</code>: create the local documentation you can view that locally</li>
-<li><code>All</code>: this does nothing itself but is used as a marker (executed by default when no parameter is given to ./build)</li>
-<li><code>VersionBump</code>: commits all current changes (when you change the version before you start the build you will have some files changed)</li>
-<li><code>NuGet</code>: generates the nuget packages</li>
-<li><code>GithubDoc</code>: generates the documentation for github</li>
-<li><code>ReleaseGithubDoc</code>: pushes the documentation to github</li>
-<li><code>Release</code>: a marker like "All"</li>
-</ul>
-
-<p>You can execute all steps until a given point with <code>./build #Step#</code> (replace #Step# with <code>Build_net40</code> to execute <code>Clean</code>, <code>RestorePackages</code>, <code>SetVersions</code>, <code>Build_40</code>)</p>
-
-<p>You can execute a single step with <code>build #Step#_single</code>: For example to build the nuget packages you can just invoke <code>./build NuGet_single</code></p>
-
-<blockquote>
-  <p>Of course you need to have the appropriate dlls in place (otherwise the Nuget package creation will fail); ie have build the project before.</p>
-</blockquote>
-
-<p>There is another (hidden) step <code>CleanAll</code> which will clean everything up (even build dependencies and the downloaded Nuget.exe), 
-this step is only needed when build dependencies change. <code>git clean -d -x -f</code> is also a good way to do that</p>
-
-<h2><a name="Visual-Studio-Monodevelop" class="anchor" href="#Visual-Studio-Monodevelop">Visual Studio / Monodevelop</a></h2>
-
-<p>As mentioned above you need to <code>build</code> at least once before you can open the 
-solution files (<code>src/${ProjectName}.*.sln</code>) with Visual Studio / Monodevelop.</p>
-
-<p>Just open the solution file for the build you want to edit.</p>
-
-<ul>
-<li>Note that files/references are managed through special <code>includes.targets</code> (eg: <code>src/source/${ProjectName}/includes.targets</code>) files.</li>
-<li>The build configuration is managed through <code>src/buildConfig.targets</code></li>
 </ul>
 
 
