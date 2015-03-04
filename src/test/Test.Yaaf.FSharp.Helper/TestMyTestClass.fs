@@ -9,9 +9,12 @@ open NUnit.Framework
 open Swensen.Unquote
 
 [<TestFixture>]
-type ``Test-Yaaf-TestHelper-MyTestClass: Check that shortening testfile names work``() = 
+type ``Test-Yaaf-TestHelper-MyTestClass: Check that MyTestClass works``() = 
     inherit MyTestClass()
     
+    [<Test>]
+    member x.``Check TestClass Setup and TearDown``() = ()
+
     [<Test>]
     member x.``Check Testnames are properly shortened (1)``() = 
         let result = 

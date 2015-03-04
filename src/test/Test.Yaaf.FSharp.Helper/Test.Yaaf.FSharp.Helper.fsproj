@@ -79,7 +79,7 @@
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="MyTestClass.fs" />
     <Compile Include="StreamTestClass.fs" />
-    <Compile Include="ShortenNamesTest.fs" />
+    <Compile Include="TestMyTestClass.fs" />
     <Compile Include="IOTest.fs" />
     <None Include="Script.fsx" />
   </ItemGroup>
