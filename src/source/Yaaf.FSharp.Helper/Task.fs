@@ -41,18 +41,23 @@ type WorkerThread () as x =
     let mutable finish = false
     //let waitHandle = new System.Threading.AutoResetEvent(false);
     let workerThread =
-        Tasks.Task.Run(fun () ->
+        new Tasks.Task((fun () ->
             WorkerThread.cuWorkerThread <- Some x
             WorkerThread.CallContext.LogicalSetData("WorkerThread", x)
             while not finish do
                 let (cont,econt,ccont) = work.Take()
                 try
                     cont()
-                with e ->
-                    econt e
-                ())
+                with 
+                | :? OperationCanceledException as e -> ccont e
+                | e -> econt e), 
+            Tasks.TaskCreationOptions.LongRunning)
+    do workerThread.Start()
     //new () = new WorkerThread(10)
-    member x.Dispose () = finish <- true
+    member x.Dispose () =
+      finish <- true
+      work.Add((ignore, ignore, ignore))
+
     member private x.IsFinished = finish
     interface System.IDisposable with
         member x.Dispose() = x.Dispose()

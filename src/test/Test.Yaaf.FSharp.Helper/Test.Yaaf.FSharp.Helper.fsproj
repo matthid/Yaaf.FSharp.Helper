@@ -81,6 +81,7 @@
     <Compile Include="StreamTestClass.fs" />
     <Compile Include="TestMyTestClass.fs" />
     <Compile Include="IOTest.fs" />
+    <Compile Include="TestWorkerThread.fs" />
     <None Include="Script.fsx" />
   </ItemGroup>
   <ItemGroup>
