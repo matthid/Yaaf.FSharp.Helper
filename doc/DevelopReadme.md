@@ -2,11 +2,11 @@
 
 ## Building
 
-This project uses Yaaf.AdvancedBuilding, see https://matthid.github.io/Yaaf.AdvancedBuilding/DevelopReadme.html for details
+This project uses Yaaf.AdvancedBuilding, see https://matthid.github.io/Yaaf.AdvancedBuilding/DevelopReadme.html for details.
 
 ## General overview:
 
-This project tries to provide some helpfull utilities for FSharp code. 
+This project tries to provide some helpful utilities for FSharp code. 
 
 ### Issues / Features / TODOs
 

@@ -41,18 +41,23 @@ type WorkerThread () as x =
     let mutable finish = false
     //let waitHandle = new System.Threading.AutoResetEvent(false);
     let workerThread =
-        Tasks.Task.Run(fun () ->
+        new Tasks.Task((fun () ->
             WorkerThread.cuWorkerThread <- Some x
             WorkerThread.CallContext.LogicalSetData("WorkerThread", x)
             while not finish do
                 let (cont,econt,ccont) = work.Take()
                 try
                     cont()
-                with e ->
-                    econt e
-                ())
+                with 
+                | :? OperationCanceledException as e -> ccont e
+                | e -> econt e), 
+            Tasks.TaskCreationOptions.LongRunning)
+    do workerThread.Start()
     //new () = new WorkerThread(10)
-    member x.Dispose () = finish <- true
+    member x.Dispose () =
+      finish <- true
+      work.Add((ignore, ignore, ignore))
+
     member private x.IsFinished = finish
     interface System.IDisposable with
         member x.Dispose() = x.Dispose()
@@ -180,11 +185,14 @@ module Task =
     open System.Threading.Tasks
     open Yaaf.FSharp.Control
     open Yaaf.FSharp.Functional
-    
-    let inline reraisePreserveStackTrace (e:System.Exception) =
+   
+    let inline reraise (e:System.Exception) =
         System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture(e).Throw()
         raise e
-
+         
+    [<Obsolete>]
+    let inline reraisePreserveStackTrace (e:System.Exception) = reraise e
+    
     let flatAggregate (agg:AggregateException) = 
         let flat = agg.Flatten()
         if flat.InnerExceptions.Count = 1 then
@@ -202,7 +210,7 @@ module Task =
             new System.Func<System.Threading.Tasks.Task, unit>(
                 fun t -> 
                     if t.IsFaulted then 
-                        reraisePreserveStackTrace <| flatAggregate t.Exception))
+                        reraise <| flatAggregate t.Exception))
 
     let startTask o (errors:Event<System.EventHandler<_>,exn>) asy =
         let t = asy |> Async.StartAsTask
@@ -215,7 +223,7 @@ module Task =
         try
             f()
         with
-        | :? AggregateException as agg -> reraisePreserveStackTrace (flatAggregate agg)
+        | :? AggregateException as agg -> reraise (flatAggregate agg)
     let start (t:Task<_>) = t.Start()
     let result (t:Task<_>) = 
         if t = null then raise <| NullReferenceException("Task is null!")
@@ -234,7 +242,7 @@ module Task =
                 return! t |> Async.AwaitTask
         with
         | :? AggregateException as agg ->
-            return reraisePreserveStackTrace <| flatAggregate agg 
+            return reraise <| flatAggregate agg 
       } 
     let awaitNoExn (t:Task<_>) =
         if t = null then raise <| NullReferenceException("Task is null!")

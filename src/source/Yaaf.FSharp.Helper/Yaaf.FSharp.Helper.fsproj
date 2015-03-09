@@ -38,7 +38,6 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <Tailcalls>false</Tailcalls>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
     <TargetProfile>netcore</TargetProfile>
     <OutputPath>bin\Debug\</OutputPath>
@@ -49,7 +48,6 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <Tailcalls>true</Tailcalls>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
     <TargetProfile>netcore</TargetProfile>
     <OutputPath>$(SolutionDir)/../build/profile111</OutputPath>

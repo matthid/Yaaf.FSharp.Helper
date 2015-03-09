@@ -79,7 +79,7 @@ module TestModule =
 
 open TestModule
 type SourceLevels = System.Diagnostics.SourceLevels
-[<TestFixture>]
+//[<TestFixture>]
 type MyTestClass() = 
     static do System.IO.Directory.CreateDirectory("logs") |> ignore
     static let level_verb = SourceLevels.Verbose
@@ -201,8 +201,6 @@ type MyTestClass() =
         testActivity <- Log.StartActivity(shortName)
         ()
     
-    [<Test>]
-    member x.``Check TestClass Setup and TearDown``() = ()
 
 
     
