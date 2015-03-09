@@ -145,6 +145,9 @@ module Async =
     let zip a = async { let! b = a
                         let! c = b
                         return c }
+
+    let reraise e = Task.reraisePreserveStackTrace e
+
 [<AutoOpen>]
 module AsyncExtensions =
 
