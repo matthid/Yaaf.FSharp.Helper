@@ -1,4 +1,8 @@
-﻿### 0.1.4
+﻿### 0.1.5
+
+ * Cleanup WorkerThread when disposed.
+
+### 0.1.4
 
  * Add net45 build.
 
