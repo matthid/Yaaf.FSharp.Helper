@@ -53,15 +53,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '861', 861)" onmouseover="showTip(event, '861', 861)">
+          <code onmouseout="hideTip(event, '863', 863)" onmouseover="showTip(event, '863', 863)">
             new(...)
           </code>
-          <div class="tip" id="861">
+          <div class="tip" id="863">
             <strong>Signature:</strong> (continuationOptions:TaskContinuationOptions option * scheduler:TaskScheduler option * cancellationToken:CancellationToken option) -&gt; TaskBuilder<br />
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L400-400" class="github-link">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L408-408" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -79,15 +79,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '862', 862)" onmouseover="showTip(event, '862', 862)">
+          <code onmouseout="hideTip(event, '864', 864)" onmouseover="showTip(event, '864', 864)">
             Bind(m, f)
           </code>
-          <div class="tip" id="862">
-            <strong>Signature:</strong> (m:Task&lt;&#39;?6659&gt; * f:(&#39;?6659 -&gt; Task&lt;&#39;?6660&gt;)) -&gt; Task&lt;&#39;?6660&gt;<br />
-                          <strong>Type parameters:</strong> '?6659, '?6660          </div>
+          <div class="tip" id="864">
+            <strong>Signature:</strong> (m:Task&lt;&#39;?6661&gt; * f:(&#39;?6661 -&gt; Task&lt;&#39;?6662&gt;)) -&gt; Task&lt;&#39;?6662&gt;<br />
+                          <strong>Type parameters:</strong> '?6661, '?6662          </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L411-411" class="github-link">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L419-419" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -97,12 +97,66 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '863', 863)" onmouseover="showTip(event, '863', 863)">
+          <code onmouseout="hideTip(event, '865', 865)" onmouseover="showTip(event, '865', 865)">
             Combine(comp1, comp2)
           </code>
-          <div class="tip" id="863">
-            <strong>Signature:</strong> (comp1:Task&lt;&#39;?6662&gt; * comp2:(&#39;?6662 -&gt; Task&lt;&#39;?6663&gt;)) -&gt; Task&lt;&#39;?6663&gt;<br />
-                          <strong>Type parameters:</strong> '?6662, '?6663          </div>
+          <div class="tip" id="865">
+            <strong>Signature:</strong> (comp1:Task&lt;&#39;?6664&gt; * comp2:(&#39;?6664 -&gt; Task&lt;&#39;?6665&gt;)) -&gt; Task&lt;&#39;?6665&gt;<br />
+                          <strong>Type parameters:</strong> '?6664, '?6665          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L421-421" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '866', 866)" onmouseover="showTip(event, '866', 866)">
+            Delay(f)
+          </code>
+          <div class="tip" id="866">
+            <strong>Signature:</strong> (f:(unit -&gt; Task&lt;&#39;T&gt;)) -&gt; unit -&gt; Task&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L439-439" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '867', 867)" onmouseover="showTip(event, '867', 867)">
+            For(sequence, body)
+          </code>
+          <div class="tip" id="867">
+            <strong>Signature:</strong> (sequence:seq&lt;&#39;?6674&gt; * body:(&#39;?6674 -&gt; &#39;?6675)) -&gt; Task&lt;unit&gt;<br />
+                          <strong>Type parameters:</strong> '?6674, '?6675          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L435-435" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '868', 868)" onmouseover="showTip(event, '868', 868)">
+            Return(x)
+          </code>
+          <div class="tip" id="868">
+            <strong>Signature:</strong> x:&#39;?6656 -&gt; Task&lt;&#39;?6656&gt;<br />
+                          <strong>Type parameters:</strong> '?6656          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L413-413" class="github-link">
@@ -115,105 +169,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '864', 864)" onmouseover="showTip(event, '864', 864)">
-            Delay(f)
-          </code>
-          <div class="tip" id="864">
-            <strong>Signature:</strong> (f:(unit -&gt; Task&lt;&#39;T&gt;)) -&gt; unit -&gt; Task&lt;&#39;T&gt;<br />
-                          <strong>Type parameters:</strong> 'T          </div>
-        </td>
-        <td class="xmldoc">
-            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L431-431" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '865', 865)" onmouseover="showTip(event, '865', 865)">
-            For(sequence, body)
-          </code>
-          <div class="tip" id="865">
-            <strong>Signature:</strong> (sequence:seq&lt;&#39;?6672&gt; * body:(&#39;?6672 -&gt; &#39;?6673)) -&gt; Task&lt;unit&gt;<br />
-                          <strong>Type parameters:</strong> '?6672, '?6673          </div>
-        </td>
-        <td class="xmldoc">
-            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L427-427" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '866', 866)" onmouseover="showTip(event, '866', 866)">
-            Return(x)
-          </code>
-          <div class="tip" id="866">
-            <strong>Signature:</strong> x:&#39;?6654 -&gt; Task&lt;&#39;?6654&gt;<br />
-                          <strong>Type parameters:</strong> '?6654          </div>
-        </td>
-        <td class="xmldoc">
-            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L405-405" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '867', 867)" onmouseover="showTip(event, '867', 867)">
+          <code onmouseout="hideTip(event, '869', 869)" onmouseover="showTip(event, '869', 869)">
             ReturnFrom(a)
           </code>
-          <div class="tip" id="867">
+          <div class="tip" id="869">
             <strong>Signature:</strong> a:Task&lt;&#39;T&gt; -&gt; Task&lt;&#39;T&gt;<br />
                           <strong>Type parameters:</strong> 'T          </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L409-409" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '868', 868)" onmouseover="showTip(event, '868', 868)">
-            Run(f)
-          </code>
-          <div class="tip" id="868">
-            <strong>Signature:</strong> (f:(unit -&gt; Task&lt;&#39;T&gt;)) -&gt; Task&lt;&#39;T&gt;<br />
-                          <strong>Type parameters:</strong> 'T          </div>
-        </td>
-        <td class="xmldoc">
-            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L433-433" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '869', 869)" onmouseover="showTip(event, '869', 869)">
-            TryFinally(m, compensation)
-          </code>
-          <div class="tip" id="869">
-            <strong>Signature:</strong> (m:Task&lt;&#39;?6667&gt; * compensation:(unit -&gt; unit)) -&gt; Task&lt;&#39;?6667&gt;<br />
-                          <strong>Type parameters:</strong> '?6667          </div>
-        </td>
-        <td class="xmldoc">
-            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L420-420" class="github-link">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L417-417" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -224,11 +188,65 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '870', 870)" onmouseover="showTip(event, '870', 870)">
-            Using(res, body)
+            Run(f)
           </code>
           <div class="tip" id="870">
-            <strong>Signature:</strong> (res:&#39;?6669 * body:(&#39;?6669 -&gt; Task&lt;&#39;?6670&gt;)) -&gt; Task&lt;&#39;?6670&gt;<br />
-                          <strong>Type parameters:</strong> '?6669, '?6670          </div>
+            <strong>Signature:</strong> (f:(unit -&gt; Task&lt;&#39;T&gt;)) -&gt; Task&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L441-441" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '871', 871)" onmouseover="showTip(event, '871', 871)">
+            TryFinally(m, compensation)
+          </code>
+          <div class="tip" id="871">
+            <strong>Signature:</strong> (m:Task&lt;&#39;?6669&gt; * compensation:(unit -&gt; unit)) -&gt; Task&lt;&#39;?6669&gt;<br />
+                          <strong>Type parameters:</strong> '?6669          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L428-428" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '872', 872)" onmouseover="showTip(event, '872', 872)">
+            Using(res, body)
+          </code>
+          <div class="tip" id="872">
+            <strong>Signature:</strong> (res:&#39;?6671 * body:(&#39;?6671 -&gt; Task&lt;&#39;?6672&gt;)) -&gt; Task&lt;&#39;?6672&gt;<br />
+                          <strong>Type parameters:</strong> '?6671, '?6672          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L432-432" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '873', 873)" onmouseover="showTip(event, '873', 873)">
+            While(guard, m)
+          </code>
+          <div class="tip" id="873">
+            <strong>Signature:</strong> (guard:(unit -&gt; bool) * m:(unit -&gt; &#39;?6667)) -&gt; Task&lt;unit&gt;<br />
+                          <strong>Type parameters:</strong> '?6667          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L424-424" class="github-link">
@@ -241,33 +259,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '871', 871)" onmouseover="showTip(event, '871', 871)">
-            While(guard, m)
-          </code>
-          <div class="tip" id="871">
-            <strong>Signature:</strong> (guard:(unit -&gt; bool) * m:(unit -&gt; &#39;?6665)) -&gt; Task&lt;unit&gt;<br />
-                          <strong>Type parameters:</strong> '?6665          </div>
-        </td>
-        <td class="xmldoc">
-            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L416-416" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '872', 872)" onmouseover="showTip(event, '872', 872)">
+          <code onmouseout="hideTip(event, '874', 874)" onmouseover="showTip(event, '874', 874)">
             Zero()
           </code>
-          <div class="tip" id="872">
+          <div class="tip" id="874">
             <strong>Signature:</strong> unit -&gt; Task&lt;unit&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L407-407" class="github-link">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/Task.fs#L415-415" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
