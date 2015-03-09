@@ -146,7 +146,7 @@ module Async =
                         let! c = b
                         return c }
 
-    let reraise e = Task.reraisePreserveStackTrace e
+    let reraise e = Task.reraise e
 
 [<AutoOpen>]
 module AsyncExtensions =
