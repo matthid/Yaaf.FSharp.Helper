@@ -57,7 +57,8 @@ type WorkerThread () as x =
     member x.Dispose () =
       finish <- true
       work.Add((ignore, ignore, ignore))
-
+    override x.Finalize () =
+      x.Dispose()
     member private x.IsFinished = finish
     interface System.IDisposable with
         member x.Dispose() = x.Dispose()
