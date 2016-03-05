@@ -5,7 +5,7 @@ namespace Yaaf.FSharp.Functional
 open System
 open System.Collections
 open System.Collections.Generic
-open FSharpx.Collections
+open Yaaf.FSharp.Collections
 
 
 /// Generic monadic operators    
@@ -830,6 +830,7 @@ module Choice =
 
     let inline mapM f x = sequence (List.map f x)
 
+#if !PORTABLE
 module Validation =
     open Choice
     open Monoid
@@ -873,7 +874,6 @@ module Validation =
 
         member this.mapM f x = this.sequence (List.map f x)
 
-
     type NonEmptyListSemigroup<'T>() = 
         interface ISemigroup<'T NonEmptyList> with 
             member x.Combine(a,b) = NonEmptyList.append a b 
@@ -905,6 +905,7 @@ module Validation =
         List.foldBack cons s (returnM [])
 
     let inline mapM f x = sequence (List.map f x)
+#endif
 
 #if NET40
 

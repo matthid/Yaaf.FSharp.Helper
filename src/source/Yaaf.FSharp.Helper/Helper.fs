@@ -5,7 +5,7 @@
 namespace Yaaf.Helper
 open Yaaf.FSharp.Control
 open FSharpx
-open FSharpx.Collections
+open Yaaf.FSharp.Collections
 
 open System
 open System.Collections.Generic

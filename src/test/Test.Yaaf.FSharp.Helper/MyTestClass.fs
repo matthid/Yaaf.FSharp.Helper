@@ -9,6 +9,7 @@ open System.Collections.Generic
 open NUnit.Framework
 open Yaaf.Helper
 open Yaaf.Logging
+open Yaaf.Logging.AsyncTracing
 
 [<AutoOpen>]
 module TestModule =
@@ -28,8 +29,8 @@ module TestModule =
             let agg = agg.Flatten()
             for i in 0..agg.InnerExceptions.Count - 1 do
                 Log.Err(fun () -> L "Exception in Task: %O" (agg.InnerExceptions.Item i))
-            reraisePreserveStackTrace <| if agg.InnerExceptions.Count = 1 then agg.InnerExceptions.Item 0
-                                         else agg :> exn
+            Task.reraise <| if agg.InnerExceptions.Count = 1 then agg.InnerExceptions.Item 0
+                            else agg :> exn
         t.Result
 
     let mutable defaultTimeout = 
@@ -43,7 +44,7 @@ module TestModule =
     let mutable warnedContextNull = false
 
     let getKey (context : TestContext) = 
-        if context = null then "key is null" // :> obj
+        if isNull context then "key is null" // :> obj
         else context.Test.FullName
 
     let warn msg = 
@@ -51,7 +52,7 @@ module TestModule =
         match warnMessages.TryGetValue(key) with
         | false, _ -> warnMessages.Add(key, [ msg ])
         | true, l -> warnMessages.[key] <- msg :: l
-        if (TestContext.CurrentContext = null && not warnedContextNull) then 
+        if isNull TestContext.CurrentContext && not warnedContextNull then 
             warnedContextNull <- true
             warnMessages.Add(getKey null, [ "TestContext.CurrentContext is null so we can not seperate warnings by test-case!" ])
 
@@ -70,18 +71,37 @@ module TestModule =
             | Some other -> sprintf "%s\n%s" other msg
         Assert.Inconclusive(warnings)
 
-    let warnTearDown() = 
+    let warnTearDown() =
+        let isFailed state =
+          match state with
+          | a when a = Interfaces.ResultState.Cancelled
+                || a = Interfaces.ResultState.ChildFailure
+                || a = Interfaces.ResultState.Error
+                || a = Interfaces.ResultState.Failure
+                || a = Interfaces.ResultState.SetUpError
+                || a = Interfaces.ResultState.SetUpFailure
+                || a = Interfaces.ResultState.TearDownError -> true
+          | _ -> false
         match getWarnings() with
         | None -> ()
         | Some allWarnings -> 
-            if (TestContext.CurrentContext <> null && TestContext.CurrentContext.Result.Status = TestStatus.Failed) then Assert.Fail(allWarnings)
+            if not (isNull TestContext.CurrentContext) && isFailed TestContext.CurrentContext.Result.Outcome
+            then Assert.Fail(allWarnings)
             else Assert.Inconclusive(allWarnings)
 
 open TestModule
 type SourceLevels = System.Diagnostics.SourceLevels
 //[<TestFixture>]
 type MyTestClass() = 
-    static do System.IO.Directory.CreateDirectory("logs") |> ignore
+    static let logsDir = "logs"
+    static do
+      try
+        let full = System.IO.Path.GetFullPath logsDir
+        System.IO.Directory.CreateDirectory(full) |> ignore
+      with :? System.UnauthorizedAccessException ->
+        // NUnit3 Visual Studio Adapter uses the visual studio installation dir (%program files%) as working directory...
+        Environment.CurrentDirectory <- TestContext.CurrentContext.TestDirectory
+        System.IO.Directory.CreateDirectory(logsDir) |> ignore
     static let level_verb = SourceLevels.Verbose
     static let level_all = SourceLevels.All
     static let level_warn = SourceLevels.Warning
@@ -92,7 +112,7 @@ type MyTestClass() =
         logger.TraceOutputOptions <- System.Diagnostics.TraceOptions.None
         logger // :> System.Diagnostics.TraceListener 
     
-    static let xmlWriter = new SimpleXmlWriterTraceListener("logs/tests.svclog") |> prepare level_all
+    static let xmlWriter = new SimpleXmlWriterTraceListener(logsDir + "/tests.svclog") |> prepare level_all
     
     //new Yaaf.Logging.XmlWriterTraceListener("logs/tests.svclog") |> prepare level_all
     static let listeners : System.Diagnostics.TraceListener [] = 

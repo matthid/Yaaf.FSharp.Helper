@@ -1,4 +1,8 @@
-﻿### 0.1.5
+﻿### 0.2
+
+ * Remove FSharpx.Collections dependency by bundling the relevant files (they don't provide a profile111 compatible build any longer).
+
+### 0.1.5
 
  * Cleanup WorkerThread when disposed.
 
