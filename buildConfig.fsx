@@ -64,6 +64,7 @@ let buildConfig =
           Attribute.InformationalVersion config.Version]
       CreateFSharpAssemblyInfo "./src/SharedAssemblyInfo.fs" info)
     RestrictReleaseToWindows = false
+    DisableMSTest = true
     BuildTargets =
      [ { BuildParams.WithSolution with
           // The default build

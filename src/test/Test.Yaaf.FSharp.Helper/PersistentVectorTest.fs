@@ -1,5 +1,7 @@
 ﻿module Yaaf.FSharp.Collections.Experimental.Tests.PersistentVectorTest
 
+#if FX_NO_THREAD
+#else
 open System
 open Yaaf.FSharp.Collections
 open Yaaf.FSharp.Collections.PersistentVector
@@ -157,3 +159,5 @@ let ``vector should allow init``() =
 
     s |> Seq.toList |> should equal [0;2;4;6;8]
     vector |> Seq.toList |> should equal [0;2;4;6;8]
+
+#endif

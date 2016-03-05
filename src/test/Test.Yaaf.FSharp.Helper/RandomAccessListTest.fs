@@ -1,5 +1,7 @@
 ﻿module Yaaf.FSharp.Collections.Tests.RandomAccessListTest
 
+#if FX_NO_THREAD
+#else
 open System
 open Yaaf.FSharp.Collections
 open Yaaf.FSharp.Collections.RandomAccessList
@@ -766,3 +768,5 @@ let ``enumerate empty``() =
         ignore()
 
     true |> should equal true
+
+#endif

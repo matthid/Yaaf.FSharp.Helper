@@ -43,7 +43,7 @@
     <Optimize>false</Optimize>
     <Tailcalls>false</Tailcalls>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;FX_NO_CONTEXT</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;FX_NO_CONTEXT;FX_NO_THREAD;FX_PORTABLE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <StartAction>Project</StartAction>
     <StartProgram>
@@ -56,7 +56,7 @@
     <Optimize>true</Optimize>
     <Tailcalls>true</Tailcalls>
     <OutputPath>$(SolutionDir)/../build/test/profile111</OutputPath>
-    <DefineConstants>TRACE;FX_NO_CONTEXT</DefineConstants>
+    <DefineConstants>TRACE;FX_NO_CONTEXT;FX_NO_THREAD;FX_PORTABLE</DefineConstants>
     <WarningLevel>3</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>

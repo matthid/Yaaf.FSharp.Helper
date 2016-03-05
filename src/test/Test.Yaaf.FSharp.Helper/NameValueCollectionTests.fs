@@ -1,5 +1,7 @@
 ﻿module Yaaf.FSharp.Collections.Tests.NameValueCollectionTests
 
+#if FX_PORTABLE
+#else
 open FsUnit
 open Yaaf.FSharp.Collections
 open NUnit.Framework
@@ -80,3 +82,5 @@ let asDictionary() =
   (fun () -> ignore d.["3"]) |> should throw typeof<KeyNotFoundException>
   n1.Add("3", "three")
   Assert.AreEqual([|"three"|], d.["3"])
+
+#endif
