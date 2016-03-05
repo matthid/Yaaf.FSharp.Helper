@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NonEmptyList - Yaaf.FSharp.Helper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Matthias Dittrich">
+
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/style.css" />
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.css" />
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/tips.js"></script>
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://fsharp.org">fsharp.org</a></li>
+          <li><a href="http://tpetricek.github.io/FSharp.Formatting/"><img height="16" width="16" src="https://matthid.github.io/Yaaf.AdvancedBuilding/content/img/FSharp.Formatting.png" /> F# Formatting</a></li>
+        </ul>
+        <h3 class="muted"><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Yaaf.FSharp.Helper</a></h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="span9" id="main">
+          
+
+
+
+<h1>NonEmptyList</h1>
+<div class="xmldoc">
+    Defined in Yaaf.FSharp.Helper.dll.
+</div>
+<div class="xmldoc">
+</div>
+
+<!-- Render nested types and modules, if there are any -->
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '251', 251)" onmouseover="showTip(event, '251', 251)">
+            append list1 list2
+          </code>
+          <div class="tip" id="251">
+            <strong>Signature:</strong> list1:NonEmptyList&lt;&#39;a&gt; -&gt; list2:NonEmptyList&lt;&#39;a&gt; -&gt; NonEmptyList&lt;&#39;a&gt;<br />
+                          <strong>Type parameters:</strong> 'a          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L99-99" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '252', 252)" onmouseover="showTip(event, '252', 252)">
+            appendList list1 list2
+          </code>
+          <div class="tip" id="252">
+            <strong>Signature:</strong> list1:NonEmptyList&lt;&#39;?23230&gt; -&gt; list2:&#39;?23230 list -&gt; NonEmptyList&lt;&#39;?23230&gt;<br />
+                          <strong>Type parameters:</strong> '?23230          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L95-95" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '253', 253)" onmouseover="showTip(event, '253', 253)">
+            collect mapping list
+          </code>
+          <div class="tip" id="253">
+            <strong>Signature:</strong> mapping:(&#39;?23240 -&gt; NonEmptyList&lt;&#39;?23241&gt;) -&gt; list:NonEmptyList&lt;&#39;?23240&gt; -&gt; NonEmptyList&lt;&#39;?23241&gt;<br />
+                          <strong>Type parameters:</strong> '?23240, '?23241          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L116-116" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '254', 254)" onmouseover="showTip(event, '254', 254)">
+            cons head tail
+          </code>
+          <div class="tip" id="254">
+            <strong>Signature:</strong> head:&#39;?23228 -&gt; tail:NonEmptyList&lt;&#39;?23228&gt; -&gt; NonEmptyList&lt;&#39;?23228&gt;<br />
+                          <strong>Type parameters:</strong> '?23228          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L91-91" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '255', 255)" onmouseover="showTip(event, '255', 255)">
+            create head tail
+          </code>
+          <div class="tip" id="255">
+            <strong>Signature:</strong> head:&#39;?23201 -&gt; tail:&#39;?23201 list -&gt; NonEmptyList&lt;&#39;?23201&gt;<br />
+                          <strong>Type parameters:</strong> '?23201          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L26-26" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '256', 256)" onmouseover="showTip(event, '256', 256)">
+            createParamsArray (head, tail)
+          </code>
+          <div class="tip" id="256">
+            <strong>Signature:</strong> (head:&#39;?23203 * tail:&#39;?23203 []) -&gt; NonEmptyList&lt;&#39;?23203&gt;<br />
+                          <strong>Type parameters:</strong> '?23203          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L29-29" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '257', 257)" onmouseover="showTip(event, '257', 257)">
+            head x
+          </code>
+          <div class="tip" id="257">
+            <strong>Signature:</strong> x:NonEmptyList&lt;&#39;?23207&gt; -&gt; &#39;?23207<br />
+                          <strong>Type parameters:</strong> '?23207          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L35-35" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '258', 258)" onmouseover="showTip(event, '258', 258)">
+            last list
+          </code>
+          <div class="tip" id="258">
+            <strong>Signature:</strong> list:NonEmptyList&lt;&#39;?23236&gt; -&gt; &#39;?23236<br />
+                          <strong>Type parameters:</strong> '?23236          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L107-107" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '259', 259)" onmouseover="showTip(event, '259', 259)">
+            length x
+          </code>
+          <div class="tip" id="259">
+            <strong>Signature:</strong> x:NonEmptyList&lt;&#39;?23213&gt; -&gt; int<br />
+                          <strong>Type parameters:</strong> '?23213          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L45-45" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '260', 260)" onmouseover="showTip(event, '260', 260)">
+            map f list
+          </code>
+          <div class="tip" id="260">
+            <strong>Signature:</strong> f:(&#39;?23225 -&gt; &#39;?23226) -&gt; list:NonEmptyList&lt;&#39;?23225&gt; -&gt; NonEmptyList&lt;&#39;?23226&gt;<br />
+                          <strong>Type parameters:</strong> '?23225, '?23226          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L85-85" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '261', 261)" onmouseover="showTip(event, '261', 261)">
+            ofArray arr
+          </code>
+          <div class="tip" id="261">
+            <strong>Signature:</strong> arr:&#39;?23219 array -&gt; NonEmptyList&lt;&#39;?23219&gt;<br />
+                          <strong>Type parameters:</strong> '?23219          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L66-66" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '262', 262)" onmouseover="showTip(event, '262', 262)">
+            ofList l
+          </code>
+          <div class="tip" id="262">
+            <strong>Signature:</strong> l:&#39;?23221 list -&gt; NonEmptyList&lt;&#39;?23221&gt;<br />
+                          <strong>Type parameters:</strong> '?23221          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L72-72" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '263', 263)" onmouseover="showTip(event, '263', 263)">
+            ofSeq e
+          </code>
+          <div class="tip" id="263">
+            <strong>Signature:</strong> e:seq&lt;&#39;?23223&gt; -&gt; NonEmptyList&lt;&#39;?23223&gt;<br />
+                          <strong>Type parameters:</strong> '?23223          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L78-78" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '264', 264)" onmouseover="showTip(event, '264', 264)">
+            reduce reduction list
+          </code>
+          <div class="tip" id="264">
+            <strong>Signature:</strong> reduction:(&#39;?23234 -&gt; &#39;?23234 -&gt; &#39;?23234) -&gt; list:NonEmptyList&lt;&#39;?23234&gt; -&gt; &#39;?23234<br />
+                          <strong>Type parameters:</strong> '?23234          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L103-103" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '265', 265)" onmouseover="showTip(event, '265', 265)">
+            rev list
+          </code>
+          <div class="tip" id="265">
+            <strong>Signature:</strong> list:NonEmptyList&lt;&#39;?23238&gt; -&gt; NonEmptyList&lt;&#39;?23238&gt;<br />
+                          <strong>Type parameters:</strong> '?23238          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L112-112" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '266', 266)" onmouseover="showTip(event, '266', 266)">
+            singleton value
+          </code>
+          <div class="tip" id="266">
+            <strong>Signature:</strong> value:&#39;?23205 -&gt; NonEmptyList&lt;&#39;?23205&gt;<br />
+                          <strong>Type parameters:</strong> '?23205          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L32-32" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '267', 267)" onmouseover="showTip(event, '267', 267)">
+            tail x
+          </code>
+          <div class="tip" id="267">
+            <strong>Signature:</strong> x:NonEmptyList&lt;&#39;?23209&gt; -&gt; &#39;?23209 list<br />
+                          <strong>Type parameters:</strong> '?23209          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L38-38" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '268', 268)" onmouseover="showTip(event, '268', 268)">
+            toArray list
+          </code>
+          <div class="tip" id="268">
+            <strong>Signature:</strong> list:NonEmptyList&lt;&#39;?23215&gt; -&gt; &#39;?23215 []<br />
+                          <strong>Type parameters:</strong> '?23215          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L49-49" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '269', 269)" onmouseover="showTip(event, '269', 269)">
+            toList x
+          </code>
+          <div class="tip" id="269">
+            <strong>Signature:</strong> x:NonEmptyList&lt;&#39;?23211&gt; -&gt; &#39;?23211 list<br />
+                          <strong>Type parameters:</strong> '?23211          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L42-42" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '270', 270)" onmouseover="showTip(event, '270', 270)">
+            toSeq list
+          </code>
+          <div class="tip" id="270">
+            <strong>Signature:</strong> list:NonEmptyList&lt;&#39;?23217&gt; -&gt; seq&lt;&#39;?23217&gt;<br />
+                          <strong>Type parameters:</strong> '?23217          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L63-63" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '271', 271)" onmouseover="showTip(event, '271', 271)">
+            zip list1 list2
+          </code>
+          <div class="tip" id="271">
+            <strong>Signature:</strong> list1:NonEmptyList&lt;&#39;?23243&gt; -&gt; list2:NonEmptyList&lt;&#39;?23244&gt; -&gt; NonEmptyList&lt;&#39;?23243 * &#39;?23244&gt;<br />
+                          <strong>Type parameters:</strong> '?23243, '?23244          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/NonEmptyList.fs#L120-120" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+        </div>
+        <div class="span3">
+          <a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">
+            <img src="https://matthid.github.io/Yaaf.FSharp.Helper/content/img/logo.png" style="width:140px;height:140px;margin:10px 0px 0px 35px;border-style:none;" />
+          </a>
+
+          <ul class="nav nav-list" id="menu">
+
+            <li class="nav-header">Yaaf.FSharp.Helper</li>
+
+            <li class="divider"></li>
+            <li><a href="https://www.nuget.org/packages/Yaaf.FSharp.Helper/">Get Yaaf.FSharp.Helper package via NuGet</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper">Source Code</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/issues">Open bugs and feature requests</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/issues/new">Report Issue or Request Feature</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/develop/LICENSE.md">License (Apache 2)</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/Contributing.html">Contributing</a></li>
+            
+            <li class="nav-header">Documentation</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Quick Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/ReleaseNotes.html">Release Notes</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/DevelopReadme.html">Development Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/buildConfig.html">An example build configuration</a></li>
+
+            <li class="nav-header">Reference</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/references/index.html">API Reference</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+      <a href="https://github.com/matthid/Yaaf.FSharp.Helper"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    </body>
+  </html>

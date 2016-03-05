@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PersistentVector - Yaaf.FSharp.Helper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Matthias Dittrich">
+
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/style.css" />
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.css" />
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/tips.js"></script>
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://fsharp.org">fsharp.org</a></li>
+          <li><a href="http://tpetricek.github.io/FSharp.Formatting/"><img height="16" width="16" src="https://matthid.github.io/Yaaf.AdvancedBuilding/content/img/FSharp.Formatting.png" /> F# Formatting</a></li>
+        </ul>
+        <h3 class="muted"><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Yaaf.FSharp.Helper</a></h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="span9" id="main">
+          
+
+
+
+<h1>PersistentVector</h1>
+<div class="xmldoc">
+    Defined in Yaaf.FSharp.Helper.dll.
+</div>
+<div class="xmldoc">
+</br><p class='summary'>
+ Defines functions which allow to access and manipulate PersistentVectors.
+</p></div>
+
+<!-- Render nested types and modules, if there are any -->
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '272', 272)" onmouseover="showTip(event, '272', 272)">
+            append arg1 arg2
+          </code>
+          <div class="tip" id="272">
+            <strong>Signature:</strong> PersistentVector&lt;&#39;T&gt; -&gt; PersistentVector&lt;&#39;T&gt; -&gt; PersistentVector&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L365-365" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(n). Returns a new vector with the elements of the second vector added at the end.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '273', 273)" onmouseover="showTip(event, '273', 273)">
+            conj arg1 arg2
+          </code>
+          <div class="tip" id="273">
+            <strong>Signature:</strong> &#39;T -&gt; PersistentVector&lt;&#39;T&gt; -&gt; PersistentVector&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L373-373" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(1). Returns a new vector with the element added at the end.   
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '274', 274)" onmouseover="showTip(event, '274', 274)">
+            empty 
+          </code>
+          <div class="tip" id="274">
+            <strong>Signature:</strong> PersistentVector&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L375-375" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(1). Returns vector of no elements.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '275', 275)" onmouseover="showTip(event, '275', 275)">
+            flatten arg1
+          </code>
+          <div class="tip" id="275">
+            <strong>Signature:</strong> PersistentVector&lt;PersistentVector&lt;&#39;T&gt;&gt; -&gt; seq&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L384-384" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(m,n). Returns a seq from a vector of vectors.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '276', 276)" onmouseover="showTip(event, '276', 276)">
+            fold arg1 arg2 arg3
+          </code>
+          <div class="tip" id="276">
+            <strong>Signature:</strong> (&#39;State -&gt; &#39;T -&gt; &#39;State) -&gt; &#39;State -&gt; PersistentVector&lt;&#39;T&gt; -&gt; &#39;State<br />
+                          <strong>Type parameters:</strong> 'State, 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L377-377" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(n). Returns a state from the supplied state and a function operating from left to right.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '277', 277)" onmouseover="showTip(event, '277', 277)">
+            foldBack arg1 arg2 arg3
+          </code>
+          <div class="tip" id="277">
+            <strong>Signature:</strong> (&#39;T -&gt; &#39;State -&gt; &#39;State) -&gt; PersistentVector&lt;&#39;T&gt; -&gt; &#39;State -&gt; &#39;State<br />
+                          <strong>Type parameters:</strong> 'T, 'State          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L387-387" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(n). Returns a state from the supplied state and a function operating from right to left.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '278', 278)" onmouseover="showTip(event, '278', 278)">
+            init arg1 arg2
+          </code>
+          <div class="tip" id="278">
+            <strong>Signature:</strong> int -&gt; (int -&gt; &#39;T) -&gt; PersistentVector&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L394-394" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(n). Returns a vector of the supplied length using the supplied function operating on the index. 
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '279', 279)" onmouseover="showTip(event, '279', 279)">
+            initial arg1
+          </code>
+          <div class="tip" id="279">
+            <strong>Signature:</strong> PersistentVector&lt;&#39;T&gt; -&gt; PersistentVector&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L400-400" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(1) for all practical purposes; really O(log32n). Returns a new vector without the last item. If the collection is empty it throws an exception.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '280', 280)" onmouseover="showTip(event, '280', 280)">
+            isEmpty arg1
+          </code>
+          <div class="tip" id="280">
+            <strong>Signature:</strong> PersistentVector&lt;&#39;T&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L404-404" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(1). Returns true if the vector has no elements.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '281', 281)" onmouseover="showTip(event, '281', 281)">
+            last arg1
+          </code>
+          <div class="tip" id="281">
+            <strong>Signature:</strong> PersistentVector&lt;&#39;T&gt; -&gt; &#39;T<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L406-406" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(1). Returns the last element in the vector. If the vector is empty it throws an exception.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '282', 282)" onmouseover="showTip(event, '282', 282)">
+            length arg1
+          </code>
+          <div class="tip" id="282">
+            <strong>Signature:</strong> PersistentVector&lt;&#39;T&gt; -&gt; int<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L410-410" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(1). Returns the number of items in the vector.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '283', 283)" onmouseover="showTip(event, '283', 283)">
+            map arg1 arg2
+          </code>
+          <div class="tip" id="283">
+            <strong>Signature:</strong> (&#39;T -&gt; &#39;T1) -&gt; PersistentVector&lt;&#39;T&gt; -&gt; PersistentVector&lt;&#39;T1&gt;<br />
+                          <strong>Type parameters:</strong> 'T, 'T1          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L412-412" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(n). Returns a vector whose elements are the results of applying the supplied function to each of the elements of a supplied vector.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '284', 284)" onmouseover="showTip(event, '284', 284)">
+            nth arg1 arg2
+          </code>
+          <div class="tip" id="284">
+            <strong>Signature:</strong> int -&gt; PersistentVector&lt;&#39;T&gt; -&gt; &#39;T<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L418-418" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(1) for all practical purposes; really O(log32n). Returns the value at the index. If the index is out of bounds it throws an exception.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '285', 285)" onmouseover="showTip(event, '285', 285)">
+            nthNth arg1 arg2 arg3
+          </code>
+          <div class="tip" id="285">
+            <strong>Signature:</strong> int -&gt; int -&gt; PersistentVector&lt;PersistentVector&lt;&#39;T&gt;&gt; -&gt; &#39;T<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L420-420" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(log32(m,n)). Returns the value at the  outer index, inner index. If either index is out of bounds it throws an exception.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '286', 286)" onmouseover="showTip(event, '286', 286)">
+            ofSeq items
+          </code>
+          <div class="tip" id="286">
+            <strong>Signature:</strong> items:seq&lt;&#39;T&gt; -&gt; PersistentVector&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L431-431" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(n). Returns a vector of the seq.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '287', 287)" onmouseover="showTip(event, '287', 287)">
+            rev arg1
+          </code>
+          <div class="tip" id="287">
+            <strong>Signature:</strong> PersistentVector&lt;&#39;T&gt; -&gt; PersistentVector&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L433-433" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(n). Returns vector reversed.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '288', 288)" onmouseover="showTip(event, '288', 288)">
+            singleton arg1
+          </code>
+          <div class="tip" id="288">
+            <strong>Signature:</strong> &#39;T -&gt; PersistentVector&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L435-435" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(1). Returns a new vector of one element.   
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '289', 289)" onmouseover="showTip(event, '289', 289)">
+            toSeq arg1
+          </code>
+          <div class="tip" id="289">
+            <strong>Signature:</strong> PersistentVector&lt;&#39;T&gt; -&gt; seq&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L437-437" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(n). Views the given vector as a sequence.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '290', 290)" onmouseover="showTip(event, '290', 290)">
+            tryInitial arg1
+          </code>
+          <div class="tip" id="290">
+            <strong>Signature:</strong> PersistentVector&lt;&#39;T&gt; -&gt; PersistentVector&lt;&#39;T&gt; option<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L402-402" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(1) for all practical purposes; really O(log32n). Returns option vector without the last item.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '291', 291)" onmouseover="showTip(event, '291', 291)">
+            tryLast arg1
+          </code>
+          <div class="tip" id="291">
+            <strong>Signature:</strong> PersistentVector&lt;&#39;T&gt; -&gt; &#39;T option<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L408-408" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(1). Returns option last element in the vector.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '292', 292)" onmouseover="showTip(event, '292', 292)">
+            tryNth arg1 arg2
+          </code>
+          <div class="tip" id="292">
+            <strong>Signature:</strong> int -&gt; PersistentVector&lt;&#39;T&gt; -&gt; &#39;T option<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L422-422" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(1) for all practical purposes; really O(log32n). Returns option value at the index.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '293', 293)" onmouseover="showTip(event, '293', 293)">
+            tryNthNth arg1 arg2 arg3
+          </code>
+          <div class="tip" id="293">
+            <strong>Signature:</strong> int -&gt; int -&gt; PersistentVector&lt;PersistentVector&lt;&#39;T&gt;&gt; -&gt; &#39;T option<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L426-426" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(log32(m,n)). Returns option value at the indices. 
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '294', 294)" onmouseover="showTip(event, '294', 294)">
+            tryUnconj arg1
+          </code>
+          <div class="tip" id="294">
+            <strong>Signature:</strong> PersistentVector&lt;&#39;T&gt; -&gt; (PersistentVector&lt;&#39;T&gt; * &#39;T) option<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L441-441" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(1) for all practical purposes; really O(log32n). Returns option tuple last element and vector without last item
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '295', 295)" onmouseover="showTip(event, '295', 295)">
+            tryUpdate arg1 arg2 arg3
+          </code>
+          <div class="tip" id="295">
+            <strong>Signature:</strong> int -&gt; &#39;T -&gt; PersistentVector&lt;&#39;T&gt; -&gt; PersistentVector&lt;&#39;T&gt; option<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L447-447" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(1) for all practical purposes; really O(log32n). Returns option vector that contains the given value at the index.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '296', 296)" onmouseover="showTip(event, '296', 296)">
+            tryUpdateNth arg1 arg2 arg3 arg4
+          </code>
+          <div class="tip" id="296">
+            <strong>Signature:</strong> int -&gt; int -&gt; &#39;T -&gt; PersistentVector&lt;PersistentVector&lt;&#39;T&gt;&gt; -&gt; PersistentVector&lt;PersistentVector&lt;&#39;T&gt;&gt; option<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L449-449" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(log32(m,n)). Returns option vector that contains the given value at the indices. 
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '297', 297)" onmouseover="showTip(event, '297', 297)">
+            unconj arg1
+          </code>
+          <div class="tip" id="297">
+            <strong>Signature:</strong> PersistentVector&lt;&#39;T&gt; -&gt; PersistentVector&lt;&#39;T&gt; * &#39;T<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L439-439" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(1) for all practical purposes; really O(log32n). Returns tuple last element and vector without last item
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '298', 298)" onmouseover="showTip(event, '298', 298)">
+            update arg1 arg2 arg3
+          </code>
+          <div class="tip" id="298">
+            <strong>Signature:</strong> int -&gt; &#39;T -&gt; PersistentVector&lt;&#39;T&gt; -&gt; PersistentVector&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L443-443" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(1) for all practical purposes; really O(log32n). Returns a new vector that contains the given value at the index.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '299', 299)" onmouseover="showTip(event, '299', 299)">
+            updateNth arg1 arg2 arg3 arg4
+          </code>
+          <div class="tip" id="299">
+            <strong>Signature:</strong> int -&gt; int -&gt; &#39;T -&gt; PersistentVector&lt;PersistentVector&lt;&#39;T&gt;&gt; -&gt; PersistentVector&lt;PersistentVector&lt;&#39;T&gt;&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L445-445" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(log32(m,n)). Returns a new vector of vectors that contains the given value at the indices. 
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '300', 300)" onmouseover="showTip(event, '300', 300)">
+            windowSeq arg1 arg2
+          </code>
+          <div class="tip" id="300">
+            <strong>Signature:</strong> int -&gt; seq&lt;&#39;T&gt; -&gt; PersistentVector&lt;PersistentVector&lt;&#39;T&gt;&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L464-464" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ O(n). Returns a vector of vectors of given length from the seq. Result may be a jagged vector.
+</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Active patterns</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Active pattern</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '301', 301)" onmouseover="showTip(event, '301', 301)">
+            ( |Conj|Nil| ) arg1
+          </code>
+          <div class="tip" id="301">
+            <strong>Signature:</strong> PersistentVector&lt;&#39;T&gt; -&gt; Choice&lt;(PersistentVector&lt;&#39;T&gt; * &#39;T),unit&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/PersistentVector.fs#L363-363" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+        </div>
+        <div class="span3">
+          <a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">
+            <img src="https://matthid.github.io/Yaaf.FSharp.Helper/content/img/logo.png" style="width:140px;height:140px;margin:10px 0px 0px 35px;border-style:none;" />
+          </a>
+
+          <ul class="nav nav-list" id="menu">
+
+            <li class="nav-header">Yaaf.FSharp.Helper</li>
+
+            <li class="divider"></li>
+            <li><a href="https://www.nuget.org/packages/Yaaf.FSharp.Helper/">Get Yaaf.FSharp.Helper package via NuGet</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper">Source Code</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/issues">Open bugs and feature requests</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/issues/new">Report Issue or Request Feature</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/develop/LICENSE.md">License (Apache 2)</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/Contributing.html">Contributing</a></li>
+            
+            <li class="nav-header">Documentation</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Quick Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/ReleaseNotes.html">Release Notes</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/DevelopReadme.html">Development Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/buildConfig.html">An example build configuration</a></li>
+
+            <li class="nav-header">Reference</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/references/index.html">API Reference</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+      <a href="https://github.com/matthid/Yaaf.FSharp.Helper"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    </body>
+  </html>

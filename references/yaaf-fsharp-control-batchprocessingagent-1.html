@@ -43,12 +43,12 @@
     Defined in Yaaf.FSharp.Helper.dll.
 </div>
 <div class="xmldoc">
-
+</br><p class='summary'>
  Agent that can be used to implement batch processing. It creates groups
  of messages (added using the Enqueue method) and emits them using the 
  BatchProduced event. A group is produced when it reaches the maximal 
  size or after the timeout elapses.
-</br></div>
+</p></div>
   <h3>Constructors</h3>
   <table class="table table-bordered member-list">
     <thead>
@@ -58,15 +58,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '680', 680)" onmouseover="showTip(event, '680', 680)">
+          <code onmouseout="hideTip(event, '1241', 1241)" onmouseover="showTip(event, '1241', 1241)">
             new(batchSize, timeout)
           </code>
-          <div class="tip" id="680">
+          <div class="tip" id="1241">
             <strong>Signature:</strong> (batchSize:int * timeout:int) -&gt; BatchProcessingAgent&lt;&#39;T&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/BatchProcessingAgent.fs#L16-16" class="github-link">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/BatchProcessingAgent.fs#L16-16" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -84,87 +84,87 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '681', 681)" onmouseover="showTip(event, '681', 681)">
+          <code onmouseout="hideTip(event, '1242', 1242)" onmouseover="showTip(event, '1242', 1242)">
             add_BatchProduced(arg1)
           </code>
-          <div class="tip" id="681">
+          <div class="tip" id="1242">
             <strong>Signature:</strong> (Handler&lt;&#39;T []&gt;) -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/BatchProcessingAgent.fs#L45-45" class="github-link">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/BatchProcessingAgent.fs#L45-45" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          </br><p class='summary'>
  The event is triggered when a group of messages is collected. The
  group is not empty, but may not be of the specified maximal size
  (when the timeout elapses before enough messages is collected)
-</br>
+</p>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '682', 682)" onmouseover="showTip(event, '682', 682)">
+          <code onmouseout="hideTip(event, '1243', 1243)" onmouseover="showTip(event, '1243', 1243)">
             BatchProduced
           </code>
-          <div class="tip" id="682">
+          <div class="tip" id="1243">
             <strong>Signature:</strong> IEvent&lt;&#39;T []&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/BatchProcessingAgent.fs#L45-45" class="github-link">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/BatchProcessingAgent.fs#L45-45" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          </br><p class='summary'>
  The event is triggered when a group of messages is collected. The
  group is not empty, but may not be of the specified maximal size
  (when the timeout elapses before enough messages is collected)
-</br>
+</p>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '683', 683)" onmouseover="showTip(event, '683', 683)">
+          <code onmouseout="hideTip(event, '1244', 1244)" onmouseover="showTip(event, '1244', 1244)">
             Enqueue(v)
           </code>
-          <div class="tip" id="683">
+          <div class="tip" id="1244">
             <strong>Signature:</strong> v:&#39;T -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/BatchProcessingAgent.fs#L48-48" class="github-link">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/BatchProcessingAgent.fs#L48-48" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          </br><p class='summary'>
  Sends new message to the agent
-</br>
+</p>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '684', 684)" onmouseover="showTip(event, '684', 684)">
+          <code onmouseout="hideTip(event, '1245', 1245)" onmouseover="showTip(event, '1245', 1245)">
             remove_BatchProduced(arg1)
           </code>
-          <div class="tip" id="684">
+          <div class="tip" id="1245">
             <strong>Signature:</strong> (Handler&lt;&#39;T []&gt;) -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.FSharp.Helper/BatchProcessingAgent.fs#L45-45" class="github-link">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/BatchProcessingAgent.fs#L45-45" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          </br><p class='summary'>
  The event is triggered when a group of messages is collected. The
  group is not empty, but may not be of the specified maximal size
  (when the timeout elapses before enough messages is collected)
-</br>
+</p>
         </td>
       </tr>
     </tbody>
@@ -183,8 +183,8 @@
             <li class="divider"></li>
             <li><a href="https://www.nuget.org/packages/Yaaf.FSharp.Helper/">Get Yaaf.FSharp.Helper package via NuGet</a></li>
             <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper">Source Code</a></li>
-            <li><a href="https://github.com/matthid//issues">Open bugs and feature requests</a></li>
-            <li><a href="https://github.com/matthid//issues/new">Report Issue or Request Feature</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/issues">Open bugs and feature requests</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/issues/new">Report Issue or Request Feature</a></li>
             <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/develop/LICENSE.md">License (Apache 2)</a></li>
             <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/Contributing.html">Contributing</a></li>
             

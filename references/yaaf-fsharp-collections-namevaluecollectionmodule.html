@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NameValueCollection - Yaaf.FSharp.Helper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Matthias Dittrich">
+
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/style.css" />
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.css" />
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/tips.js"></script>
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://fsharp.org">fsharp.org</a></li>
+          <li><a href="http://tpetricek.github.io/FSharp.Formatting/"><img height="16" width="16" src="https://matthid.github.io/Yaaf.AdvancedBuilding/content/img/FSharp.Formatting.png" /> F# Formatting</a></li>
+        </ul>
+        <h3 class="muted"><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Yaaf.FSharp.Helper</a></h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="span9" id="main">
+          
+
+
+
+<h1>NameValueCollection</h1>
+<div class="xmldoc">
+    Defined in Yaaf.FSharp.Helper.dll.
+</div>
+<div class="xmldoc">
+</br><p class='summary'>
+ Extensions for NameValueCollections.
+</p></div>
+
+<!-- Render nested types and modules, if there are any -->
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '240', 240)" onmouseover="showTip(event, '240', 240)">
+            add name value x
+          </code>
+          <div class="tip" id="240">
+            <strong>Signature:</strong> name:string -&gt; value:string -&gt; x:NameValueCollection -&gt; NameValueCollection<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/Collections.fs#L460-460" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Adds an element to a copy of an existing NameValueCollection
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '241', 241)" onmouseover="showTip(event, '241', 241)">
+            addInPlace x (a, b)
+          </code>
+          <div class="tip" id="241">
+            <strong>Signature:</strong> x:NameValueCollection -&gt; (a:string * b:string) -&gt; unit<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/Collections.fs#L457-457" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ In-place add of a key-value pair to a UNRESOLVED(NameValueCollection)</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '242', 242)" onmouseover="showTip(event, '242', 242)">
+            asDictionary x
+          </code>
+          <div class="tip" id="242">
+            <strong>Signature:</strong> x:NameValueCollection -&gt; IDictionary&lt;string,string []&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/Collections.fs#L511-511" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '243', 243)" onmouseover="showTip(event, '243', 243)">
+            asLookup this
+          </code>
+          <div class="tip" id="243">
+            <strong>Signature:</strong> this:NameValueCollection -&gt; ILookup&lt;string,string&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/Collections.fs#L602-602" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '244', 244)" onmouseover="showTip(event, '244', 244)">
+            asReadonlyDictionary x
+          </code>
+          <div class="tip" id="244">
+            <strong>Signature:</strong> x:NameValueCollection -&gt; IDictionary&lt;string,string []&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/Collections.fs#L576-576" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '245', 245)" onmouseover="showTip(event, '245', 245)">
+            concat a b
+          </code>
+          <div class="tip" id="245">
+            <strong>Signature:</strong> a:NameValueCollection -&gt; b:NameValueCollection -&gt; NameValueCollection<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/Collections.fs#L445-445" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Returns a new UNRESOLVED(NameValueCollection) with the concatenation of two UNRESOLVED(NameValueCollection)s
+ </p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '246', 246)" onmouseover="showTip(event, '246', 246)">
+            ofSeq l
+          </code>
+          <div class="tip" id="246">
+            <strong>Signature:</strong> l:seq&lt;string * string&gt; -&gt; NameValueCollection<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/Collections.fs#L498-498" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Creates a UNRESOLVED(NameValueCollection) from a list of key-value pairs
+ </p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '247', 247)" onmouseover="showTip(event, '247', 247)">
+            toArray a
+          </code>
+          <div class="tip" id="247">
+            <strong>Signature:</strong> a:NameValueCollection -&gt; (string * string) []<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/Collections.fs#L472-472" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Returns a UNRESOLVED(NameValueCollection) as an array of key-value pairs.
+ Note that keys may be duplicated.
+ </p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '248', 248)" onmouseover="showTip(event, '248', 248)">
+            toList a
+          </code>
+          <div class="tip" id="248">
+            <strong>Signature:</strong> a:NameValueCollection -&gt; (string * string) list<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/Collections.fs#L492-492" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Returns a UNRESOLVED(NameValueCollection) as a list of key-value pairs.
+ Note that keys may be duplicated.
+ </p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '249', 249)" onmouseover="showTip(event, '249', 249)">
+            toLookup a
+          </code>
+          <div class="tip" id="249">
+            <strong>Signature:</strong> a:NameValueCollection -&gt; ILookup&lt;string,string&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/Collections.fs#L505-505" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '250', 250)" onmouseover="showTip(event, '250', 250)">
+            toSeq a
+          </code>
+          <div class="tip" id="250">
+            <strong>Signature:</strong> a:NameValueCollection -&gt; seq&lt;string * string&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/Collections.fs#L483-483" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Returns a UNRESOLVED(NameValueCollection) as a sequence of key-value pairs.
+ Note that keys may be duplicated.
+ </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+        </div>
+        <div class="span3">
+          <a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">
+            <img src="https://matthid.github.io/Yaaf.FSharp.Helper/content/img/logo.png" style="width:140px;height:140px;margin:10px 0px 0px 35px;border-style:none;" />
+          </a>
+
+          <ul class="nav nav-list" id="menu">
+
+            <li class="nav-header">Yaaf.FSharp.Helper</li>
+
+            <li class="divider"></li>
+            <li><a href="https://www.nuget.org/packages/Yaaf.FSharp.Helper/">Get Yaaf.FSharp.Helper package via NuGet</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper">Source Code</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/issues">Open bugs and feature requests</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/issues/new">Report Issue or Request Feature</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/develop/LICENSE.md">License (Apache 2)</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/Contributing.html">Contributing</a></li>
+            
+            <li class="nav-header">Documentation</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Quick Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/ReleaseNotes.html">Release Notes</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/DevelopReadme.html">Development Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/buildConfig.html">An example build configuration</a></li>
+
+            <li class="nav-header">Reference</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/references/index.html">API Reference</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+      <a href="https://github.com/matthid/Yaaf.FSharp.Helper"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    </body>
+  </html>

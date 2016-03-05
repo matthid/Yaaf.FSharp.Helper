@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ResizeArray - Yaaf.FSharp.Helper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Matthias Dittrich">
+
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/style.css" />
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.css" />
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/tips.js"></script>
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.FSharp.Helper/content/prism.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://fsharp.org">fsharp.org</a></li>
+          <li><a href="http://tpetricek.github.io/FSharp.Formatting/"><img height="16" width="16" src="https://matthid.github.io/Yaaf.AdvancedBuilding/content/img/FSharp.Formatting.png" /> F# Formatting</a></li>
+        </ul>
+        <h3 class="muted"><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Yaaf.FSharp.Helper</a></h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="span9" id="main">
+          
+
+
+
+<h1>ResizeArray</h1>
+<div class="xmldoc">
+    Defined in Yaaf.FSharp.Helper.dll.
+</div>
+<div class="xmldoc">
+</br><p class='summary'>
+ Generic operations on the type System.Collections.Generic.List, which is called ResizeArray in the F# libraries.
+</p></div>
+
+<!-- Render nested types and modules, if there are any -->
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '10', 10)" onmouseover="showTip(event, '10', 10)">
+            append arg1 arg2
+          </code>
+          <div class="tip" id="10">
+            <strong>Signature:</strong> ResizeArray&lt;&#39;T&gt; -&gt; ResizeArray&lt;&#39;T&gt; -&gt; ResizeArray&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L36-36" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Build a new array that contains the elements of the first array followed by the elements of the second array
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '11', 11)" onmouseover="showTip(event, '11', 11)">
+            blit arg1 arg2 arg3 arg4 arg5
+          </code>
+          <div class="tip" id="11">
+            <strong>Signature:</strong> ResizeArray&lt;&#39;T&gt; -&gt; int -&gt; ResizeArray&lt;&#39;T&gt; -&gt; int -&gt; int -&gt; unit<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L26-26" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Read a range of elements from the first array and write them into the second.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '12', 12)" onmouseover="showTip(event, '12', 12)">
+            choose arg1 arg2
+          </code>
+          <div class="tip" id="12">
+            <strong>Signature:</strong> (&#39;T -&gt; &#39;U option) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; ResizeArray&lt;&#39;U&gt;<br />
+                          <strong>Type parameters:</strong> 'T, 'U          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L144-144" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Apply the given function to each element of the array. Return
+ the array comprised of the results "x" for each element where
+ the function returns Some(x)
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '13', 13)" onmouseover="showTip(event, '13', 13)">
+            concat arg1
+          </code>
+          <div class="tip" id="13">
+            <strong>Signature:</strong> seq&lt;ResizeArray&lt;&#39;T&gt;&gt; -&gt; ResizeArray&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L35-35" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Build a new array that contains the elements of each of the given list of arrays
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '14', 14)" onmouseover="showTip(event, '14', 14)">
+            copy arg1
+          </code>
+          <div class="tip" id="14">
+            <strong>Signature:</strong> ResizeArray&lt;&#39;T&gt; -&gt; ResizeArray&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L51-51" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Build a new array that contains the elements of the given array
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '15', 15)" onmouseover="showTip(event, '15', 15)">
+            create arg1 arg2
+          </code>
+          <div class="tip" id="15">
+            <strong>Signature:</strong> int -&gt; &#39;T -&gt; ResizeArray&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L16-16" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Create an array whose elements are all initially the given value.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '16', 16)" onmouseover="showTip(event, '16', 16)">
+            distinct arg1
+          </code>
+          <div class="tip" id="16">
+            <strong>Signature:</strong> ResizeArray&lt;&#39;T&gt; -&gt; ResizeArray&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L335-335" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Returns an array that contains no duplicate entries according to generic hash and
+ equality comparisons on the entries.
+ If an element occurs multiple times in the array then the later occurrences are discarded.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '17', 17)" onmouseover="showTip(event, '17', 17)">
+            distinctBy arg1 arg2
+          </code>
+          <div class="tip" id="17">
+            <strong>Signature:</strong> (&#39;T -&gt; &#39;Key) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; ResizeArray&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T, 'Key          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L327-327" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Returns an array that contains no duplicate entries according to the 
+ generic hash and equality comparisons on the keys returned by the given key-generating function.
+ If an element occurs multiple times in the array then the later occurrences are discarded.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '18', 18)" onmouseover="showTip(event, '18', 18)">
+            exists arg1 arg2
+          </code>
+          <div class="tip" id="18">
+            <strong>Signature:</strong> (&#39;T -&gt; bool) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L94-94" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Test if any element of the array satisfies the given predicate.
+ If the input function is <c>f</c> and the elements are <c>i0...iN</c> 
+ then computes <c>p i0 or ... or p iN</c>.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '19', 19)" onmouseover="showTip(event, '19', 19)">
+            exists2 arg1 arg2 arg3
+          </code>
+          <div class="tip" id="19">
+            <strong>Signature:</strong> (&#39;T1 -&gt; &#39;T2 -&gt; bool) -&gt; ResizeArray&lt;&#39;T1&gt; -&gt; ResizeArray&lt;&#39;T2&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> 'T1, 'T2          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L196-196" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Test elements of the two arrays pairwise to see if any pair of element satisfies the given predicate.
+ Raise ArgumentException if the arrays have different lengths.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '20', 20)" onmouseover="showTip(event, '20', 20)">
+            fill arg1 arg2 arg3 arg4
+          </code>
+          <div class="tip" id="20">
+            <strong>Signature:</strong> ResizeArray&lt;&#39;T&gt; -&gt; int -&gt; int -&gt; &#39;T -&gt; unit<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L44-44" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Fill a range of the collection with the given element
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '21', 21)" onmouseover="showTip(event, '21', 21)">
+            filter arg1 arg2
+          </code>
+          <div class="tip" id="21">
+            <strong>Signature:</strong> (&#39;T -&gt; bool) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; ResizeArray&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L152-152" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Return a new collection containing only the elements of the collection
+ for which the given predicate returns <c>true</c>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '22', 22)" onmouseover="showTip(event, '22', 22)">
+            find arg1 arg2
+          </code>
+          <div class="tip" id="22">
+            <strong>Signature:</strong> (&#39;T -&gt; bool) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; &#39;T<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L106-106" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Return the first element for which the given function returns <c>true</c>.
+ Raise <c>KeyNotFoundException</c> if no such element exists.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '23', 23)" onmouseover="showTip(event, '23', 23)">
+            findIndex arg1 arg2
+          </code>
+          <div class="tip" id="23">
+            <strong>Signature:</strong> (&#39;T -&gt; bool) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; int<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L202-202" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Return the index of the first element in the array
+ that satisfies the given predicate. Raise <c>KeyNotFoundException</c> if 
+ none of the elements satisfy the predicate.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '24', 24)" onmouseover="showTip(event, '24', 24)">
+            findIndexi arg1 arg2
+          </code>
+          <div class="tip" id="24">
+            <strong>Signature:</strong> (int -&gt; &#39;T -&gt; bool) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; int<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L206-206" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Return the index of the first element in the array
+ that satisfies the given predicate. Raise <c>KeyNotFoundException</c> if 
+ none of the elements satisfy the predicate.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '25', 25)" onmouseover="showTip(event, '25', 25)">
+            fold arg1 arg2 arg3
+          </code>
+          <div class="tip" id="25">
+            <strong>Signature:</strong> (&#39;T -&gt; &#39;State -&gt; &#39;T) -&gt; &#39;T -&gt; ResizeArray&lt;&#39;State&gt; -&gt; &#39;T<br />
+                          <strong>Type parameters:</strong> 'T, 'State          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L181-181" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Apply a function to each element of the collection, threading an accumulator argument
+ through the computation. If the input function is <c>f</c> and the elements are <c>i0...iN</c> 
+ then computes <c>f (... (f s i0)...) iN</c>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '26', 26)" onmouseover="showTip(event, '26', 26)">
+            fold2 arg1 arg2 arg3 arg4
+          </code>
+          <div class="tip" id="26">
+            <strong>Signature:</strong> (&#39;State -&gt; &#39;T1 -&gt; &#39;T2 -&gt; &#39;State) -&gt; &#39;State -&gt; ResizeArray&lt;&#39;T1&gt; -&gt; ResizeArray&lt;&#39;T2&gt; -&gt; &#39;State<br />
+                          <strong>Type parameters:</strong> 'State, 'T1, 'T2          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L232-232" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Apply a function to pairs of elements drawn from the two collections, 
+ left-to-right, threading an accumulator argument
+ through the computation.  The two input
+ arrays must have the same lengths, otherwise an <c>ArgumentException</c> is
+ raised.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '27', 27)" onmouseover="showTip(event, '27', 27)">
+            foldBack arg1 arg2 arg3
+          </code>
+          <div class="tip" id="27">
+            <strong>Signature:</strong> (&#39;T -&gt; &#39;State -&gt; &#39;State) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; &#39;State -&gt; &#39;State<br />
+                          <strong>Type parameters:</strong> 'T, 'State          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L174-174" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Apply a function to each element of the array, threading an accumulator argument
+ through the computation. If the input function is <c>f</c> and the elements are <c>i0...iN</c> then 
+ computes <c>f i0 (...(f iN s))</c>.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '28', 28)" onmouseover="showTip(event, '28', 28)">
+            foldBack2 arg1 arg2 arg3 arg4
+          </code>
+          <div class="tip" id="28">
+            <strong>Signature:</strong> (&#39;T1 -&gt; &#39;T2 -&gt; &#39;State -&gt; &#39;State) -&gt; ResizeArray&lt;&#39;T1&gt; -&gt; ResizeArray&lt;&#39;T2&gt; -&gt; &#39;State -&gt; &#39;State<br />
+                          <strong>Type parameters:</strong> 'T1, 'T2, 'State          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L241-241" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Apply a function to pairs of elements drawn from the two collections, right-to-left, 
+ threading an accumulator argument through the computation.  The two input
+ arrays must have the same lengths, otherwise an <c>ArgumentException</c> is
+ raised.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '29', 29)" onmouseover="showTip(event, '29', 29)">
+            forall arg1 arg2
+          </code>
+          <div class="tip" id="29">
+            <strong>Signature:</strong> (&#39;T -&gt; bool) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L99-99" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Test if all elements of the array satisfy the given predicate.
+ If the input function is <c>f</c> and the elements are <c>i0...iN</c> and "j0...jN"
+ then computes <c>p i0 && ... && p iN</c>.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '30', 30)" onmouseover="showTip(event, '30', 30)">
+            forall2 arg1 arg2 arg3
+          </code>
+          <div class="tip" id="30">
+            <strong>Signature:</strong> (&#39;T1 -&gt; &#39;T2 -&gt; bool) -&gt; ResizeArray&lt;&#39;T1&gt; -&gt; ResizeArray&lt;&#39;T2&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> 'T1, 'T2          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L250-250" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Test elements of the two arrays pairwise to see if all pairs of elements satisfy the given predicate.
+ Raise ArgumentException if the arrays have different lengths.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '31', 31)" onmouseover="showTip(event, '31', 31)">
+            get arg1 arg2
+          </code>
+          <div class="tip" id="31">
+            <strong>Signature:</strong> ResizeArray&lt;&#39;T&gt; -&gt; int -&gt; &#39;T<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L14-14" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Fetch an element from the collection.  You can also use the syntax <c>arr.[idx]</c>.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '32', 32)" onmouseover="showTip(event, '32', 32)">
+            init arg1 arg2
+          </code>
+          <div class="tip" id="32">
+            <strong>Signature:</strong> int -&gt; (int -&gt; &#39;T) -&gt; ResizeArray&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L21-21" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Create an array by calling the given generator on each index.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '33', 33)" onmouseover="showTip(event, '33', 33)">
+            isEmpty arg1
+          </code>
+          <div class="tip" id="33">
+            <strong>Signature:</strong> ResizeArray&lt;&#39;T&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L256-256" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Return true if the given array is empty, otherwise false
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '34', 34)" onmouseover="showTip(event, '34', 34)">
+            iter arg1 arg2
+          </code>
+          <div class="tip" id="34">
+            <strong>Signature:</strong> (&#39;T -&gt; unit) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; unit<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L70-70" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Apply the given function to each element of the array. 
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '35', 35)" onmouseover="showTip(event, '35', 35)">
+            iter2 arg1 arg2 arg3
+          </code>
+          <div class="tip" id="35">
+            <strong>Signature:</strong> (&#39;T1 -&gt; &#39;T2 -&gt; unit) -&gt; ResizeArray&lt;&#39;T1&gt; -&gt; ResizeArray&lt;&#39;T2&gt; -&gt; unit<br />
+                          <strong>Type parameters:</strong> 'T1, 'T2          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L128-128" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Apply the given function to two arrays simultaneously. The
+ two arrays must have the same lengths, otherwise an Invalid_argument exception is
+ raised.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '36', 36)" onmouseover="showTip(event, '36', 36)">
+            iteri arg1 arg2
+          </code>
+          <div class="tip" id="36">
+            <strong>Signature:</strong> (int -&gt; &#39;T -&gt; unit) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; unit<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L89-89" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Apply the given function to each element of the array.  The integer passed to the
+ function indicates the index of element.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '37', 37)" onmouseover="showTip(event, '37', 37)">
+            iteri2 arg1 arg2 arg3
+          </code>
+          <div class="tip" id="37">
+            <strong>Signature:</strong> (int -&gt; &#39;T1 -&gt; &#39;T2 -&gt; unit) -&gt; ResizeArray&lt;&#39;T1&gt; -&gt; ResizeArray&lt;&#39;T2&gt; -&gt; unit<br />
+                          <strong>Type parameters:</strong> 'T1, 'T2          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L258-258" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Apply the given function to pair of elements drawn from matching indices in two arrays,
+ also passing the index of the elements. The two arrays must have the same lengths, 
+ otherwise an <c>ArgumentException</c> is raised.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '38', 38)" onmouseover="showTip(event, '38', 38)">
+            length arg1
+          </code>
+          <div class="tip" id="38">
+            <strong>Signature:</strong> ResizeArray&lt;&#39;T&gt; -&gt; int<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L13-13" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Return the length of the collection.  You can also use property <c>arr.Length</c>.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '39', 39)" onmouseover="showTip(event, '39', 39)">
+            map arg1 arg2
+          </code>
+          <div class="tip" id="39">
+            <strong>Signature:</strong> (&#39;T -&gt; &#39;U) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; ResizeArray&lt;&#39;U&gt;<br />
+                          <strong>Type parameters:</strong> 'T, 'U          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L74-74" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Build a new array whose elements are the results of applying the given function
+ to each of the elements of the array.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '40', 40)" onmouseover="showTip(event, '40', 40)">
+            map2 arg1 arg2 arg3
+          </code>
+          <div class="tip" id="40">
+            <strong>Signature:</strong> (&#39;T1 -&gt; &#39;T2 -&gt; &#39;U) -&gt; ResizeArray&lt;&#39;T1&gt; -&gt; ResizeArray&lt;&#39;T2&gt; -&gt; ResizeArray&lt;&#39;U&gt;<br />
+                          <strong>Type parameters:</strong> 'T1, 'T2, 'U          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L135-135" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Build a new collection whose elements are the results of applying the given function
+ to the corresponding elements of the two collections pairwise.  The two input
+ arrays must have the same lengths.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '41', 41)" onmouseover="showTip(event, '41', 41)">
+            mapi arg1 arg2
+          </code>
+          <div class="tip" id="41">
+            <strong>Signature:</strong> (int -&gt; &#39;T -&gt; &#39;U) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; ResizeArray&lt;&#39;U&gt;<br />
+                          <strong>Type parameters:</strong> 'T, 'U          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L81-81" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Build a new array whose elements are the results of applying the given function
+ to each of the elements of the array. The integer index passed to the
+ function indicates the index of element being transformed.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '42', 42)" onmouseover="showTip(event, '42', 42)">
+            mapi2 arg1 arg2 arg3
+          </code>
+          <div class="tip" id="42">
+            <strong>Signature:</strong> (int -&gt; &#39;T1 -&gt; &#39;T2 -&gt; &#39;U) -&gt; ResizeArray&lt;&#39;T1&gt; -&gt; ResizeArray&lt;&#39;T2&gt; -&gt; ResizeArray&lt;&#39;U&gt;<br />
+                          <strong>Type parameters:</strong> 'T1, 'T2, 'U          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L265-265" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Build a new collection whose elements are the results of applying the given function
+ to the corresponding elements of the two collections pairwise.  The two input
+ arrays must have the same lengths, otherwise an <c>ArgumentException</c> is
+ raised.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '43', 43)" onmouseover="showTip(event, '43', 43)">
+            ofArray arg1
+          </code>
+          <div class="tip" id="43">
+            <strong>Signature:</strong> &#39;T [] -&gt; ResizeArray&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L189-189" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Build a ResizeArray from the given elements
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '44', 44)" onmouseover="showTip(event, '44', 44)">
+            ofList arg1
+          </code>
+          <div class="tip" id="44">
+            <strong>Signature:</strong> &#39;T list -&gt; ResizeArray&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L59-59" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Build an array from the given list
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '45', 45)" onmouseover="showTip(event, '45', 45)">
+            ofSeq arg1
+          </code>
+          <div class="tip" id="45">
+            <strong>Signature:</strong> seq&lt;&#39;T&gt; -&gt; ResizeArray&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L68-68" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Build and array from the given seq
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '46', 46)" onmouseover="showTip(event, '46', 46)">
+            partition arg1 arg2
+          </code>
+          <div class="tip" id="46">
+            <strong>Signature:</strong> (&#39;T -&gt; bool) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; ResizeArray&lt;&#39;T&gt; * ResizeArray&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L159-159" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Split the collection into two collections, containing the 
+ elements for which the given predicate returns <c>true</c> and <c>false</c>
+ respectively 
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '47', 47)" onmouseover="showTip(event, '47', 47)">
+            reduce arg1 arg2
+          </code>
+          <div class="tip" id="47">
+            <strong>Signature:</strong> (&#39;T -&gt; &#39;T -&gt; &#39;T) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; &#39;T<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L222-222" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Apply a function to each element of the array, threading an accumulator argument
+ through the computation. If the input function is <c>f</c> and the elements are <c>i0...iN</c> 
+ then computes <c>f (... (f i0 i1)...) iN</c>. Raises ArgumentException if the array has size zero.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '48', 48)" onmouseover="showTip(event, '48', 48)">
+            reduceBack arg1 arg2
+          </code>
+          <div class="tip" id="48">
+            <strong>Signature:</strong> (&#39;T -&gt; &#39;T -&gt; &#39;T) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; &#39;T<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L227-227" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Apply a function to each element of the array, threading an accumulator argument
+ through the computation. If the input function is <c>f</c> and the elements are <c>i0...iN</c> then 
+ computes <c>f i0 (...(f iN-1 iN))</c>. Raises ArgumentException if the array has size zero.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '49', 49)" onmouseover="showTip(event, '49', 49)">
+            rev arg1
+          </code>
+          <div class="tip" id="49">
+            <strong>Signature:</strong> ResizeArray&lt;&#39;T&gt; -&gt; ResizeArray&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L167-167" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Return a new array with the elements in reverse order
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '50', 50)" onmouseover="showTip(event, '50', 50)">
+            scan arg1 arg2 arg3
+          </code>
+          <div class="tip" id="50">
+            <strong>Signature:</strong> (&#39;State -&gt; &#39;T -&gt; &#39;State) -&gt; &#39;State -&gt; ResizeArray&lt;&#39;T&gt; -&gt; ResizeArray&lt;&#39;State&gt;<br />
+                          <strong>Type parameters:</strong> 'State, 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L289-289" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Like <c>fold</c>, but return the intermediary and final results
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '51', 51)" onmouseover="showTip(event, '51', 51)">
+            scanBack arg1 arg2 arg3
+          </code>
+          <div class="tip" id="51">
+            <strong>Signature:</strong> (&#39;T -&gt; &#39;State -&gt; &#39;State) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; &#39;State -&gt; ResizeArray&lt;&#39;State&gt;<br />
+                          <strong>Type parameters:</strong> 'T, 'State          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L293-293" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Like <c>foldBack</c>, but return both the intermediary and final results
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '52', 52)" onmouseover="showTip(event, '52', 52)">
+            set arg1 arg2 arg3
+          </code>
+          <div class="tip" id="52">
+            <strong>Signature:</strong> ResizeArray&lt;&#39;T&gt; -&gt; int -&gt; &#39;T -&gt; unit<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L15-15" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Set the value of an element in the collection. You can also use the syntax <c>arr.[idx] <- e</c>.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '53', 53)" onmouseover="showTip(event, '53', 53)">
+            singleton arg1
+          </code>
+          <div class="tip" id="53">
+            <strong>Signature:</strong> &#39;T -&gt; ResizeArray&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L297-297" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Return an array containing the given element
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '54', 54)" onmouseover="showTip(event, '54', 54)">
+            sort arg1 arg2
+          </code>
+          <div class="tip" id="54">
+            <strong>Signature:</strong> (&#39;T -&gt; &#39;T -&gt; int) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; unit<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L192-192" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Sort the elements using the given comparison function
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '55', 55)" onmouseover="showTip(event, '55', 55)">
+            sortBy arg1 arg2
+          </code>
+          <div class="tip" id="55">
+            <strong>Signature:</strong> (&#39;T -&gt; &#39;Key) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; unit<br />
+                          <strong>Type parameters:</strong> 'T, 'Key          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L193-193" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Sort the elements using the key extractor and generic comparison on the keys
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '56', 56)" onmouseover="showTip(event, '56', 56)">
+            sub arg1 arg2 arg3
+          </code>
+          <div class="tip" id="56">
+            <strong>Signature:</strong> ResizeArray&lt;&#39;T&gt; -&gt; int -&gt; int -&gt; ResizeArray&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L38-38" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Build a new array that contains the given subrange specified by
+ starting index and length.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '57', 57)" onmouseover="showTip(event, '57', 57)">
+            toArray arg1
+          </code>
+          <div class="tip" id="57">
+            <strong>Signature:</strong> ResizeArray&lt;&#39;T&gt; -&gt; &#39;T []<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L188-188" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Return a fixed-length array containing the elements of the input ResizeArray
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '58', 58)" onmouseover="showTip(event, '58', 58)">
+            toList arg1
+          </code>
+          <div class="tip" id="58">
+            <strong>Signature:</strong> ResizeArray&lt;&#39;T&gt; -&gt; &#39;T list<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L53-53" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Build a list from the given array
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '59', 59)" onmouseover="showTip(event, '59', 59)">
+            toSeq arg1
+          </code>
+          <div class="tip" id="59">
+            <strong>Signature:</strong> ResizeArray&lt;&#39;T&gt; -&gt; seq&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L190-190" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Return a view of the array as an enumerable object
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '60', 60)" onmouseover="showTip(event, '60', 60)">
+            tryFind arg1 arg2
+          </code>
+          <div class="tip" id="60">
+            <strong>Signature:</strong> (&#39;T -&gt; bool) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; &#39;T option<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L121-121" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Return the first element for which the given function returns <c>true</c>.
+ Return None if no such element exists.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '61', 61)" onmouseover="showTip(event, '61', 61)">
+            tryFindIndex arg1 arg2
+          </code>
+          <div class="tip" id="61">
+            <strong>Signature:</strong> (&#39;T -&gt; bool) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; int option<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L302-302" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Return the index of the first element in the array
+ that satisfies the given predicate.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '62', 62)" onmouseover="showTip(event, '62', 62)">
+            tryFindIndexi arg1 arg2
+          </code>
+          <div class="tip" id="62">
+            <strong>Signature:</strong> (int -&gt; &#39;T -&gt; bool) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; int option<br />
+                          <strong>Type parameters:</strong> 'T          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L306-306" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Return the index of the first element in the array
+ that satisfies the given predicate.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '63', 63)" onmouseover="showTip(event, '63', 63)">
+            tryPick arg1 arg2
+          </code>
+          <div class="tip" id="63">
+            <strong>Signature:</strong> (&#39;T -&gt; &#39;U option) -&gt; ResizeArray&lt;&#39;T&gt; -&gt; &#39;U option<br />
+                          <strong>Type parameters:</strong> 'T, 'U          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L113-113" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Apply the given function to successive elements, returning the first
+ result where function returns "Some(x)" for some x.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '64', 64)" onmouseover="showTip(event, '64', 64)">
+            unzip arg1
+          </code>
+          <div class="tip" id="64">
+            <strong>Signature:</strong> ResizeArray&lt;&#39;T1 * &#39;T2&gt; -&gt; ResizeArray&lt;&#39;T1&gt; * ResizeArray&lt;&#39;T2&gt;<br />
+                          <strong>Type parameters:</strong> 'T1, 'T2          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L315-315" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Split an array of pairs into two arrays
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '65', 65)" onmouseover="showTip(event, '65', 65)">
+            zip arg1 arg2
+          </code>
+          <div class="tip" id="65">
+            <strong>Signature:</strong> ResizeArray&lt;&#39;T1&gt; -&gt; ResizeArray&lt;&#39;T2&gt; -&gt; ResizeArray&lt;&#39;T1 * &#39;T2&gt;<br />
+                          <strong>Type parameters:</strong> 'T1, 'T2          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/master/src/source/Yaaf.FSharp.Helper/ResizeArray.fs#L310-310" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          </br><p class='summary'>
+ Combine the two arrays into an array of pairs. The two arrays must have equal lengths, otherwise an <c>ArgumentException</c> is
+ raised..
+</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+        </div>
+        <div class="span3">
+          <a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">
+            <img src="https://matthid.github.io/Yaaf.FSharp.Helper/content/img/logo.png" style="width:140px;height:140px;margin:10px 0px 0px 35px;border-style:none;" />
+          </a>
+
+          <ul class="nav nav-list" id="menu">
+
+            <li class="nav-header">Yaaf.FSharp.Helper</li>
+
+            <li class="divider"></li>
+            <li><a href="https://www.nuget.org/packages/Yaaf.FSharp.Helper/">Get Yaaf.FSharp.Helper package via NuGet</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper">Source Code</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/issues">Open bugs and feature requests</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/issues/new">Report Issue or Request Feature</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.FSharp.Helper/blob/develop/LICENSE.md">License (Apache 2)</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/Contributing.html">Contributing</a></li>
+            
+            <li class="nav-header">Documentation</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/index.html">Quick Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/ReleaseNotes.html">Release Notes</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/DevelopReadme.html">Development Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/buildConfig.html">An example build configuration</a></li>
+
+            <li class="nav-header">Reference</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.FSharp.Helper/references/index.html">API Reference</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+      <a href="https://github.com/matthid/Yaaf.FSharp.Helper"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    </body>
+  </html>
