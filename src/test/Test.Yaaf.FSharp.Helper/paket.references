@@ -1,5 +1,6 @@
 NUnit
 NUnit.Runners
 FsUnit
+FsCheck
 Unquote
 Yaaf.Logging

@@ -49,10 +49,10 @@ let buildConfig =
               Version = config.Version
               ReleaseNotes = toLines release.Notes
               Dependencies = 
-                [ "FSharp.Core", "3.1.2.1"
-                  "FSharpx.Collections", "1.10.1"
-                  "Yaaf.Portable.Text.Encoding", "0.7.0"
-                  "Yaaf.Logging", "1.0.1" ] }) ]
+                [ "FSharp.Core"
+                  "Yaaf.Portable.Text.Encoding"
+                  "Yaaf.Logging" ] 
+                |> List.map (fun name -> name, GetPackageVersion "packages" name) }) ]
     UseNuget = false
     SetAssemblyFileVersions = (fun config ->
       let info =
@@ -63,13 +63,11 @@ let buildConfig =
           Attribute.FileVersion config.Version
           Attribute.InformationalVersion config.Version]
       CreateFSharpAssemblyInfo "./src/SharedAssemblyInfo.fs" info)
-    EnableProjectFileCreation = false
+    RestrictReleaseToWindows = false
     BuildTargets =
      [ { BuildParams.WithSolution with
           // The default build
           PlatformName = "Profile111"
-          // Workaround FSharp.Compiler.Service not liking to have a FSharp.Core here: https://github.com/fsprojects/FSharpx.Reflection/issues/1
-          AfterBuild = fun _ -> File.Delete "build/profile111/FSharp.Core.dll"
           SimpleBuildName = "profile111"
           FindUnitTestDlls =
             // Don't run on mono.
@@ -77,7 +75,5 @@ let buildConfig =
        { BuildParams.WithSolution with
           // The default build
           PlatformName = "Net45"
-          // Workaround FSharp.Compiler.Service not liking to have a FSharp.Core here: https://github.com/fsprojects/FSharpx.Reflection/issues/1
-          AfterBuild = fun _ -> File.Delete "build/net45/FSharp.Core.dll"
           SimpleBuildName = "net45" } ]
   }

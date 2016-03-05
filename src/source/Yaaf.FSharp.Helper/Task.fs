@@ -191,7 +191,7 @@ module Task =
         System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture(e).Throw()
         raise e
          
-    [<Obsolete>]
+    [<Obsolete("Use Task.reraise instead.")>]
     let inline reraisePreserveStackTrace (e:System.Exception) = reraise e
     
     let flatAggregate (agg:AggregateException) = 

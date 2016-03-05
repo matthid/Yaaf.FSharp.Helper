@@ -6,7 +6,7 @@ namespace Yaaf.FSharp.Control
 
 open System
 open System.Collections.Generic
-open FSharpx.Collections.Mutable
+open Yaaf.FSharp.Collections.Mutable
 
 // ----------------------------------------------------------------------------
 
