@@ -100,6 +100,8 @@ type MyTestClass() =
         System.IO.Directory.CreateDirectory(full) |> ignore
       with :? System.UnauthorizedAccessException ->
         // NUnit3 Visual Studio Adapter uses the visual studio installation dir (%program files%) as working directory...
+        // See https://github.com/nunit/docs/wiki/Breaking-Changes
+        // See https://github.com/nunit/nunit3-vs-adapter/issues/38
         Environment.CurrentDirectory <- TestContext.CurrentContext.TestDirectory
         System.IO.Directory.CreateDirectory(logsDir) |> ignore
     static let level_verb = SourceLevels.Verbose
